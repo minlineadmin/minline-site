@@ -1,0 +1,50 @@
+---
+import { pagePath } from '../lib/content.js';
+
+const { locale, content } = Astro.props;
+const contactsPath = pagePath(locale, 'contacts');
+const productsPath = pagePath(locale, 'products');
+---
+<section class="hero">
+  <div class="container">
+    <h1>{content.hero.title}</h1>
+    <p class="lead">{content.hero.lead}</p>
+    <div class="actions">
+      <a class="btn btn-primary" href={contactsPath}>{content.hero.ctaPrimary}</a>
+      <a class="btn btn-ghost" href={productsPath}>{content.hero.ctaSecondary}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>{content.highlights.title}</h2>
+    <div class="grid">
+      {content.highlights.items.map((item) => (
+        <div class="card">
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>{content.partner.title}</h2>
+    <div class="section-intro">
+      <p>{content.partner.text}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>{content.cta.title}</h2>
+    <div class="section-intro">
+      <p>{content.cta.text}</p>
+    </div>
+    <a class="btn btn-primary" href={contactsPath}>{content.cta.button}</a>
+  </div>
+</section>

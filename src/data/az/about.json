@@ -1,0 +1,24 @@
+{
+  "slug": "haqqimizda",
+  "navLabel": "Haqqımızda",
+  "metaTitle": "Haqqımızda — Minline Systems",
+  "metaDescription": "Minline Systems MMC — Azərbaycanda sənaye avtomatlaşdırması üzrə həllər təqdim edən şirkət.",
+  "intro": {
+    "title": "Haqqımızda",
+    "lead": "Minline Systems MMC neft-qaz sənayesi üçün avtomatlaşdırma həllərinin tədarükü və tətbiqi üzrə fəaliyyət göstərir. (Mətn layihəsi.)"
+  },
+  "blocks": [
+    {
+      "title": "Fəaliyyət istiqaməti",
+      "text": "Sənaye müəssisələri üçün idarəetmə sistemləri, avadanlıq və mühəndislik xidmətləri. (Yertutan mətn.)"
+    },
+    {
+      "title": "Tərəfdaşlıq",
+      "text": "Kunlun Digital Technology Co., Ltd. ilə tərəfdaşlıq çərçivəsində beynəlxalq təcrübəni yerli bazara gətiririk. (Formulə sənədlər əsasında dəqiqləşdiriləcək.)"
+    },
+    {
+      "title": "Yanaşmamız",
+      "text": "Hər layihəyə fərdi yanaşma: tələblərin təhlili, optimal həllin seçilməsi və uzunmüddətli dəstək. (Yertutan mətn.)"
+    }
+  ]
+}

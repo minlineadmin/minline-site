@@ -1,0 +1,24 @@
+{
+  "slug": "about",
+  "navLabel": "About",
+  "metaTitle": "About us — Minline Systems",
+  "metaDescription": "Minline Systems MMC — industrial automation solutions provider in Azerbaijan.",
+  "intro": {
+    "title": "About us",
+    "lead": "Minline Systems MMC supplies and implements automation solutions for the oil and gas industry. (Draft copy.)"
+  },
+  "blocks": [
+    {
+      "title": "What we do",
+      "text": "Control systems, equipment and engineering services for industrial enterprises. (Placeholder copy.)"
+    },
+    {
+      "title": "Partnership",
+      "text": "Through our partnership with Kunlun Digital Technology Co., Ltd. we bring international expertise to the local market. (Wording to be finalized based on documents.)"
+    },
+    {
+      "title": "Our approach",
+      "text": "An individual approach to every project: requirements analysis, optimal solution selection and long-term support. (Placeholder copy.)"
+    }
+  ]
+}

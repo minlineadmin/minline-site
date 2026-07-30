@@ -1,0 +1,28 @@
+{
+  "slug": "xidmetler",
+  "navLabel": "Xidmətlər",
+  "metaTitle": "Xidmətlər — Minline Systems",
+  "metaDescription": "Konsultasiya, tədarük, inteqrasiya, istismara vermə və texniki dəstək xidmətləri.",
+  "intro": {
+    "title": "Xidmətlər",
+    "lead": "Avadanlıq tədarükündən istismara vermə və dəstəyə qədər tam xidmət dövrü. (Mətn layihəsi.)"
+  },
+  "items": [
+    {
+      "title": "Konsultasiya və layihələndirmə",
+      "text": "Tələblərin təhlili və texniki həllin seçilməsi üzrə dəstək. (Yertutan mətn.)"
+    },
+    {
+      "title": "Tədarük və inteqrasiya",
+      "text": "Avadanlığın tədarükü və mövcud infrastruktura inteqrasiyası. (Yertutan mətn.)"
+    },
+    {
+      "title": "İstismara vermə",
+      "text": "Quraşdırma, sazlama və sınaq işlərinin təşkili. (Yertutan mətn.)"
+    },
+    {
+      "title": "Texniki dəstək və təlim",
+      "text": "İstismar dövründə dəstək və personal üçün təlimlər. (Yertutan mətn.)"
+    }
+  ]
+}

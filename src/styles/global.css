@@ -1,0 +1,158 @@
+/* Skeleton-stage styles: structural, with a hint of the final direction
+   (black marble + gold). The real design pass replaces the token values,
+   not the markup. */
+
+:root {
+  --bg: #0d0d0f;
+  --bg-elevated: #16161a;
+  --text: #e8e6e1;
+  --text-muted: #9a978f;
+  --gold: #c9a227;
+  --gold-soft: #e0c46c;
+  --line: #2a2a30;
+  --max-width: 1100px;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3 { line-height: 1.25; font-weight: 600; }
+h1 { font-size: clamp(1.9rem, 4vw, 3rem); margin: 0 0 0.5em; }
+h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); margin: 0 0 0.8em; }
+h3 { font-size: 1.1rem; margin: 0 0 0.4em; }
+
+p { margin: 0 0 1em; color: var(--text-muted); }
+
+a { color: var(--gold-soft); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(13, 13, 15, 0.92);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 64px;
+}
+.brand {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.brand span { color: var(--gold); }
+.site-nav { display: flex; gap: 20px; flex-wrap: wrap; }
+.site-nav a {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+}
+.site-nav a:hover { color: var(--text); text-decoration: none; }
+.site-nav a[aria-current="page"] { color: var(--gold-soft); }
+
+/* Language switcher */
+.lang-switcher { display: flex; gap: 10px; font-size: 0.85rem; }
+.lang-switcher a { color: var(--text-muted); text-transform: uppercase; }
+.lang-switcher a[aria-current="true"] { color: var(--gold); font-weight: 600; }
+
+/* Hero */
+.hero {
+  padding: 96px 0 72px;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(1200px 400px at 70% -10%, rgba(201, 162, 39, 0.08), transparent),
+    var(--bg);
+}
+.hero .lead { max-width: 640px; font-size: 1.1rem; }
+.hero .actions { margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap; }
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.btn-primary { background: var(--gold); color: #121212; }
+.btn-primary:hover { background: var(--gold-soft); text-decoration: none; }
+.btn-ghost { border: 1px solid var(--line); color: var(--text); }
+.btn-ghost:hover { border-color: var(--gold); text-decoration: none; }
+
+/* Generic sections */
+.section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+.section-intro { max-width: 680px; margin-bottom: 40px; }
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.card h3 { color: var(--text); }
+.card p { font-size: 0.95rem; margin-bottom: 0; }
+
+/* Form */
+.quote-form { max-width: 560px; display: grid; gap: 14px; }
+.quote-form label { font-size: 0.85rem; color: var(--text-muted); display: grid; gap: 6px; }
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  color: var(--text);
+  font: inherit;
+}
+.quote-form input:focus,
+.quote-form textarea:focus { outline: 1px solid var(--gold); border-color: var(--gold); }
+.form-note { font-size: 0.8rem; color: var(--text-muted); }
+
+/* Contacts */
+.contact-list { list-style: none; padding: 0; margin: 0 0 32px; display: grid; gap: 10px; }
+.contact-list strong { color: var(--text); font-weight: 600; }
+
+/* Footer */
+.site-footer {
+  padding: 40px 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}

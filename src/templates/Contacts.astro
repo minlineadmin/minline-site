@@ -1,0 +1,25 @@
+---
+import QuoteForm from '../components/QuoteForm.astro';
+import { getSite } from '../lib/content.js';
+
+const { locale, content } = Astro.props;
+const site = getSite(locale);
+---
+<section class="section">
+  <div class="container">
+    <h1>{content.intro.title}</h1>
+    <div class="section-intro">
+      <p>{content.intro.lead}</p>
+    </div>
+    <ul class="contact-list">
+      {content.items.map((item) => (
+        <li><strong>{item.label}:</strong> {item.value}</li>
+      ))}
+    </ul>
+    <h2>{content.formTitle}</h2>
+    <div class="section-intro">
+      <p>{content.formText}</p>
+    </div>
+    <QuoteForm site={site} />
+  </div>
+</section>

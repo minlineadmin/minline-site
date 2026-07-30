@@ -1,0 +1,14 @@
+{
+  "companyName": "Minline Systems MMC",
+  "navAriaLabel": "Main navigation",
+  "footerNote": "Automation solutions for the oil and gas industry",
+  "form": {
+    "name": "Full name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Your request",
+    "submit": "Send request",
+    "pendingNote": "The form will be activated shortly. In the meantime, please contact us by email."
+  }
+}

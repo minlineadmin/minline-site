@@ -1,0 +1,15 @@
+---
+// Switches language while staying on the same section (not just the home page).
+import { getAlternates } from '../lib/content.js';
+
+const { locale, sectionKey } = Astro.props;
+const alternates = getAlternates(sectionKey);
+const labels = { az: 'AZ', en: 'EN', ru: 'RU' };
+---
+<div class="lang-switcher">
+  {alternates.map(({ locale: l, href }) => (
+    <a href={href} aria-current={l === locale ? 'true' : undefined} lang={l}>
+      {labels[l]}
+    </a>
+  ))}
+</div>

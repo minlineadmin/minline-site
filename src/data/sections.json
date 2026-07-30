@@ -1,0 +1,7 @@
+[
+  { "key": "home", "template": "Home" },
+  { "key": "products", "template": "Products" },
+  { "key": "services", "template": "Services" },
+  { "key": "about", "template": "About" },
+  { "key": "contacts", "template": "Contacts" }
+]

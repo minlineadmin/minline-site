@@ -1,0 +1,38 @@
+{
+  "slug": "",
+  "navLabel": "Home",
+  "metaTitle": "Minline Systems — automation solutions for the oil and gas industry",
+  "metaDescription": "Minline Systems MMC delivers digital automation solutions for oil and gas production in Azerbaijan. Official partner of Kunlun Digital Technology.",
+  "hero": {
+    "title": "Digital automation solutions for oil and gas production",
+    "lead": "Minline Systems MMC specializes in the supply and implementation of industrial automation systems in Azerbaijan. We are an official partner of Kunlun Digital Technology Co., Ltd.",
+    "ctaPrimary": "Request a proposal",
+    "ctaSecondary": "Explore products"
+  },
+  "highlights": {
+    "title": "What we do",
+    "items": [
+      {
+        "title": "Control systems",
+        "text": "Modern process control systems — from design to commissioning. (Draft copy — to be refined.)"
+      },
+      {
+        "title": "Field equipment and instrumentation",
+        "text": "Selection and supply of measurement and control instruments. (Draft copy — to be refined.)"
+      },
+      {
+        "title": "Engineering support",
+        "text": "Technical consulting, integration and commissioning support. (Draft copy — to be refined.)"
+      }
+    ]
+  },
+  "partner": {
+    "title": "Partnership with Kunlun Digital Technology",
+    "text": "Kunlun Digital Technology Co., Ltd. (China) is a technology company with international experience in oil and gas production automation. Minline Systems brings these technologies to the Azerbaijani market. (Wording to be finalized based on partnership documents.)"
+  },
+  "cta": {
+    "title": "Get a proposal for your project",
+    "text": "Send us your requirements and we will come back with a technical and commercial proposal shortly.",
+    "button": "Contact us"
+  }
+}

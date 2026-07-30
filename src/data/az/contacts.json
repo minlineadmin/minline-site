@@ -1,0 +1,17 @@
+{
+  "slug": "elaqe",
+  "navLabel": "Əlaqə",
+  "metaTitle": "Əlaqə — Minline Systems",
+  "metaDescription": "Minline Systems MMC ilə əlaqə: təklif sorğusu göndərin.",
+  "intro": {
+    "title": "Əlaqə",
+    "lead": "Suallarınız və ya təklif sorğusu üçün bizimlə əlaqə saxlayın."
+  },
+  "items": [
+    { "label": "Ünvan", "value": "Bakı, Azərbaycan (dəqiqləşdiriləcək)" },
+    { "label": "E-poçt", "value": "info@minline.az (hazırlanır)" },
+    { "label": "Telefon", "value": "(dəqiqləşdiriləcək)" }
+  ],
+  "formTitle": "Təklif sorğusu",
+  "formText": "Formanı doldurun — sizinlə qısa müddətdə əlaqə saxlayacağıq."
+}

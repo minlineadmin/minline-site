@@ -1,0 +1,32 @@
+---
+// Request-a-quote form. Formspree endpoint is wired at alpha stage via
+// PUBLIC_FORMSPREE_ID; until then the form renders but is inert (no action).
+const { site } = Astro.props;
+const f = site.form;
+const formspreeId = import.meta.env.PUBLIC_FORMSPREE_ID;
+const action = formspreeId ? `https://formspree.io/f/${formspreeId}` : undefined;
+---
+<form class="quote-form" method="POST" action={action}>
+  <label>
+    {f.name}
+    <input type="text" name="name" required autocomplete="name" />
+  </label>
+  <label>
+    {f.company}
+    <input type="text" name="company" autocomplete="organization" />
+  </label>
+  <label>
+    {f.email}
+    <input type="email" name="email" required autocomplete="email" />
+  </label>
+  <label>
+    {f.phone}
+    <input type="tel" name="phone" autocomplete="tel" />
+  </label>
+  <label>
+    {f.message}
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+  <button class="btn btn-primary" type="submit">{f.submit}</button>
+  {!action && <p class="form-note">{f.pendingNote}</p>}
+</form>

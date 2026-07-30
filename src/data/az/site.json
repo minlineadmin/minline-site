@@ -1,0 +1,14 @@
+{
+  "companyName": "Minline Systems MMC",
+  "navAriaLabel": "Əsas naviqasiya",
+  "footerNote": "Neft-qaz sənayesi üçün avtomatlaşdırma həlləri",
+  "form": {
+    "name": "Ad, soyad",
+    "company": "Şirkət",
+    "email": "E-poçt",
+    "phone": "Telefon",
+    "message": "Müraciətiniz",
+    "submit": "Sorğu göndər",
+    "pendingNote": "Forma tezliklə aktiv olacaq. Hələlik bizimlə e-poçt vasitəsilə əlaqə saxlaya bilərsiniz."
+  }
+}

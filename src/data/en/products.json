@@ -1,0 +1,28 @@
+{
+  "slug": "products",
+  "navLabel": "Products",
+  "metaTitle": "Products — Minline Systems",
+  "metaDescription": "Industrial automation systems and equipment: control systems, SCADA, field instrumentation, industrial software.",
+  "intro": {
+    "title": "Products",
+    "lead": "The categories below are a preliminary structure; the exact product line will be published once Kunlun Digital Technology materials are confirmed."
+  },
+  "categories": [
+    {
+      "title": "Distributed control systems (DCS)",
+      "text": "Systems for centralized control of production processes. (Placeholder copy.)"
+    },
+    {
+      "title": "SCADA and monitoring",
+      "text": "Real-time supervision of technological processes. (Placeholder copy.)"
+    },
+    {
+      "title": "Field instrumentation",
+      "text": "Pressure, temperature, flow and level measurement equipment. (Placeholder copy.)"
+    },
+    {
+      "title": "Industrial software",
+      "text": "Software solutions for production data acquisition and analytics. (Placeholder copy.)"
+    }
+  ]
+}

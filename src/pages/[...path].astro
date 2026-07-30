@@ -1,0 +1,26 @@
+---
+// Single route that renders all pages of the site (5 sections × 3 locales).
+// Pages are generated from content files — see src/lib/content.js.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllPages, getSectionContent } from '../lib/content.js';
+
+import Home from '../templates/Home.astro';
+import Products from '../templates/Products.astro';
+import Services from '../templates/Services.astro';
+import About from '../templates/About.astro';
+import Contacts from '../templates/Contacts.astro';
+
+const templates = { Home, Products, Services, About, Contacts };
+
+export function getStaticPaths() {
+  return getAllPages();
+}
+
+const { locale, key, template } = Astro.props;
+const content = getSectionContent(locale, key);
+const Template = templates[template];
+if (!Template) throw new Error(`Unknown template "${template}" for section "${key}"`);
+---
+<BaseLayout locale={locale} sectionKey={key} content={content}>
+  <Template locale={locale} content={content} />
+</BaseLayout>

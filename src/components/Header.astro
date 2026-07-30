@@ -1,0 +1,21 @@
+---
+import LangSwitcher from './LangSwitcher.astro';
+import { getNav } from '../lib/content.js';
+
+const { locale, sectionKey, site } = Astro.props;
+const nav = getNav(locale);
+const homeHref = nav.find((i) => i.key === 'home')?.href ?? '/';
+---
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href={homeHref}>Minline <span>Systems</span></a>
+    <nav class="site-nav" aria-label={site.navAriaLabel}>
+      {nav.map((item) => (
+        <a href={item.href} aria-current={item.key === sectionKey ? 'page' : undefined}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+    <LangSwitcher locale={locale} sectionKey={sectionKey} />
+  </div>
+</header>
