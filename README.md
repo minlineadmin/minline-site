@@ -20,10 +20,6 @@ npm run dev       # local dev
 npm run build     # production build -> dist/
 ```
 
-## Temporary: scripts/build-preview.mjs
-
-`node scripts/build-preview.mjs` renders the same content into `dist-preview/` with zero dependencies. It exists only because the first skeleton demo was produced in a sandbox without npm registry access. **Astro build must be verified before alpha; delete the script after that.**
-
 ## Content status
 
 All texts are drafts/placeholders pending: client-provided details (address, phone), confirmation of Kunlun Digital Technology materials and partnership wording, and native-speaker review of AZ/EN copy.
