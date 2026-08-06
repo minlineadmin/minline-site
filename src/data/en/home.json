@@ -1,38 +1,56 @@
 {
   "slug": "",
   "navLabel": "Home",
-  "metaTitle": "Minline Systems — automation solutions for the oil and gas industry",
-  "metaDescription": "Minline Systems MMC delivers digital automation solutions for oil and gas production in Azerbaijan. Official partner of Kunlun Digital Technology.",
+  "metaTitle": "Minline Systems — modern solutions for the oil and gas industry",
+  "metaDescription": "Oilfield digitalization, SCADA automation systems and reliable supply of oil production equipment compliant with international API standards.",
   "hero": {
-    "title": "Digital automation solutions for oil and gas production",
-    "lead": "Minline Systems MMC specializes in the supply and implementation of industrial automation systems in Azerbaijan. We are an official partner of Kunlun Digital Technology Co., Ltd.",
-    "ctaPrimary": "Request a proposal",
-    "ctaSecondary": "Explore products"
+    "title": "Modern solutions for the oil and gas industry",
+    "lead": "Oilfield digitalization, SCADA automation systems and reliable supply of oil production equipment compliant with international API standards.",
+    "ctaPrimary": "Explore our directions",
+    "ctaSecondary": "Get in touch"
   },
-  "highlights": {
-    "title": "What we do",
+  "directions": {
+    "title": "Our Business Directions",
+    "lead": "Innovative digital technologies and artificial lift solutions tailored to the needs of Azerbaijan's oil and gas sector.",
     "items": [
       {
-        "title": "Control systems",
-        "text": "Modern process control systems — from design to commissioning. (Draft copy — to be refined.)"
+        "key": "smartfield",
+        "title": "Intelligent Oil and Gas Production (Smart Field & SCADA)",
+        "text": "Full digitalization of oil and gas fields, SCADA systems and AI-based control technologies.",
+        "more": "Learn more"
       },
       {
-        "title": "Field equipment and instrumentation",
-        "text": "Selection and supply of measurement and control instruments. (Draft copy — to be refined.)"
-      },
-      {
-        "title": "Engineering support",
-        "text": "Technical consulting, integration and commissioning support. (Draft copy — to be refined.)"
+        "key": "pumps",
+        "title": "Sucker Rod Pumps and Downhole Equipment",
+        "text": "High-precision sucker rod pumps and spare parts for oil production, compliant with the international API 11AX standard.",
+        "more": "Learn more"
       }
     ]
   },
-  "partner": {
-    "title": "Partnership with Kunlun Digital Technology",
-    "text": "Kunlun Digital Technology Co., Ltd. (China) is a technology company with international experience in oil and gas production automation. Minline Systems brings these technologies to the Azerbaijani market. (Wording to be finalized based on partnership documents.)"
+  "advantages": {
+    "title": "Why Minline Systems?",
+    "items": [
+      {
+        "title": "International Certification",
+        "text": "All equipment we supply fully complies with API Spec 11AX, ISO and international industry standards."
+      },
+      {
+        "title": "Supply Exclusivity",
+        "text": "Direct partnership with global manufacturers ensures competitive pricing and flexible supply terms."
+      },
+      {
+        "title": "Comprehensive Engineering Support",
+        "text": "From equipment selection through site acceptance testing (SAT) to 24/7 responsive technical support."
+      },
+      {
+        "title": "Solutions for Challenging Conditions",
+        "text": "Special modifications adapted to Azerbaijan's local geological and operating conditions: viscous oil, sand production, high pressure."
+      }
+    ]
   },
   "cta": {
-    "title": "Get a proposal for your project",
-    "text": "Send us your requirements and we will come back with a technical and commercial proposal shortly.",
-    "button": "Contact us"
+    "title": "Get in touch",
+    "text": "Need technical solutions or a commercial proposal for your project? Our specialists are ready to help.",
+    "button": "Send a request"
   }
 }

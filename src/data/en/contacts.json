@@ -2,16 +2,17 @@
   "slug": "contacts",
   "navLabel": "Contacts",
   "metaTitle": "Contacts — Minline Systems",
-  "metaDescription": "Contact Minline Systems MMC: request a proposal.",
+  "metaDescription": "Contact Minline Systems LLC: Baku, Narimanov district, H. Aliyev str. 143. Request technical solutions and a commercial proposal.",
   "intro": {
-    "title": "Contacts",
-    "lead": "Get in touch with us for questions or a proposal request."
+    "title": "Get in touch",
+    "lead": "Need technical solutions or a commercial proposal for your project? Our specialists are ready to help."
   },
+  "formTitle": "Send a request",
+  "detailsTitle": "Company details",
   "items": [
-    { "label": "Address", "value": "Baku, Azerbaijan (to be confirmed)" },
-    { "label": "Email", "value": "info@minline.az (being set up)" },
-    { "label": "Phone", "value": "(to be confirmed)" }
-  ],
-  "formTitle": "Request a proposal",
-  "formText": "Fill in the form and we will get back to you shortly."
+    { "label": "Company", "value": "Minline Systems LLC" },
+    { "label": "Address", "value": "Baku, Narimanov district, H. Aliyev str. 143" },
+    { "label": "Email", "value": "info@minline.az", "href": "mailto:info@minline.az" },
+    { "label": "TIN (VÖEN)", "value": "1009691901" }
+  ]
 }

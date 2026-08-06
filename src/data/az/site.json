@@ -1,14 +1,22 @@
 {
-  "companyName": "Minline Systems MMC",
+  "companyName": "\"Minline Systems\" MMC",
   "navAriaLabel": "Əsas naviqasiya",
-  "footerNote": "Neft-qaz sənayesi üçün avtomatlaşdırma həlləri",
+  "footerNote": "Neft-qaz sənayesində müasir həllər",
+  "footerTaxLabel": "VÖEN",
+  "footerTax": "1009691901",
   "form": {
-    "name": "Ad, soyad",
+    "name": "Ad və Soyad",
+    "namePlaceholder": "Adınız və soyadınız",
     "company": "Şirkət",
+    "companyPlaceholder": "Şirkətinizin adı",
     "email": "E-poçt",
+    "emailPlaceholder": "numune@company.com",
     "phone": "Telefon",
-    "message": "Müraciətiniz",
-    "submit": "Sorğu göndər",
+    "phonePlaceholder": "+994 50 000 00 00",
+    "message": "Mesaj",
+    "messagePlaceholder": "Layihəniz haqqında qısa məlumat...",
+    "submit": "Sorğu Göndər",
+    "success": "Təşəkkür edirik! Sorğunuz qəbul olundu. Mütəxəssisimiz ən qısa zamanda sizinlə əlaqə saxlayacaqdır.",
     "pendingNote": "Forma tezliklə aktiv olacaq. Hələlik bizimlə e-poçt vasitəsilə əlaqə saxlaya bilərsiniz."
   }
 }

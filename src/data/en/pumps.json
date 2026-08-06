@@ -1,0 +1,31 @@
+{
+  "slug": "sucker-rod-pumps",
+  "navLabel": "Sucker Rod Pumps",
+  "metaTitle": "Sucker Rod Pumps and Downhole Equipment (API 11AX) — Minline Systems",
+  "metaDescription": "API Spec 11AX certified sucker rod pumps, special designs for challenging conditions, barrels, plungers and valve assemblies.",
+  "eyebrow": "Direction 02",
+  "intro": {
+    "title": "Artificial Lift Equipment to the International API 11AX Standard",
+    "lead": "Supply of high-quality downhole pumps and components to ensure uninterrupted artificial lift oil production at onshore and offshore fields."
+  },
+  "blocksTitle": "Equipment Range",
+  "blocks": [
+    {
+      "title": "API Spec 11AX Certified Pumps",
+      "text": "A complete range of insert and tubing type sucker rod pumps, efficient in both economic and technical terms."
+    },
+    {
+      "title": "Special Designs for Challenging Conditions",
+      "text": "Pumps made from highly resistant alloys for wells with a high gas-oil ratio, sand production, corrosive environments and viscous oil."
+    },
+    {
+      "title": "Spare Parts and Components",
+      "text": "Guaranteed supply of a full range: long-life barrels, plungers, valve assemblies, rods and downhole equipment."
+    }
+  ],
+  "cta": {
+    "title": "Need help selecting equipment?",
+    "text": "Let us determine the pump type and configuration for your well conditions together.",
+    "button": "Send a request"
+  }
+}

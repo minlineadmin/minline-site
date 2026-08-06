@@ -5,12 +5,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllPages, getSectionContent } from '../lib/content.js';
 
 import Home from '../templates/Home.astro';
-import Products from '../templates/Products.astro';
+import Direction from '../templates/Direction.astro';
 import Services from '../templates/Services.astro';
 import About from '../templates/About.astro';
 import Contacts from '../templates/Contacts.astro';
 
-const templates = { Home, Products, Services, About, Contacts };
+const templates = { Home, Direction, Services, About, Contacts };
 
 export function getStaticPaths() {
   return getAllPages();

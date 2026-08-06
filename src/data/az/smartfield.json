@@ -1,0 +1,35 @@
+{
+  "slug": "smart-field-scada",
+  "navLabel": "Smart Field & SCADA",
+  "metaTitle": "İntellektual Neft və Qaz Hasilatı (Smart Field & SCADA) — Minline Systems",
+  "metaDescription": "Sənaye 4.0 standartları ilə neft-qaz yataqlarının rəqəmsallaşdırılması: Smart Field idarəetməsi, SCADA avtomatlaşdırma, proqnozlaşdırıcı analitika və enerji optimallaşdırılması.",
+  "eyebrow": "Fəaliyyət İstiqaməti 01",
+  "intro": {
+    "title": "Sənaye 4.0 Standartları ilə Neft-Qaz Yataqlarının Rəqəmsallaşdırılması",
+    "lead": "\"Minline Systems\" neft və qaz yataqlarının effektivliyini artırmaq, hasilat xərclərini azaltmaq və əməliyyat təhlükəsizliyini təmin etmək üçün qabaqcıl rəqəmsal həllər təqdim edir."
+  },
+  "blocksTitle": "Həll Sahələri",
+  "blocks": [
+    {
+      "title": "Ağıllı Yataq (Smart Field) İdarəetməsi",
+      "text": "Əşyaların İnterneti (IoT) sensorları və Big Data analitikası əsasında quyuların və hasilat obyektlərinin real vaxt rejimində mərkəzləşdirilmiş monitorinqi."
+    },
+    {
+      "title": "SCADA və İnteqrasiya Olunmuş Avtomatlaşdırma",
+      "text": "Qazma, hasilat, nəqletmə və emal proseslərində insan faktorunu minimuma endirən, yüksək dəqiqlikli avtomatlaşdırılmış idarəetmə sistemləri."
+    },
+    {
+      "title": "Proqnozlaşdırıcı Analitika (Predictive Maintenance)",
+      "text": "Süni intellekt alətləri vasitəsilə avadanlıqların aşınmasını və mürəkkəbləşmələri öncədən təyin edən diaqnostika platformaları."
+    },
+    {
+      "title": "Enerji Optimallaşdırılması",
+      "text": "İstehsalat proseslərində enerji itkilərinin azaldılması və karbon izinin minimuma endirilməsi üzrə rəqəmsal modullar."
+    }
+  ],
+  "cta": {
+    "title": "Layihəniz üçün həll axtarırsınız?",
+    "text": "Mütəxəssislərimiz sizin obyektin şəraitinə uyğun rəqəmsallaşdırma həllini seçməkdə kömək edəcək.",
+    "button": "Sorğu göndərin"
+  }
+}

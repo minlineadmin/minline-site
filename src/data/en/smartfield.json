@@ -1,0 +1,35 @@
+{
+  "slug": "smart-field-scada",
+  "navLabel": "Smart Field & SCADA",
+  "metaTitle": "Intelligent Oil and Gas Production (Smart Field & SCADA) — Minline Systems",
+  "metaDescription": "Oil and gas field digitalization to Industry 4.0 standards: smart field management, SCADA automation, predictive analytics and energy optimization.",
+  "eyebrow": "Direction 01",
+  "intro": {
+    "title": "Oil and Gas Field Digitalization to Industry 4.0 Standards",
+    "lead": "Minline Systems delivers advanced digital solutions that increase field efficiency, reduce production costs and ensure operational safety."
+  },
+  "blocksTitle": "Solution Areas",
+  "blocks": [
+    {
+      "title": "Smart Field Management",
+      "text": "Centralized real-time monitoring of wells and production facilities based on Internet of Things (IoT) sensors and Big Data analytics."
+    },
+    {
+      "title": "SCADA and Integrated Automation",
+      "text": "High-precision automated control systems for drilling, production, transportation and processing that minimize the human factor."
+    },
+    {
+      "title": "Predictive Maintenance Analytics",
+      "text": "Diagnostic platforms that identify equipment wear and operational complications in advance using artificial intelligence tools."
+    },
+    {
+      "title": "Energy Optimization",
+      "text": "Digital modules for reducing energy losses across production processes and minimizing the carbon footprint."
+    }
+  ],
+  "cta": {
+    "title": "Looking for a solution for your project?",
+    "text": "Our specialists will help you select a digitalization solution suited to your site conditions.",
+    "button": "Send a request"
+  }
+}

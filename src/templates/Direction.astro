@@ -1,4 +1,6 @@
 ---
+// Shared template for the two business directions (Smart Field & SCADA, sucker rod pumps).
+// Adding a third direction = 3 content files + one line in sections.json. No code change.
 import { pagePath } from '../lib/content.js';
 
 const { locale, content } = Astro.props;
@@ -6,18 +8,19 @@ const contactsPath = pagePath(locale, 'contacts');
 ---
 <section class="section section-lead">
   <div class="container">
+    <p class="eyebrow">{content.eyebrow}</p>
     <h1>{content.intro.title}</h1>
     <div class="section-intro">
-      {content.intro.paragraphs.map((p) => <p class="lead">{p}</p>)}
+      <p class="lead">{content.intro.lead}</p>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <h2>{content.advantages.title}</h2>
+    <h2>{content.blocksTitle}</h2>
     <div class="grid">
-      {content.advantages.items.map((item) => (
+      {content.blocks.map((item) => (
         <div class="card">
           <h3>{item.title}</h3>
           <p>{item.text}</p>

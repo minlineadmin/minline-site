@@ -67,26 +67,34 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
+  gap: 20px;
   min-height: 72px;
+  flex-wrap: nowrap;
 }
 .brand {
-  font-size: 1.02rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.16em;
+  white-space: nowrap;
   text-transform: uppercase;
   color: var(--text);
 }
 .brand span { color: var(--gold); }
 .brand:hover { text-decoration: none; }
 
-.site-nav { display: flex; gap: 26px; flex-wrap: wrap; }
+.site-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
 .site-nav a {
   color: var(--text-muted);
-  font-size: 0.88rem;
-  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
   padding: 6px 0;
   border-bottom: 1px solid transparent;
+  white-space: nowrap;
 }
 .site-nav a:hover { color: var(--text); text-decoration: none; }
 .site-nav a[aria-current="page"] {
@@ -94,7 +102,7 @@ a:hover { text-decoration: underline; }
   border-bottom-color: var(--gold);
 }
 
-.lang-switcher { display: flex; gap: 2px; font-size: 0.78rem; }
+.lang-switcher { display: flex; gap: 2px; font-size: 0.75rem; flex-shrink: 0; }
 .lang-switcher a {
   color: var(--text-muted);
   text-transform: uppercase;
@@ -124,7 +132,7 @@ a:hover { text-decoration: underline; }
     repeating-linear-gradient(90deg, transparent 0 47px, rgba(255, 255, 255, 0.025) 47px 48px),
     var(--bg);
 }
-.hero h1 { max-width: 780px; }
+.hero h1 { max-width: 15ch; }
 .hero h1::before {
   content: "";
   display: block;
@@ -284,8 +292,95 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Responsive ---------- */
 
+@media (max-width: 1080px) {
+  .site-header .container { flex-wrap: wrap; gap: 12px 18px; padding-top: 14px; padding-bottom: 14px; }
+  .site-nav { flex-wrap: wrap; margin-left: 0; order: 3; width: 100%; gap: 16px; }
+  .lang-switcher { margin-left: auto; }
+}
+
 @media (max-width: 760px) {
   .hero { padding: 84px 0 64px; }
+  .hero h1 { max-width: none; }
   .section { padding: 60px 0; }
-  .site-header .container { flex-wrap: wrap; padding-top: 12px; padding-bottom: 12px; }
+  .section-lead { padding-bottom: 0; }
+}
+
+/* ---------- Direction cards, icons, page leads (structure v2) ---------- */
+
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+
+.card-link {
+  display: block;
+  color: inherit;
+  counter-increment: none;
+}
+.card-link::before { content: none; }
+.card-link:hover { text-decoration: none; border-color: var(--gold); }
+.card-link h3 { margin-bottom: 0.6em; }
+
+.dir-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--gold);
+  margin-bottom: 22px;
+  display: block;
+}
+
+.card-more {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--gold-soft);
+}
+.card-more::after {
+  content: " →";
+  transition: opacity 0.15s ease;
+}
+.card-link:hover .card-more { color: var(--gold); }
+
+/* Page lead block: h1 + intro, no bottom border so it reads as one unit */
+.section-lead { padding-bottom: 0; border-bottom: none; }
+.section-lead h1 { font-size: clamp(1.7rem, 2.9vw, 2.4rem); max-width: 24ch; }
+.section-lead .lead { font-size: 1.05rem; line-height: 1.7; }
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+/* Contacts: form + details side by side */
+.contacts-layout {
+  display: grid;
+  gap: 56px;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  align-items: start;
+}
+.contacts-details .contact-list { margin-bottom: 0; }
+.contact-label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.contact-value, .contact-list a { color: var(--text); }
+
+.quote-form label span {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.quote-form input::placeholder,
+.quote-form textarea::placeholder { color: #5f5d57; }
+
+.site-footer .container { gap: 12px 32px; }
+
+@media (max-width: 860px) {
+  .contacts-layout { grid-template-columns: 1fr; gap: 44px; }
 }

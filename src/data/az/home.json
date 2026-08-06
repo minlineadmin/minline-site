@@ -1,38 +1,56 @@
 {
   "slug": "",
   "navLabel": "Ana səhifə",
-  "metaTitle": "Minline Systems — neft-qaz sənayesi üçün avtomatlaşdırma həlləri",
-  "metaDescription": "Minline Systems MMC — Azərbaycanda neft-qaz istehsalının rəqəmsal avtomatlaşdırılması üzrə həllər. Kunlun Digital Technology-nin rəsmi tərəfdaşı.",
+  "metaTitle": "Minline Systems — neft-qaz sənayesində müasir həllər",
+  "metaDescription": "Yataqların rəqəmsallaşdırılması, SCADA avtomatlaşdırma sistemləri və beynəlxalq API standartlarına cavab verən neft hasilatı avadanlıqlarının etibarlı təchizatı.",
   "hero": {
-    "title": "Neft-qaz istehsalı üçün rəqəmsal avtomatlaşdırma həlləri",
-    "lead": "Minline Systems MMC Azərbaycanda sənaye avtomatlaşdırma sistemlərinin tədarükü və tətbiqi üzrə ixtisaslaşır. Kunlun Digital Technology Co., Ltd. şirkətinin rəsmi tərəfdaşıyıq.",
-    "ctaPrimary": "Təklif sorğusu",
-    "ctaSecondary": "Məhsullarla tanış olun"
+    "title": "Neft-qaz sənayesində müasir həllər",
+    "lead": "Yataqların rəqəmsallaşdırılması, SCADA avtomatlaşdırma sistemləri və beynəlxalq API standartlarına cavab verən neft hasilatı avadanlıqlarının etibarlı təchizatı.",
+    "ctaPrimary": "Xidmətlərimizlə tanış olun",
+    "ctaSecondary": "Əlaqə saxlayın"
   },
-  "highlights": {
-    "title": "İstiqamətlərimiz",
+  "directions": {
+    "title": "Fəaliyyət İstiqamətlərimiz",
+    "lead": "Azərbaycanın neft-qaz sektorunun ehtiyaclarına uyğunlaşdırılmış innovativ rəqəmsal texnologiyalar və mexanikləşdirilmiş hasilat həlləri.",
     "items": [
       {
-        "title": "İdarəetmə sistemləri",
-        "text": "İstehsal proseslərinin idarə olunması üçün müasir sistemlər — layihələndirmədən istismara qədər. (Mətn layihəsi — dəqiqləşdiriləcək.)"
+        "key": "smartfield",
+        "title": "İntellektual Neft və Qaz Hasilatı (Smart Field & SCADA)",
+        "text": "Neft və qaz yataqlarının tam rəqəmsallaşdırılması, SCADA sistemləri və süni intellekt əsaslı idarəetmə texnologiyaları.",
+        "more": "Ətraflı"
       },
       {
-        "title": "Sahə avadanlığı və cihazlar",
-        "text": "Ölçmə və nəzarət cihazlarının seçimi və tədarükü. (Mətn layihəsi — dəqiqləşdiriləcək.)"
-      },
-      {
-        "title": "Mühəndislik dəstəyi",
-        "text": "Texniki məsləhət, inteqrasiya və istismara vermə üzrə dəstək. (Mətn layihəsi — dəqiqləşdiriləcək.)"
+        "key": "pumps",
+        "title": "Ştangalı Dərinlik Nasosları və Quyudibi Avadanlıqlar",
+        "text": "Neft hasilatı üçün beynəlxalq API 11AX standartlarına cavab verən yüksək dəqiqlikli ştangalı dərinlik nasosları (ŞDN) və ehtiyat hissələri.",
+        "more": "Ətraflı"
       }
     ]
   },
-  "partner": {
-    "title": "Kunlun Digital Technology tərəfdaşlığı",
-    "text": "Kunlun Digital Technology Co., Ltd. (Çin) neft-qaz istehsalının avtomatlaşdırılması sahəsində beynəlxalq təcrübəyə malik texnologiya şirkətidir. Minline Systems bu texnologiyaları Azərbaycan bazarına təqdim edir. (Formulə tərəfdaşlıq sənədləri əsasında dəqiqləşdiriləcək.)"
+  "advantages": {
+    "title": "Niyə Minline Systems?",
+    "items": [
+      {
+        "title": "Beynəlxalq Sertifikasiya",
+        "text": "Təqdim etdiyimiz bütün avadanlıqlar API Spec 11AX, ISO və beynəlxalq sənaye standartlarına tam cavab verir."
+      },
+      {
+        "title": "Layihə Eksklyuzivliyi",
+        "text": "Qlobal istehsalçılarla birbaşa tərəfdaşlıq sayəsində rəqabətədavamlı qiymət və çevik təchizat şərtləri."
+      },
+      {
+        "title": "Kompleks Mühəndislik Dəstəyi",
+        "text": "Avadanlığın seçimindən başlayaraq, sahədə sınaq-quraşdırma (SAT) və 24/7 operativ texniki dəstək."
+      },
+      {
+        "title": "Çətin Şəraitlər üçün Həllər",
+        "text": "Azərbaycanın yerli geoloji və istismar şəraitinə (özüllü neft, qum, yüksək təzyiq) uyğunlaşdırılmış xüsusi modifikasiyalar."
+      }
+    ]
   },
   "cta": {
-    "title": "Layihəniz üçün təklif alın",
-    "text": "Tələblərinizi bizə göndərin — qısa müddətdə texniki-kommersiya təklifi ilə geri dönək.",
-    "button": "Əlaqə saxlayın"
+    "title": "Bizimlə Əlaqə",
+    "text": "Layihəniz üçün texniki həllərə və ya qiymət təklifinə ehtiyacınız var? Mütəxəssislərimiz sizə kömək etməyə hazırdır.",
+    "button": "Sorğu göndərin"
   }
 }

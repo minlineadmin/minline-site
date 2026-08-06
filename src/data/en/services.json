@@ -2,27 +2,32 @@
   "slug": "services",
   "navLabel": "Services",
   "metaTitle": "Services — Minline Systems",
-  "metaDescription": "Consulting, supply, integration, commissioning and technical support services.",
+  "metaDescription": "Engineering and equipment selection, complete supply, site installation and acceptance testing (SAT/commissioning), 24/7 technical support.",
   "intro": {
     "title": "Services",
-    "lead": "A full service cycle — from equipment supply to commissioning and support. (Draft copy.)"
+    "lead": "A full cycle — from equipment selection through commissioning on site to long-term technical support."
   },
   "items": [
     {
-      "title": "Consulting and design",
-      "text": "Requirements analysis and support in selecting the right technical solution. (Placeholder copy.)"
+      "title": "Engineering and Equipment Selection",
+      "text": "Analysis of the site's technical requirements and definition of the optimal solution for the well conditions."
     },
     {
-      "title": "Supply and integration",
-      "text": "Equipment supply and integration with existing infrastructure. (Placeholder copy.)"
+      "title": "Complete Supply",
+      "text": "Delivery of equipment and spare parts based on direct partnership with international manufacturers."
     },
     {
-      "title": "Commissioning",
-      "text": "Installation, configuration and testing. (Placeholder copy.)"
+      "title": "Site Installation and Testing (SAT)",
+      "text": "Organization of installation, commissioning and site acceptance testing (SAT)."
     },
     {
-      "title": "Technical support and training",
-      "text": "Operational support and staff training. (Placeholder copy.)"
+      "title": "24/7 Technical Support",
+      "text": "Responsive technical support throughout operation and training for your personnel."
     }
-  ]
+  ],
+  "cta": {
+    "title": "Need our services?",
+    "text": "Send us your project requirements — we will come back with a technical and commercial proposal.",
+    "button": "Send a request"
+  }
 }

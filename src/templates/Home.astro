@@ -1,30 +1,39 @@
 ---
 import { pagePath } from '../lib/content.js';
+import DirectionIcon from '../components/DirectionIcon.astro';
 
 const { locale, content } = Astro.props;
 const contactsPath = pagePath(locale, 'contacts');
-const productsPath = pagePath(locale, 'products');
+const directionsPath = {
+  smartfield: pagePath(locale, 'smartfield'),
+  pumps: pagePath(locale, 'pumps')
+};
 ---
 <section class="hero">
   <div class="container">
     <h1>{content.hero.title}</h1>
     <p class="lead">{content.hero.lead}</p>
     <div class="actions">
-      <a class="btn btn-primary" href={contactsPath}>{content.hero.ctaPrimary}</a>
-      <a class="btn btn-ghost" href={productsPath}>{content.hero.ctaSecondary}</a>
+      <a class="btn btn-primary" href="#directions">{content.hero.ctaPrimary}</a>
+      <a class="btn btn-ghost" href={contactsPath}>{content.hero.ctaSecondary}</a>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="directions">
   <div class="container">
-    <h2>{content.highlights.title}</h2>
-    <div class="grid">
-      {content.highlights.items.map((item) => (
-        <div class="card">
+    <h2>{content.directions.title}</h2>
+    <div class="section-intro">
+      <p>{content.directions.lead}</p>
+    </div>
+    <div class="grid grid-2">
+      {content.directions.items.map((item) => (
+        <a class="card card-link" href={directionsPath[item.key]}>
+          <DirectionIcon name={item.key} />
           <h3>{item.title}</h3>
           <p>{item.text}</p>
-        </div>
+          <span class="card-more">{item.more}</span>
+        </a>
       ))}
     </div>
   </div>
@@ -32,9 +41,14 @@ const productsPath = pagePath(locale, 'products');
 
 <section class="section">
   <div class="container">
-    <h2>{content.partner.title}</h2>
-    <div class="section-intro">
-      <p>{content.partner.text}</p>
+    <h2>{content.advantages.title}</h2>
+    <div class="grid">
+      {content.advantages.items.map((item) => (
+        <div class="card">
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </div>
+      ))}
     </div>
   </div>
 </section>

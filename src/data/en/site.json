@@ -1,14 +1,22 @@
 {
-  "companyName": "Minline Systems MMC",
+  "companyName": "Minline Systems LLC",
   "navAriaLabel": "Main navigation",
-  "footerNote": "Automation solutions for the oil and gas industry",
+  "footerNote": "Modern solutions for the oil and gas industry",
+  "footerTaxLabel": "TIN (VÖEN)",
+  "footerTax": "1009691901",
   "form": {
     "name": "Full name",
+    "namePlaceholder": "Your first and last name",
     "company": "Company",
+    "companyPlaceholder": "Your company name",
     "email": "Email",
+    "emailPlaceholder": "numune@company.com",
     "phone": "Phone",
-    "message": "Your request",
+    "phonePlaceholder": "+994 50 000 00 00",
+    "message": "Message",
+    "messagePlaceholder": "Brief information about your project...",
     "submit": "Send request",
+    "success": "Thank you! Your request has been received. Our specialist will contact you shortly.",
     "pendingNote": "The form will be activated shortly. In the meantime, please contact us by email."
   }
 }

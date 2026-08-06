@@ -1,6 +1,7 @@
 [
   { "key": "home", "template": "Home" },
-  { "key": "products", "template": "Products" },
+  { "key": "smartfield", "template": "Direction" },
+  { "key": "pumps", "template": "Direction" },
   { "key": "services", "template": "Services" },
   { "key": "about", "template": "About" },
   { "key": "contacts", "template": "Contacts" }

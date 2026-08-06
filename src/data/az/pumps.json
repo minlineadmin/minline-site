@@ -1,0 +1,31 @@
+{
+  "slug": "derinlik-nasoslari",
+  "navLabel": "Dərinlik Nasosları",
+  "metaTitle": "Ştangalı Dərinlik Nasosları və Quyudibi Avadanlıqlar (API 11AX) — Minline Systems",
+  "metaDescription": "API Spec 11AX sertifikasiyalı ştangalı dərinlik nasosları (ŞDN), mürəkkəb şəraitlər üçün xüsusi icralar, silindrlər, plunjerlər və klapan cütlükləri.",
+  "eyebrow": "Fəaliyyət İstiqaməti 02",
+  "intro": {
+    "title": "Beynəlxalq API 11AX Standartlı Mexanikləşdirilmiş Hasilat Avadanlıqları",
+    "lead": "Quru və dəniz yataqlarında mexanikləşdirilmiş neft hasilatının fasiləsizliyini təmin etmək üçün yüksək keyfiyyətli dərinlik nasosları və komponentlərinin tədarükü."
+  },
+  "blocksTitle": "Avadanlıq Çeşidi",
+  "blocks": [
+    {
+      "title": "API Spec 11AX Sertifikasiyalı Nasoslar",
+      "text": "İqtisadi və texniki baxımdan yüksək effektivliyə malik keçidli (insert) və boru (tubing) tipli ştangalı dərinlik nasoslarının tam çeşidi."
+    },
+    {
+      "title": "Mürəkkəb Şəraitlər üçün Xüsusi İcralar",
+      "text": "Yüksək qaz amili, qum təzahürü, korroziyalı mühit və özüllü neft hasil olunan quyular üçün xüsusi dözümlü xəlitələrdən hazırlanmış nasoslar."
+    },
+    {
+      "title": "Ehtiyat Hissələri və Komponentlər",
+      "text": "Yüksək resurslu silindrlər, plunjerlər, klapan cütlükləri, millər və quyudibi avadanlıqların tam çeşiddə zəmanətli təminatı."
+    }
+  ],
+  "cta": {
+    "title": "Avadanlıq seçimində kömək lazımdır?",
+    "text": "Quyunuzun şəraitinə uyğun nasos tipini və komplektasiyanı birlikdə müəyyən edək.",
+    "button": "Sorğu göndərin"
+  }
+}

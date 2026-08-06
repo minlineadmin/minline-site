@@ -1,14 +1,22 @@
 {
-  "companyName": "Minline Systems MMC",
+  "companyName": "ООО «Minline Systems»",
   "navAriaLabel": "Основная навигация",
-  "footerNote": "Решения по автоматизации для нефтегазовой отрасли",
+  "footerNote": "Современные решения для нефтегазовой отрасли",
+  "footerTaxLabel": "ИНН (VÖEN)",
+  "footerTax": "1009691901",
   "form": {
-    "name": "Имя, фамилия",
+    "name": "Имя и фамилия",
+    "namePlaceholder": "Ваше имя и фамилия",
     "company": "Компания",
-    "email": "Email",
+    "companyPlaceholder": "Название вашей компании",
+    "email": "E-mail",
+    "emailPlaceholder": "numune@company.com",
     "phone": "Телефон",
-    "message": "Ваш запрос",
+    "phonePlaceholder": "+994 50 000 00 00",
+    "message": "Сообщение",
+    "messagePlaceholder": "Краткая информация о вашем проекте...",
     "submit": "Отправить запрос",
+    "success": "Благодарим! Ваш запрос принят. Наш специалист свяжется с вами в ближайшее время.",
     "pendingNote": "Форма скоро будет активирована. Пока вы можете связаться с нами по электронной почте."
   }
 }

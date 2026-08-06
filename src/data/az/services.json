@@ -2,27 +2,32 @@
   "slug": "xidmetler",
   "navLabel": "Xidmətlər",
   "metaTitle": "Xidmətlər — Minline Systems",
-  "metaDescription": "Konsultasiya, tədarük, inteqrasiya, istismara vermə və texniki dəstək xidmətləri.",
+  "metaDescription": "Avadanlığın seçimi və layihələndirmə, komplekt təchizat, sahə quraşdırması və sınaq (SAT/commissioning), 24/7 texniki dəstək.",
   "intro": {
     "title": "Xidmətlər",
-    "lead": "Avadanlıq tədarükündən istismara vermə və dəstəyə qədər tam xidmət dövrü. (Mətn layihəsi.)"
+    "lead": "Avadanlığın seçimindən başlayaraq sahədə istismara verməyə və uzunmüddətli texniki dəstəyə qədər tam xidmət dövrü."
   },
   "items": [
     {
-      "title": "Konsultasiya və layihələndirmə",
-      "text": "Tələblərin təhlili və texniki həllin seçilməsi üzrə dəstək. (Yertutan mətn.)"
+      "title": "Layihələndirmə və Avadanlıq Seçimi",
+      "text": "Obyektin texniki tələblərinin təhlili və quyu şəraitinə uyğun optimal həllin müəyyən edilməsi."
     },
     {
-      "title": "Tədarük və inteqrasiya",
-      "text": "Avadanlığın tədarükü və mövcud infrastruktura inteqrasiyası. (Yertutan mətn.)"
+      "title": "Komplekt Təchizat",
+      "text": "Beynəlxalq istehsalçılarla birbaşa tərəfdaşlıq əsasında avadanlığın və ehtiyat hissələrinin çatdırılması."
     },
     {
-      "title": "İstismara vermə",
-      "text": "Quraşdırma, sazlama və sınaq işlərinin təşkili. (Yertutan mətn.)"
+      "title": "Sahə Quraşdırması və Sınaq (SAT)",
+      "text": "Quraşdırma, sazlama və sahədə qəbul sınaqlarının (SAT/commissioning) təşkili."
     },
     {
-      "title": "Texniki dəstək və təlim",
-      "text": "İstismar dövründə dəstək və personal üçün təlimlər. (Yertutan mətn.)"
+      "title": "24/7 Texniki Dəstək",
+      "text": "İstismar dövründə operativ texniki dəstək və personal üçün təlimlər."
     }
-  ]
+  ],
+  "cta": {
+    "title": "Xidmətlərimizə ehtiyacınız var?",
+    "text": "Layihənizin şərtlərini bizə göndərin — texniki-kommersiya təklifi ilə geri dönək.",
+    "button": "Sorğu göndərin"
+  }
 }

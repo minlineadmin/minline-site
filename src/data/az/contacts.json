@@ -2,16 +2,17 @@
   "slug": "elaqe",
   "navLabel": "Əlaqə",
   "metaTitle": "Əlaqə — Minline Systems",
-  "metaDescription": "Minline Systems MMC ilə əlaqə: təklif sorğusu göndərin.",
+  "metaDescription": "\"Minline Systems\" MMC ilə əlaqə: Bakı şəhəri, Narımanov rayonu, H. Əliyev küç. 143. Texniki həllər və qiymət təklifi üçün sorğu göndərin.",
   "intro": {
-    "title": "Əlaqə",
-    "lead": "Suallarınız və ya təklif sorğusu üçün bizimlə əlaqə saxlayın."
+    "title": "Bizimlə Əlaqə",
+    "lead": "Layihəniz üçün texniki həllərə və ya qiymət təklifinə ehtiyacınız var? Mütəxəssislərimiz sizə kömək etməyə hazırdır."
   },
+  "formTitle": "Sorğu Göndərin",
+  "detailsTitle": "Rekvizitlər",
   "items": [
-    { "label": "Ünvan", "value": "Bakı, Azərbaycan (dəqiqləşdiriləcək)" },
-    { "label": "E-poçt", "value": "info@minline.az (hazırlanır)" },
-    { "label": "Telefon", "value": "(dəqiqləşdiriləcək)" }
-  ],
-  "formTitle": "Təklif sorğusu",
-  "formText": "Formanı doldurun — sizinlə qısa müddətdə əlaqə saxlayacağıq."
+    { "label": "Şirkət", "value": "\"Minline Systems\" MMC" },
+    { "label": "Ünvan", "value": "Bakı şəhəri, Narımanov rayonu, H. Əliyev küç. 143" },
+    { "label": "E-poçt", "value": "info@minline.az", "href": "mailto:info@minline.az" },
+    { "label": "VÖEN", "value": "1009691901" }
+  ]
 }

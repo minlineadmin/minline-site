@@ -2,23 +2,38 @@
   "slug": "haqqimizda",
   "navLabel": "Haqqımızda",
   "metaTitle": "Haqqımızda — Minline Systems",
-  "metaDescription": "Minline Systems MMC — Azərbaycanda sənaye avtomatlaşdırması üzrə həllər təqdim edən şirkət.",
+  "metaDescription": "\"Minline Systems\" MMC — Azərbaycanın neft-qaz və sənaye sektorunda müasir texnologiyaların, SCADA sistemlərinin və mühəndislik həllərinin inteqrasiyası üzrə ixtisaslaşmış tərəfdaş.",
   "intro": {
     "title": "Haqqımızda",
-    "lead": "Minline Systems MMC neft-qaz sənayesi üçün avtomatlaşdırma həllərinin tədarükü və tətbiqi üzrə fəaliyyət göstərir. (Mətn layihəsi.)"
+    "paragraphs": [
+      "\"Minline Systems\" MMC — Azərbaycanın neft-qaz və sənaye sektorunda müasir texnologiyaların, SCADA avtomatlaşdırma sistemlərinin və mühəndislik həllərinin inteqrasiyası üzrə ixtisaslaşmış etibarlı tərəfdaşdır.",
+      "Şirkətimiz beynəlxalq istehsalçılarla eksklyuziv tərəfdaşlıq əsasında neft və qaz hasilatı müəssisələrinə, əməliyyat şirkətlərinə və podratçılara komplekt təchizat, layihələndirmə, sahə quraşdırması (SAT/commissioning) və texniki dəstək xidmətləri göstərir. Bizim məqsədimiz — yerli sənaye obyektlərində hasilatın səmərəliliyini artırmaq və rəqəmsal transformasiyanı sürətləndirməkdir."
+    ]
   },
-  "blocks": [
-    {
-      "title": "Fəaliyyət istiqaməti",
-      "text": "Sənaye müəssisələri üçün idarəetmə sistemləri, avadanlıq və mühəndislik xidmətləri. (Yertutan mətn.)"
-    },
-    {
-      "title": "Tərəfdaşlıq",
-      "text": "Kunlun Digital Technology Co., Ltd. ilə tərəfdaşlıq çərçivəsində beynəlxalq təcrübəni yerli bazara gətiririk. (Formulə sənədlər əsasında dəqiqləşdiriləcək.)"
-    },
-    {
-      "title": "Yanaşmamız",
-      "text": "Hər layihəyə fərdi yanaşma: tələblərin təhlili, optimal həllin seçilməsi və uzunmüddətli dəstək. (Yertutan mətn.)"
-    }
-  ]
+  "advantages": {
+    "title": "Niyə Minline Systems?",
+    "items": [
+      {
+        "title": "Beynəlxalq Sertifikasiya",
+        "text": "Təqdim etdiyimiz bütün avadanlıqlar API Spec 11AX, ISO və beynəlxalq sənaye standartlarına tam cavab verir."
+      },
+      {
+        "title": "Layihə Eksklyuzivliyi",
+        "text": "Qlobal istehsalçılarla birbaşa tərəfdaşlıq sayəsində rəqabətədavamlı qiymət və çevik təchizat şərtləri."
+      },
+      {
+        "title": "Kompleks Mühəndislik Dəstəyi",
+        "text": "Avadanlığın seçimindən başlayaraq, sahədə sınaq-quraşdırma (SAT) və 24/7 operativ texniki dəstək."
+      },
+      {
+        "title": "Çətin Şəraitlər üçün Həllər",
+        "text": "Azərbaycanın yerli geoloji və istismar şəraitinə (özüllü neft, qum, yüksək təzyiq) uyğunlaşdırılmış xüsusi modifikasiyalar."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Əməkdaşlıq təklifiniz var?",
+    "text": "Bizimlə əlaqə saxlayın — layihənizin şərtlərini müzakirə edək.",
+    "button": "Əlaqə saxlayın"
+  }
 }

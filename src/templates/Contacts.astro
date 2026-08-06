@@ -5,21 +5,35 @@ import { getSite } from '../lib/content.js';
 const { locale, content } = Astro.props;
 const site = getSite(locale);
 ---
-<section class="section">
+<section class="section section-lead">
   <div class="container">
     <h1>{content.intro.title}</h1>
     <div class="section-intro">
-      <p>{content.intro.lead}</p>
+      <p class="lead">{content.intro.lead}</p>
     </div>
-    <ul class="contact-list">
-      {content.items.map((item) => (
-        <li><strong>{item.label}:</strong> {item.value}</li>
-      ))}
-    </ul>
-    <h2>{content.formTitle}</h2>
-    <div class="section-intro">
-      <p>{content.formText}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contacts-layout">
+      <div>
+        <h2>{content.formTitle}</h2>
+        <QuoteForm site={site} />
+      </div>
+      <aside class="contacts-details">
+        <h2>{content.detailsTitle}</h2>
+        <ul class="contact-list">
+          {content.items.map((item) => (
+            <li>
+              <span class="contact-label">{item.label}</span>
+              {item.href
+                ? <a href={item.href}>{item.value}</a>
+                : <span class="contact-value">{item.value}</span>}
+            </li>
+          ))}
+        </ul>
+      </aside>
     </div>
-    <QuoteForm site={site} />
   </div>
 </section>
