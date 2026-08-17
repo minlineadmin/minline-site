@@ -345,6 +345,9 @@ a:hover { text-decoration: underline; }
 
 /* Page lead block: h1 + intro, no bottom border so it reads as one unit */
 .section-lead { padding-bottom: 0; border-bottom: none; }
+/* lead block already ends the section; the intro's own bottom margin would
+   stack with the next section's top padding and open a double gap */
+.section-lead .section-intro { margin-bottom: 0; }
 .section-lead h1 { font-size: clamp(1.7rem, 2.9vw, 2.4rem); max-width: 24ch; }
 .section-lead .lead { font-size: 1.05rem; line-height: 1.7; }
 
@@ -387,4 +390,87 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 860px) {
   .contacts-layout { grid-template-columns: 1fr; gap: 44px; }
+}
+
+/* ---------- Lists: parallel claims vs. sequential process ----------
+   feature-list — unordered, parallel statements (advantages). No connector
+   line: these are simultaneous claims, not steps.
+   bead-list — ordered stages (services). The connector line and numbering
+   carry meaning: each stage follows the previous one. */
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 780px;
+}
+.feature-list li {
+  position: relative;
+  padding: 26px 0 26px 46px;
+  border-bottom: 1px solid var(--line);
+}
+.feature-list li:first-child { padding-top: 4px; }
+.feature-list li:last-child { border-bottom: none; padding-bottom: 4px; }
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 34px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 5px rgba(201, 162, 75, 0.10);
+}
+.feature-list li:first-child::before { top: 12px; }
+.feature-list h3 { color: var(--text); margin-bottom: 0.4em; }
+.feature-list p { margin: 0; font-size: 0.96rem; max-width: 62ch; }
+
+.bead-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 780px;
+  position: relative;
+  counter-reset: bead;
+}
+.bead-list::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  bottom: 18px;
+  width: 1px;
+  background: linear-gradient(180deg, var(--gold-dim), rgba(201, 162, 75, 0.10) 70%, transparent);
+}
+.bead-list li {
+  position: relative;
+  padding: 0 0 36px 60px;
+  counter-increment: bead;
+}
+.bead-list li:last-child { padding-bottom: 0; }
+.bead-list li::before {
+  content: "0" counter(bead);
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-dim);
+  background: var(--bg);
+  color: var(--gold);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bead-list h3 { color: var(--text); margin-bottom: 0.4em; }
+.bead-list p { margin: 0; font-size: 0.96rem; max-width: 62ch; }
+
+@media (max-width: 480px) {
+  .feature-list li { padding-left: 30px; }
+  .feature-list li::before { left: 2px; }
+  .bead-list li { padding-left: 48px; }
 }

@@ -42,14 +42,14 @@ const directionsPath = {
 <section class="section">
   <div class="container">
     <h2>{content.advantages.title}</h2>
-    <div class="grid">
+    <ul class="feature-list">
       {content.advantages.items.map((item) => (
-        <div class="card">
+        <li>
           <h3>{item.title}</h3>
           <p>{item.text}</p>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   </div>
 </section>
 

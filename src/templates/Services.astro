@@ -15,14 +15,14 @@ const contactsPath = pagePath(locale, 'contacts');
 
 <section class="section">
   <div class="container">
-    <div class="grid">
-      {content.items.map((item, i) => (
-        <div class="card">
+    <ul class="bead-list">
+      {content.items.map((item) => (
+        <li>
           <h3>{item.title}</h3>
           <p>{item.text}</p>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   </div>
 </section>
 

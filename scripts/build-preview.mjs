@@ -95,6 +95,9 @@ function footer(locale) {
 }
 
 const card = (i) => `<div class="card"><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></div>`;
+const li = (i) => `<li><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></li>`;
+const featureList = (items) => `<ul class="feature-list">${items.map(li).join('')}</ul>`;
+const beadList = (items) => `<ul class="bead-list">${items.map(li).join('')}</ul>`;
 
 function quoteForm(locale) {
   const f = data[locale].site.form;
@@ -139,7 +142,7 @@ const templates = {
     </div></section>
     <section class="section"><div class="container">
       <h2>${esc(c.advantages.title)}</h2>
-      <div class="grid">${c.advantages.items.map(card).join('')}</div>
+      ${featureList(c.advantages.items)}
     </div></section>
     ${ctaBlock(locale, c)}`;
   },
@@ -163,7 +166,7 @@ const templates = {
       <div class="section-intro"><p class="lead">${esc(c.intro.lead)}</p></div>
     </div></section>
     <section class="section"><div class="container">
-      <div class="grid">${c.items.map(card).join('')}</div>
+      ${beadList(c.items)}
     </div></section>
     ${ctaBlock(locale, c)}`;
   },
@@ -175,7 +178,7 @@ const templates = {
     </div></section>
     <section class="section"><div class="container">
       <h2>${esc(c.advantages.title)}</h2>
-      <div class="grid">${c.advantages.items.map(card).join('')}</div>
+      ${featureList(c.advantages.items)}
     </div></section>
     ${ctaBlock(locale, c)}`;
   },
