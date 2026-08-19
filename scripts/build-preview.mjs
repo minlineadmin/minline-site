@@ -108,7 +108,7 @@ const summaryCards = (locale, c) => {
   const items = c.cards
     .map((i) =>
       i.anchor
-        ? `<a class="card card-link" href="#${esc(i.anchor)}"><h3>${esc(i.title)}</h3><p>${esc(
+        ? `<a class="card card-link card-numbered" href="#${esc(i.anchor)}"><h3>${esc(i.title)}</h3><p>${esc(
             i.text
           )}</p><span class="card-more">${esc(more)}</span></a>`
         : card(i)

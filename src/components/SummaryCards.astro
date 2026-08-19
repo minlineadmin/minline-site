@@ -14,7 +14,7 @@ const moreLabel = getSite(locale).cardMoreLabel;
     <div class="grid">
       {cards.map((item) =>
         item.anchor ? (
-          <a class="card card-link" href={`#${item.anchor}`}>
+          <a class="card card-link card-numbered" href={`#${item.anchor}`}>
             <h3>{item.title}</h3>
             <p>{item.text}</p>
             <span class="card-more">{moreLabel}</span>
