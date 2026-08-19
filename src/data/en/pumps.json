@@ -14,15 +14,18 @@
   "cards": [
     {
       "title": "Pumps built to API Spec 11AX requirements",
-      "text": "A range of modifications and sizes of insert-type and tubing-type sucker rod pumps."
+      "text": "A range of modifications and sizes of insert-type and tubing-type sucker rod pumps.",
+      "anchor": "pump-range"
     },
     {
       "title": "Special designs for challenging conditions",
-      "text": "Solutions suited to demanding service: sand, corrosive environments, high gas-oil ratio and viscous crude."
+      "text": "Solutions suited to demanding service: sand, corrosive environments, high gas-oil ratio and viscous crude.",
+      "anchor": "pump-conditions"
     },
     {
       "title": "Spare parts and components",
-      "text": "A wide range of barrels, plungers, valve elements and other critical components for pump systems."
+      "text": "A wide range of barrels, plungers, valve elements and other critical components for pump systems.",
+      "anchor": "pump-parts"
     }
   ],
   "blocks": [
@@ -32,13 +35,32 @@
       "body": "The UKR-LAND product line covers sucker rod pumps in a range of design modifications built to API Spec 11AX requirements. The products are shaped as solutions that meet oil and gas industry requirements for materials, construction, testing and marking. The portfolio includes both insert-type and tubing-type pumps.",
       "specsTitle": "Key technical parameters",
       "specs": [
-        { "label": "Barrel diameter", "value": "20–95 mm" },
-        { "label": "Plunger stroke", "value": "0.9–6 m" },
-        { "label": "Barrel types", "value": "Heavy-Wall, Thin-Wall, API Modified" },
-        { "label": "Materials", "value": "alloy steels and coating options" },
-        { "label": "Solutions for H₂S service", "value": "options compliant with NACE requirements" },
-        { "label": "Main modifications", "value": "RHA, RHB, RWA, RXB, TH, THM, THOS" }
-      ]
+        {
+          "label": "Barrel diameter",
+          "value": "20–95 mm"
+        },
+        {
+          "label": "Plunger stroke",
+          "value": "0.9–6 m"
+        },
+        {
+          "label": "Barrel types",
+          "value": "Heavy-Wall, Thin-Wall, API Modified"
+        },
+        {
+          "label": "Materials",
+          "value": "alloy steels and coating options"
+        },
+        {
+          "label": "Solutions for H₂S service",
+          "value": "options compliant with NACE requirements"
+        },
+        {
+          "label": "Main modifications",
+          "value": "RHA, RHB, RWA, RXB, TH, THM, THOS"
+        }
+      ],
+      "anchor": "pump-range"
     },
     {
       "type": "columns",
@@ -52,7 +74,8 @@
           "title": "Tubing-type pumps",
           "text": "Tubing-type pumps offer a wider application range and matching design options, making them an effective solution for certain well parameters."
         }
-      ]
+      ],
+      "anchor": "pump-types"
     },
     {
       "type": "subitems",
@@ -71,7 +94,8 @@
           "title": "Case-by-case selection",
           "text": "Equipment selection should account for well depth, operating regime, fluid composition, temperature, pressure and abrasiveness."
         }
-      ]
+      ],
+      "anchor": "pump-conditions"
     },
     {
       "type": "text",
@@ -82,7 +106,8 @@
         "nickel-carbide coated barrels",
         "chrome-plated brass barrels",
         "steel barrels with carbonitriding and chrome plating"
-      ]
+      ],
+      "anchor": "pump-barrels"
     },
     {
       "type": "text",
@@ -92,7 +117,8 @@
         "grooved plungers for wells with sand production",
         "corrosion-resistant Monel-coated plungers",
         "PA-type plungers with chemical and abrasion resistance"
-      ]
+      ],
+      "anchor": "pump-plungers"
     },
     {
       "type": "text",
@@ -108,7 +134,8 @@
         "protective filters",
         "sand cleaner elements",
         "other downhole components"
-      ]
+      ],
+      "anchor": "pump-parts"
     }
   ],
   "cta": {

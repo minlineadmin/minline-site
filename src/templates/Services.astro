@@ -3,6 +3,7 @@
 // The process uses bead-list (a real sequence); "why" uses feature-list
 // (parallel claims). Same distinction as elsewhere on the site.
 import ContentBlock from '../components/ContentBlock.astro';
+import SummaryCards from '../components/SummaryCards.astro';
 import { pagePath } from '../lib/content.js';
 
 const { locale, content } = Astro.props;
@@ -10,6 +11,7 @@ const contactsPath = pagePath(locale, 'contacts');
 ---
 <section class="section section-lead">
   <div class="container">
+    <p class="eyebrow">{content.eyebrow}</p>
     <h1>{content.hero.title}</h1>
     <div class="section-intro">
       <p class="lead">{content.hero.lead}</p>
@@ -20,19 +22,12 @@ const contactsPath = pagePath(locale, 'contacts');
   </div>
 </section>
 
-<section class="section" id={content.cardsAnchor}>
-  <div class="container">
-    <h2>{content.cardsTitle}</h2>
-    <div class="grid">
-      {content.cards.map((item) => (
-        <div class="card">
-          <h3>{item.title}</h3>
-          <p>{item.text}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+<SummaryCards
+  locale={locale}
+  anchor={content.cardsAnchor}
+  title={content.cardsTitle}
+  cards={content.cards}
+/>
 
 {content.blocks.map((block) => <ContentBlock block={block} />)}
 

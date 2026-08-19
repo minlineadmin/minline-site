@@ -3,6 +3,7 @@
 // Page shape: lead → summary cards → typed content blocks → CTA.
 // A third direction = 3 content files + one line in sections.json. No code change.
 import ContentBlock from '../components/ContentBlock.astro';
+import SummaryCards from '../components/SummaryCards.astro';
 import { pagePath } from '../lib/content.js';
 
 const { locale, content } = Astro.props;
@@ -21,19 +22,12 @@ const contactsPath = pagePath(locale, 'contacts');
   </div>
 </section>
 
-<section class="section" id={content.cardsAnchor}>
-  <div class="container">
-    <h2>{content.cardsTitle}</h2>
-    <div class="grid">
-      {content.cards.map((item) => (
-        <div class="card">
-          <h3>{item.title}</h3>
-          <p>{item.text}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+<SummaryCards
+  locale={locale}
+  anchor={content.cardsAnchor}
+  title={content.cardsTitle}
+  cards={content.cards}
+/>
 
 {content.blocks.map((block) => <ContentBlock block={block} />)}
 

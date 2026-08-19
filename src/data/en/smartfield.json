@@ -14,19 +14,23 @@
   "cards": [
     {
       "title": "Smart Field Management",
-      "text": "Centralised real-time monitoring of wells and production facilities based on IoT sensors and operational data."
+      "text": "Centralised real-time monitoring of wells and production facilities based on IoT sensors and operational data.",
+      "anchor": "sf-detail-1"
     },
     {
       "title": "SCADA and Integrated Automation",
-      "text": "Monitoring and control of drilling, production, transport and processing within a single supervisory environment."
+      "text": "Monitoring and control of drilling, production, transport and processing within a single supervisory environment.",
+      "anchor": "sf-detail-2"
     },
     {
       "title": "Predictive Analytics",
-      "text": "Analytical tools that help identify signs of equipment wear and potential failures in advance."
+      "text": "Analytical tools that help identify signs of equipment wear and potential failures in advance.",
+      "anchor": "sf-detail-3"
     },
     {
       "title": "Energy Optimization",
-      "text": "Digital solutions aimed at reducing energy losses and using resources more efficiently across production processes."
+      "text": "Digital solutions aimed at reducing energy losses and using resources more efficiently across production processes.",
+      "anchor": "sf-detail-4"
     }
   ],
   "blocks": [
@@ -39,7 +43,8 @@
         "centralised data collection",
         "visualisation of operational indicators",
         "a single information base for analytics"
-      ]
+      ],
+      "anchor": "sf-detail-1"
     },
     {
       "type": "text",
@@ -50,17 +55,20 @@
         "faster process management",
         "stronger operational discipline",
         "a higher level of automation"
-      ]
+      ],
+      "anchor": "sf-detail-2"
     },
     {
       "type": "text",
       "title": "Predictive Analytics",
-      "body": "Analysing operational data from equipment helps identify early signs of potential failure. This makes it possible to plan maintenance not only after a breakdown, but on the basis of the equipment's actual condition."
+      "body": "Analysing operational data from equipment helps identify early signs of potential failure. This makes it possible to plan maintenance not only after a breakdown, but on the basis of the equipment's actual condition.",
+      "anchor": "sf-detail-3"
     },
     {
       "type": "text",
       "title": "Energy Optimization",
-      "body": "Digital control and analytics help track energy consumption across production processes, locate sources of loss and use resources more efficiently. The goal is to raise production efficiency while preserving process stability."
+      "body": "Digital control and analytics help track energy consumption across production processes, locate sources of loss and use resources more efficiently. The goal is to raise production efficiency while preserving process stability.",
+      "anchor": "sf-detail-4"
     }
   ],
   "cta": {

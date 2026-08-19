@@ -14,19 +14,23 @@
   "cards": [
     {
       "title": "Ağıllı Yataq İdarəetməsi",
-      "text": "IoT sensorları və əməliyyat məlumatları əsasında quyuların və hasilat obyektlərinin real vaxt rejimində mərkəzləşdirilmiş monitorinqi."
+      "text": "IoT sensorları və əməliyyat məlumatları əsasında quyuların və hasilat obyektlərinin real vaxt rejimində mərkəzləşdirilmiş monitorinqi.",
+      "anchor": "sf-detail-1"
     },
     {
       "title": "SCADA və İnteqrasiya Olunmuş Avtomatlaşdırma",
-      "text": "Qazma, hasilat, nəql və emal proseslərinin vahid nəzarət mühitində izlənməsi və idarə edilməsi."
+      "text": "Qazma, hasilat, nəql və emal proseslərinin vahid nəzarət mühitində izlənməsi və idarə edilməsi.",
+      "anchor": "sf-detail-2"
     },
     {
       "title": "Proqnozlaşdırıcı Analitika",
-      "text": "Avadanlığın aşınma əlamətlərini və potensial nasazlıqları əvvəlcədən müəyyən etməyə kömək edən analitik alətlər."
+      "text": "Avadanlığın aşınma əlamətlərini və potensial nasazlıqları əvvəlcədən müəyyən etməyə kömək edən analitik alətlər.",
+      "anchor": "sf-detail-3"
     },
     {
       "title": "Enerji Optimallaşdırılması",
-      "text": "İstehsalat proseslərində enerji itkilərinin azaldılmasına və resurslardan daha səmərəli istifadəyə yönəlmiş rəqəmsal həllər."
+      "text": "İstehsalat proseslərində enerji itkilərinin azaldılmasına və resurslardan daha səmərəli istifadəyə yönəlmiş rəqəmsal həllər.",
+      "anchor": "sf-detail-4"
     }
   ],
   "blocks": [
@@ -39,7 +43,8 @@
         "məlumatların mərkəzləşdirilmiş toplanması",
         "əməliyyat göstəricilərinin vizuallaşdırılması",
         "analitika üçün vahid informasiya bazası"
-      ]
+      ],
+      "anchor": "sf-detail-1"
     },
     {
       "type": "text",
@@ -50,17 +55,20 @@
         "proseslərin daha operativ idarə edilməsi",
         "əməliyyat intizamının artırılması",
         "avtomatlaşdırma səviyyəsinin yüksəldilməsi"
-      ]
+      ],
+      "anchor": "sf-detail-2"
     },
     {
       "type": "text",
       "title": "Proqnozlaşdırıcı Analitika",
-      "body": "Avadanlıq üzrə toplanan əməliyyat məlumatlarının analizi potensial nasazlıqların erkən əlamətlərini müəyyən etməyə kömək edir. Bu yanaşma texniki xidməti yalnız nasazlıq baş verdikdən sonra deyil, avadanlığın faktiki vəziyyətinə əsasən planlaşdırmağa imkan verir."
+      "body": "Avadanlıq üzrə toplanan əməliyyat məlumatlarının analizi potensial nasazlıqların erkən əlamətlərini müəyyən etməyə kömək edir. Bu yanaşma texniki xidməti yalnız nasazlıq baş verdikdən sonra deyil, avadanlığın faktiki vəziyyətinə əsasən planlaşdırmağa imkan verir.",
+      "anchor": "sf-detail-3"
     },
     {
       "type": "text",
       "title": "Enerji Optimallaşdırılması",
-      "body": "Rəqəmsal nəzarət və analitika istehsalat proseslərində enerji sərfiyyatının izlənməsinə, itki mənbələrinin aşkar edilməsinə və resurslardan daha səmərəli istifadəyə kömək edir. Məqsəd texnoloji dayanıqlığı qorumaqla istehsal effektivliyini yüksəltməkdir."
+      "body": "Rəqəmsal nəzarət və analitika istehsalat proseslərində enerji sərfiyyatının izlənməsinə, itki mənbələrinin aşkar edilməsinə və resurslardan daha səmərəli istifadəyə kömək edir. Məqsəd texnoloji dayanıqlığı qorumaqla istehsal effektivliyini yüksəltməkdir.",
+      "anchor": "sf-detail-4"
     }
   ],
   "cta": {

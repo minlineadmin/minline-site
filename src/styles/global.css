@@ -12,13 +12,14 @@
   --gold-soft: #e3c67f;
   --gold-dim: rgba(201, 162, 75, 0.35);
   --line: #26262e;
-  --max-width: 1140px;
+  --max-width: 1240px;
   --radius: 4px;
 }
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+@media (max-width: 760px) { html { scroll-padding-top: 128px; } }
 
 body {
   margin: 0;
@@ -54,7 +55,7 @@ a:hover { text-decoration: underline; }
 /* ---------- Marble veins (decorative, two corners only) ---------- */
 
 .veins {
-  position: absolute;
+  position: fixed;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
@@ -63,15 +64,28 @@ a:hover { text-decoration: underline; }
 }
 .veins svg {
   position: absolute;
-  width: clamp(300px, 34vw, 520px);
-  height: clamp(300px, 34vw, 520px);
-  opacity: 0.28;
+  width: clamp(460px, 58vw, 940px);
+  height: clamp(460px, 58vw, 940px);
+  opacity: 0.62;
 }
-.veins-tl { top: 0; left: 0; }
-.veins-br { bottom: 0; right: 0; }
+/* Each cluster is pushed a fifth of its own size off-canvas and masked from
+   its corner outwards: full strength in the empty corner, gone by the time it
+   reaches the reading column. Without the mask the strokes cross headings. */
+.veins-tl {
+  top: -20%;
+  left: -20%;
+  -webkit-mask-image: radial-gradient(105% 105% at 0% 0%, #000 0%, #000 30%, rgba(0, 0, 0, 0.45) 52%, transparent 74%);
+  mask-image: radial-gradient(105% 105% at 0% 0%, #000 0%, #000 30%, rgba(0, 0, 0, 0.45) 52%, transparent 74%);
+}
+.veins-br {
+  bottom: -20%;
+  right: -20%;
+  -webkit-mask-image: radial-gradient(105% 105% at 100% 100%, #000 0%, #000 30%, rgba(0, 0, 0, 0.45) 52%, transparent 74%);
+  mask-image: radial-gradient(105% 105% at 100% 100%, #000 0%, #000 30%, rgba(0, 0, 0, 0.45) 52%, transparent 74%);
+}
 
 @media (max-width: 760px) {
-  .veins svg { width: 62vw; height: 62vw; opacity: 0.22; }
+  .veins svg { width: 82vw; height: 82vw; opacity: 0.42; }
 }
 
 .site-header,
@@ -153,7 +167,7 @@ main,
 
 .hero {
   position: relative;
-  padding: 130px 0 100px;
+  padding: 104px 0 84px;
   border-bottom: 1px solid var(--line);
   background:
     radial-gradient(900px 420px at 82% -12%, rgba(201, 162, 75, 0.13), transparent 65%),
@@ -161,10 +175,9 @@ main,
     /* fine engineering grid, fades toward the left where text sits */
     linear-gradient(to left, transparent, var(--bg) 55%),
     repeating-linear-gradient(0deg, transparent 0 47px, rgba(255, 255, 255, 0.025) 47px 48px),
-    repeating-linear-gradient(90deg, transparent 0 47px, rgba(255, 255, 255, 0.025) 47px 48px),
-    var(--bg);
+    repeating-linear-gradient(90deg, transparent 0 47px, rgba(255, 255, 255, 0.025) 47px 48px);
 }
-.hero h1 { max-width: 15ch; }
+.hero h1 { max-width: 22ch; }
 .hero h1::before {
   content: "";
   display: block;
@@ -173,8 +186,8 @@ main,
   margin-bottom: 28px;
   background: linear-gradient(90deg, var(--gold), rgba(201, 162, 75, 0.15));
 }
-.hero .lead { max-width: 640px; font-size: 1.12rem; line-height: 1.7; }
-.hero .actions { margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
+.hero .lead { max-width: 880px; font-size: 1.12rem; line-height: 1.7; }
+.hero .actions { margin-top: 34px; display: flex; gap: 16px; flex-wrap: wrap; }
 
 /* ---------- Buttons ---------- */
 
@@ -201,7 +214,7 @@ main,
 
 /* ---------- Sections ---------- */
 
-.section { padding: 88px 0; border-bottom: 1px solid var(--line); }
+.section { padding: 58px 0; border-bottom: 1px solid var(--line); }
 .section:last-child { border-bottom: none; }
 
 .section h2 {
@@ -224,7 +237,7 @@ main,
   background: linear-gradient(90deg, var(--gold), rgba(201, 162, 75, 0.15));
 }
 
-.section-intro { max-width: 700px; margin-bottom: 44px; }
+.section-intro { max-width: 900px; margin-bottom: 32px; }
 .section-intro p { font-size: 1.02rem; }
 .section-intro h2 { margin-top: 1.6em; }
 
@@ -295,7 +308,7 @@ main,
   margin: 0 0 40px;
   display: grid;
   gap: 12px;
-  max-width: 580px;
+  max-width: 640px;
 }
 .contact-list li {
   padding: 14px 18px;
@@ -335,9 +348,9 @@ main,
 }
 
 @media (max-width: 760px) {
-  .hero { padding: 84px 0 64px; }
+  .hero { padding: 72px 0 56px; }
   .hero h1 { max-width: none; }
-  .section { padding: 60px 0; }
+  .section { padding: 46px 0; }
   .section-lead { padding-bottom: 0; }
 }
 
@@ -380,7 +393,7 @@ main,
 /* lead block already ends the section; the intro's own bottom margin would
    stack with the next section's top padding and open a double gap */
 .section-lead .section-intro { margin-bottom: 0; }
-.section-lead h1 { font-size: clamp(1.7rem, 2.9vw, 2.4rem); max-width: 24ch; }
+.section-lead h1 { font-size: clamp(1.7rem, 2.9vw, 2.4rem); max-width: 34ch; }
 .section-lead .lead { font-size: 1.05rem; line-height: 1.7; }
 
 .eyebrow {
@@ -434,11 +447,11 @@ main,
   list-style: none;
   padding: 0;
   margin: 0;
-  max-width: 780px;
+  max-width: 1000px;
 }
 .feature-list li {
   position: relative;
-  padding: 26px 0 26px 46px;
+  padding: 22px 0 22px 46px;
   border-bottom: 1px solid var(--line);
 }
 .feature-list li:first-child { padding-top: 4px; }
@@ -447,7 +460,7 @@ main,
   content: "";
   position: absolute;
   left: 8px;
-  top: 34px;
+  top: 30px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -456,13 +469,13 @@ main,
 }
 .feature-list li:first-child::before { top: 12px; }
 .feature-list h3 { color: var(--text); margin-bottom: 0.4em; }
-.feature-list p { margin: 0; font-size: 0.96rem; max-width: 62ch; }
+.feature-list p { margin: 0; font-size: 0.96rem; max-width: 82ch; }
 
 .bead-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  max-width: 780px;
+  max-width: 1000px;
   position: relative;
   counter-reset: bead;
 }
@@ -499,7 +512,7 @@ main,
   justify-content: center;
 }
 .bead-list h3 { color: var(--text); margin-bottom: 0.4em; }
-.bead-list p { margin: 0; font-size: 0.96rem; max-width: 62ch; }
+.bead-list p { margin: 0; font-size: 0.96rem; max-width: 82ch; }
 
 @media (max-width: 480px) {
   .feature-list li { padding-left: 30px; }
@@ -513,9 +526,9 @@ main,
    (a lead paragraph plus named sub-cases). Adding a block = a JSON entry,
    never a template change. */
 
-.block { padding: 74px 0; border-bottom: 1px solid var(--line); }
+.block { padding: 52px 0; border-bottom: 1px solid var(--line); }
 .block:last-of-type { border-bottom: 1px solid var(--line); }
-.block-body { max-width: 760px; }
+.block-body { max-width: 1000px; }
 .block-body > p { font-size: 1.02rem; }
 
 .block h2 { margin-bottom: 0.7em; }
@@ -524,10 +537,10 @@ main,
 .point-list {
   list-style: none;
   padding: 0;
-  margin: 26px 0 0;
+  margin: 22px 0 0;
   display: grid;
-  gap: 12px;
-  max-width: 700px;
+  gap: 10px;
+  max-width: 900px;
 }
 .point-list li {
   position: relative;
@@ -549,9 +562,9 @@ main,
 
 /* specifications: label / value pairs */
 .specs {
-  margin: 34px 0 0;
+  margin: 30px 0 0;
   border-top: 1px solid var(--line);
-  max-width: 760px;
+  max-width: 1000px;
 }
 .specs-title {
   font-size: 0.74rem;
@@ -581,9 +594,9 @@ main,
 .columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-  gap: 34px;
-  margin-top: 30px;
-  max-width: 860px;
+  gap: 40px;
+  margin-top: 28px;
+  max-width: 1000px;
 }
 .columns h3 {
   color: var(--text);
@@ -594,10 +607,10 @@ main,
 
 /* named sub-cases under a lead paragraph */
 .subitems {
-  margin: 32px 0 0;
+  margin: 28px 0 0;
   display: grid;
-  gap: 26px;
-  max-width: 760px;
+  gap: 22px;
+  max-width: 1000px;
 }
 .subitem { padding-left: 22px; border-left: 2px solid var(--gold-dim); }
 .subitem h3 { color: var(--text); margin-bottom: 0.35em; }
@@ -619,8 +632,37 @@ main,
 }
 
 @media (max-width: 620px) {
-  .block { padding: 54px 0; }
+  .block { padding: 40px 0; }
   .specs dl { grid-template-columns: 1fr; }
   .specs dt { padding-bottom: 0; border-bottom: none; }
   .specs dd { padding-top: 4px; }
 }
+
+/* ---------- Mobile header: one scrollable row ----------
+   Six nav items wrapped onto three lines and turned the sticky header into a
+   third of the screen. Declared last so it wins over the 1080px wrap rule. */
+@media (max-width: 760px) {
+  .site-header .container {
+    flex-wrap: wrap;
+    row-gap: 6px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    min-height: 0;
+  }
+  .site-nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    gap: 18px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent 100%);
+    mask-image: linear-gradient(90deg, #000 88%, transparent 100%);
+  }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .lang-switcher { margin-left: auto; }
+  /* the fine grid reads as a hard-edged block once the column is narrow */
+  .hero { background: none; }
+}
+

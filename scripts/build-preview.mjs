@@ -103,6 +103,21 @@ function footer(locale) {
 }
 
 const card = (i) => `<div class="card"><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></div>`;
+const summaryCards = (locale, c) => {
+  const more = data[locale].site.cardMoreLabel;
+  const items = c.cards
+    .map((i) =>
+      i.anchor
+        ? `<a class="card card-link" href="#${esc(i.anchor)}"><h3>${esc(i.title)}</h3><p>${esc(
+            i.text
+          )}</p><span class="card-more">${esc(more)}</span></a>`
+        : card(i)
+    )
+    .join('');
+  return `<section class="section" id="${esc(c.cardsAnchor)}"><div class="container">
+    <h2>${esc(c.cardsTitle)}</h2><div class="grid">${items}</div>
+  </div></section>`;
+};
 const li = (i) => `<li><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></li>`;
 const featureList = (items) => `<ul class="feature-list">${items.map(li).join('')}</ul>`;
 const beadList = (items) => `<ul class="bead-list">${items.map(li).join('')}</ul>`;
@@ -149,7 +164,7 @@ function contentBlock(b) {
     )}" loading="lazy" />${
       b.image.caption ? `<figcaption>${esc(b.image.caption)}</figcaption>` : ''
     }</figure>`);
-  return `<section class="block"><div class="container"><div class="block-body">${parts.join(
+  return `<section class="block"${b.anchor ? ` id="${esc(b.anchor)}"` : ''}><div class="container"><div class="block-body">${parts.join(
     ''
   )}</div></div></section>`;
 }
@@ -195,25 +210,20 @@ const templates = {
       ${c.hero.ctaLabel ? `<a class="btn btn-ghost" href="#${esc(c.cardsAnchor)}">${esc(c.hero.ctaLabel)}</a>` : ''}
       </div>
     </div></section>
-    <section class="section" id="${esc(c.cardsAnchor)}"><div class="container">
-      <h2>${esc(c.cardsTitle)}</h2>
-      <div class="grid">${c.cards.map(card).join('')}</div>
-    </div></section>
+    ${summaryCards(locale, c)}
     ${c.blocks.map(contentBlock).join('')}
     ${ctaBlock(locale, c)}`;
   },
   Services(locale, c) {
     return `
     <section class="section section-lead"><div class="container">
+      <p class="eyebrow">${esc(c.eyebrow)}</p>
       <h1>${esc(c.hero.title)}</h1>
       <div class="section-intro"><p class="lead">${esc(c.hero.lead)}</p>
       ${c.hero.ctaLabel ? `<a class="btn btn-ghost" href="#${esc(c.cardsAnchor)}">${esc(c.hero.ctaLabel)}</a>` : ''}
       </div>
     </div></section>
-    <section class="section" id="${esc(c.cardsAnchor)}"><div class="container">
-      <h2>${esc(c.cardsTitle)}</h2>
-      <div class="grid">${c.cards.map(card).join('')}</div>
-    </div></section>
+    ${summaryCards(locale, c)}
     ${c.blocks.map(contentBlock).join('')}
     <section class="section"><div class="container">
       <h2>${esc(c.process.title)}</h2>

@@ -3,6 +3,7 @@
   "navLabel": "Xidmətlər",
   "metaTitle": "Xidmətlər — texniki audit, quraşdırma, servis və modernləşdirmə | Minline Systems",
   "metaDescription": "Texniki audit və avadanlıq seçimi, quraşdırma və istismara vermə, planlı servis, təmir və modernləşdirmə üzrə kompleks texniki dəstək.",
+  "eyebrow": "Xidmətlər",
   "hero": {
     "title": "Avadanlıq seçimindən istismara qədər texniki dəstək",
     "lead": "Minline Systems layihənin texniki tələblərinin təhlilindən başlayaraq avadanlıq seçimi, quraşdırma, istismara vermə, servis, təmir və modernləşdirmə mərhələlərinə qədər kompleks yanaşma təklif edir. Məqsəd avadanlığın dayanıqlı işləməsini təmin etmək və əməliyyat risklərini azaltmaqdır.",
@@ -13,41 +14,49 @@
   "cards": [
     {
       "title": "Texniki Audit və Avadanlıq Seçimi",
-      "text": "Quyu və istismar şəraitinin təhlili əsasında uyğun texniki həll və avadanlıq konfiqurasiyasının seçilməsi."
+      "text": "Quyu və istismar şəraitinin təhlili əsasında uyğun texniki həll və avadanlıq konfiqurasiyasının seçilməsi.",
+      "anchor": "svc-audit"
     },
     {
       "title": "Quraşdırma və İstismara Verilmə",
-      "text": "Avadanlığın quraşdırılması, sazlanması, iş rejiminə çıxarılması və zərurət olduqda personalın təlimi."
+      "text": "Avadanlığın quraşdırılması, sazlanması, iş rejiminə çıxarılması və zərurət olduqda personalın təlimi.",
+      "anchor": "svc-install"
     },
     {
       "title": "Servis və Texniki Xidmət",
-      "text": "Planlı texniki xidmət, nasazlıqlara operativ reaksiya və iş rejiminin optimallaşdırılması üzrə dəstək."
+      "text": "Planlı texniki xidmət, nasazlıqlara operativ reaksiya və iş rejiminin optimallaşdırılması üzrə dəstək.",
+      "anchor": "svc-service"
     },
     {
       "title": "Təmir və Modernləşdirmə",
-      "text": "Avadanlığın iş qabiliyyətinin bərpası, qovşaqların yenilənməsi və səmərəliliyin artırılması."
+      "text": "Avadanlığın iş qabiliyyətinin bərpası, qovşaqların yenilənməsi və səmərəliliyin artırılması.",
+      "anchor": "svc-repair"
     }
   ],
   "blocks": [
     {
       "type": "text",
       "title": "Texniki Audit və Avadanlıq Seçimi",
-      "body": "Texniki audit zamanı istismar şəraiti, quyu xüsusiyyətləri, mövcud infrastruktur və layihə məqsədləri təhlil edilir. Bu məlumatlar əsasında uyğun avadanlıq və konfiqurasiya seçilir. Məqsəd texniki tələblər, layihə büdcəsi və istismar səmərəliliyi arasında optimal balans yaratmaqdır."
+      "body": "Texniki audit zamanı istismar şəraiti, quyu xüsusiyyətləri, mövcud infrastruktur və layihə məqsədləri təhlil edilir. Bu məlumatlar əsasında uyğun avadanlıq və konfiqurasiya seçilir. Məqsəd texniki tələblər, layihə büdcəsi və istismar səmərəliliyi arasında optimal balans yaratmaqdır.",
+      "anchor": "svc-audit"
     },
     {
       "type": "text",
       "title": "Quraşdırma və İstismara Verilmə",
-      "body": "Bu mərhələ avadanlığın obyektə quraşdırılmasını, sazlama işlərini və texniki tapşırığa uyğun iş rejiminə çıxarılmasını əhatə edir. Zərurət olduqda sifarişçi heyətinə istismar üzrə təlim də təqdim oluna bilər."
+      "body": "Bu mərhələ avadanlığın obyektə quraşdırılmasını, sazlama işlərini və texniki tapşırığa uyğun iş rejiminə çıxarılmasını əhatə edir. Zərurət olduqda sifarişçi heyətinə istismar üzrə təlim də təqdim oluna bilər.",
+      "anchor": "svc-install"
     },
     {
       "type": "text",
       "title": "Servis və Texniki Xidmət",
-      "body": "Servis xidməti planlı profilaktikanı, texniki vəziyyətin qiymətləndirilməsini, köhnəlmiş qovşaqların müəyyən edilməsini və istismar sabitliyinin qorunmasına yönəlmiş tədbirləri əhatə edir. Əsas məqsəd dayanma riskini azaltmaq və avadanlığın xidmət müddətini uzatmaqdır."
+      "body": "Servis xidməti planlı profilaktikanı, texniki vəziyyətin qiymətləndirilməsini, köhnəlmiş qovşaqların müəyyən edilməsini və istismar sabitliyinin qorunmasına yönəlmiş tədbirləri əhatə edir. Əsas məqsəd dayanma riskini azaltmaq və avadanlığın xidmət müddətini uzatmaqdır.",
+      "anchor": "svc-service"
     },
     {
       "type": "text",
       "title": "Təmir və Modernləşdirmə",
-      "body": "Təmir və modernləşdirmə mövcud avadanlığın səmərəliliyinin artırılmasına, ayrı-ayrı qovşaqların yenilənməsinə və sistemin xidmət müddətinin uzadılmasına kömək edir. Bu yanaşma tam dəyişiklik olmadan texniki nəticəni yaxşılaşdırmağa imkan verir."
+      "body": "Təmir və modernləşdirmə mövcud avadanlığın səmərəliliyinin artırılmasına, ayrı-ayrı qovşaqların yenilənməsinə və sistemin xidmət müddətinin uzadılmasına kömək edir. Bu yanaşma tam dəyişiklik olmadan texniki nəticəni yaxşılaşdırmağa imkan verir.",
+      "anchor": "svc-repair"
     }
   ],
   "process": {

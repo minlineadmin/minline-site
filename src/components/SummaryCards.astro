@@ -1,0 +1,31 @@
+---
+// Summary cards at the top of a direction / services page.
+// A card with an `anchor` jumps to the matching detail block further down the
+// same page — the cards already read as clickable, so they have to be.
+// Cards without an anchor stay static, so a content file can omit the link.
+import { getSite } from '../lib/content.js';
+
+const { locale, anchor, title, cards } = Astro.props;
+const moreLabel = getSite(locale).cardMoreLabel;
+---
+<section class="section" id={anchor}>
+  <div class="container">
+    <h2>{title}</h2>
+    <div class="grid">
+      {cards.map((item) =>
+        item.anchor ? (
+          <a class="card card-link" href={`#${item.anchor}`}>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+            <span class="card-more">{moreLabel}</span>
+          </a>
+        ) : (
+          <div class="card">
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        )
+      )}
+    </div>
+  </div>
+</section>

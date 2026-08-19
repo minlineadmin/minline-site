@@ -10,7 +10,7 @@
 const { block } = Astro.props;
 const b = block;
 ---
-<section class="block">
+<section class="block" id={b.anchor}>
   <div class="container">
     <div class="block-body">
       {b.title && <h2>{b.title}</h2>}

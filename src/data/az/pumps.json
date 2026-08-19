@@ -14,15 +14,18 @@
   "cards": [
     {
       "title": "API Spec 11AX tələblərinə uyğun nasoslar",
-      "text": "Insert və tubing tipli ştanqlı dərinlik nasoslarının müxtəlif modifikasiyaları və tipölçüləri."
+      "text": "Insert və tubing tipli ştanqlı dərinlik nasoslarının müxtəlif modifikasiyaları və tipölçüləri.",
+      "anchor": "pump-range"
     },
     {
       "title": "Mürəkkəb şəraitlər üçün xüsusi icralar",
-      "text": "Qum, korroziyalı mühit, yüksək qaz amili və özlü neft kimi çətin istismar şəraitləri üçün uyğun həllər."
+      "text": "Qum, korroziyalı mühit, yüksək qaz amili və özlü neft kimi çətin istismar şəraitləri üçün uyğun həllər.",
+      "anchor": "pump-conditions"
     },
     {
       "title": "Ehtiyat hissələri və komponentlər",
-      "text": "Silindrlər, plunjerlər, klapan elementləri və nasos sistemləri üçün digər mühüm komponentlərin geniş çeşidi."
+      "text": "Silindrlər, plunjerlər, klapan elementləri və nasos sistemləri üçün digər mühüm komponentlərin geniş çeşidi.",
+      "anchor": "pump-parts"
     }
   ],
   "blocks": [
@@ -32,13 +35,32 @@
       "body": "UKR-LAND məhsul xətti API Spec 11AX tələblərinə uyğun müxtəlif konstruktiv modifikasiyalarda ştanqlı dərinlik nasoslarını əhatə edir. Məhsullar neft-qaz sənayesində material, konstruksiya, sınaq və markalanma tələblərinə cavab verən həllər kimi formalaşdırılıb. Portfeldə həm insert tipli, həm də tubing tipli nasoslar mövcuddur.",
       "specsTitle": "Əsas texniki göstəricilər",
       "specs": [
-        { "label": "Silindr diametri", "value": "20–95 mm" },
-        { "label": "Plunjer gedişi", "value": "0,9–6 m" },
-        { "label": "Silindr növləri", "value": "Heavy-Wall, Thin-Wall, API Modified" },
-        { "label": "Materiallar", "value": "legirlənmiş polad və örtük variantları" },
-        { "label": "H₂S mühitləri üçün həllər", "value": "NACE tələblərinə uyğun seçimlər" },
-        { "label": "Əsas modifikasiyalar", "value": "RHA, RHB, RWA, RXB, TH, THM, THOS" }
-      ]
+        {
+          "label": "Silindr diametri",
+          "value": "20–95 mm"
+        },
+        {
+          "label": "Plunjer gedişi",
+          "value": "0,9–6 m"
+        },
+        {
+          "label": "Silindr növləri",
+          "value": "Heavy-Wall, Thin-Wall, API Modified"
+        },
+        {
+          "label": "Materiallar",
+          "value": "legirlənmiş polad və örtük variantları"
+        },
+        {
+          "label": "H₂S mühitləri üçün həllər",
+          "value": "NACE tələblərinə uyğun seçimlər"
+        },
+        {
+          "label": "Əsas modifikasiyalar",
+          "value": "RHA, RHB, RWA, RXB, TH, THM, THOS"
+        }
+      ],
+      "anchor": "pump-range"
     },
     {
       "type": "columns",
@@ -52,7 +74,8 @@
           "title": "Tubing tipli nasoslar",
           "text": "Tubing tipli nasoslar daha geniş tətbiq diapazonu və uyğun konstruktiv imkanlar təqdim edərək müəyyən quyu parametrləri üçün effektiv həll rolunu oynayır."
         }
-      ]
+      ],
+      "anchor": "pump-types"
     },
     {
       "type": "subitems",
@@ -71,7 +94,8 @@
           "title": "Fərdi seçim",
           "text": "Avadanlığın seçimi quyu dərinliyi, iş rejimi, mühitin tərkibi, temperatur, təzyiq və abrazivlik kimi parametrlər nəzərə alınmaqla aparılmalıdır."
         }
-      ]
+      ],
+      "anchor": "pump-conditions"
     },
     {
       "type": "text",
@@ -82,7 +106,8 @@
         "nikel-karbid örtüklü silindrlər",
         "xrom örtüklü latun silindrlər",
         "karbon-azot emalı və xrom örtüyü tətbiq olunmuş polad silindrlər"
-      ]
+      ],
+      "anchor": "pump-barrels"
     },
     {
       "type": "text",
@@ -92,7 +117,8 @@
         "qum təzahürü olan quyular üçün yivli plunjerlər",
         "korroziyaya davamlı Monel örtüklü plunjerlər",
         "kimyəvi və abraziv dayanıqlığa malik PA tipli plunjerlər"
-      ]
+      ],
+      "anchor": "pump-plungers"
     },
     {
       "type": "text",
@@ -108,7 +134,8 @@
         "qoruyucu filtrlər",
         "qum təmizləyici elementlər",
         "digər quyudibi komponentlər"
-      ]
+      ],
+      "anchor": "pump-parts"
     }
   ],
   "cta": {
