@@ -2,55 +2,55 @@
   "slug": "",
   "navLabel": "Ana səhifə",
   "metaTitle": "Minline Systems — neft-qaz sənayesində müasir həllər",
-  "metaDescription": "Yataqların rəqəmsallaşdırılması, SCADA avtomatlaşdırma sistemləri və beynəlxalq API standartlarına cavab verən neft hasilatı avadanlıqlarının etibarlı təchizatı.",
+  "metaDescription": "Neft-qaz sektorunda rəqəmsallaşdırma, SCADA əsaslı idarəetmə, ştanqlı dərinlik nasosları və quyudibi avadanlıqlar üzrə texniki həllər.",
   "hero": {
     "title": "Neft-qaz sənayesində müasir həllər",
-    "lead": "Yataqların rəqəmsallaşdırılması, SCADA avtomatlaşdırma sistemləri və beynəlxalq API standartlarına cavab verən neft hasilatı avadanlıqlarının etibarlı təchizatı.",
-    "ctaPrimary": "Xidmətlərimizlə tanış olun",
-    "ctaSecondary": "Əlaqə saxlayın"
+    "lead": "Minline Systems neft-qaz sektorunda rəqəmsallaşdırma, SCADA əsaslı idarəetmə, ştanqlı dərinlik nasosları və quyudibi avadanlıqlar üzrə texniki həllər təqdim edir. Biz müştərilərə hasilat proseslərinin daha səmərəli, daha dayanıqlı və daha idarəolunan qurulmasına dəstək veririk.",
+    "ctaPrimary": "Məhsullara baxın",
+    "ctaSecondary": "Bizimlə əlaqə"
   },
   "directions": {
-    "title": "Fəaliyyət İstiqamətlərimiz",
-    "lead": "Azərbaycanın neft-qaz sektorunun ehtiyaclarına uyğunlaşdırılmış innovativ rəqəmsal texnologiyalar və mexanikləşdirilmiş hasilat həlləri.",
+    "title": "Əsas İstiqamətlər",
+    "lead": "Fəaliyyətimiz iki əsas istiqamət üzərində qurulub: yataqların rəqəmsal idarə edilməsi və mexanikləşdirilmiş hasilat avadanlıqlarının təchizatı.",
     "items": [
       {
         "key": "smartfield",
-        "title": "İntellektual Neft və Qaz Hasilatı (Smart Field & SCADA)",
-        "text": "Neft və qaz yataqlarının tam rəqəmsallaşdırılması, SCADA sistemləri və süni intellekt əsaslı idarəetmə texnologiyaları.",
-        "more": "Ətraflı"
+        "title": "Smart Field & SCADA",
+        "text": "Neft-qaz yataqlarının real vaxt monitorinqi, SCADA nəzarəti, analitika və avtomatlaşdırma həlləri.",
+        "more": "Ətraflı bax"
       },
       {
         "key": "pumps",
-        "title": "Ştangalı Dərinlik Nasosları və Quyudibi Avadanlıqlar",
-        "text": "Neft hasilatı üçün beynəlxalq API 11AX standartlarına cavab verən yüksək dəqiqlikli ştangalı dərinlik nasosları (ŞDN) və ehtiyat hissələri.",
-        "more": "Ətraflı"
+        "title": "Dərinlik Nasosları",
+        "text": "API Spec 11AX tələblərinə uyğun ştanqlı dərinlik nasosları, xüsusi icralar və quyudibi komponentlər.",
+        "more": "Ətraflı bax"
       }
     ]
   },
   "advantages": {
-    "title": "Niyə Minline Systems?",
+    "title": "Niyə Minline Systems",
     "items": [
       {
-        "title": "Beynəlxalq Sertifikasiya",
-        "text": "Təqdim etdiyimiz bütün avadanlıqlar API Spec 11AX, ISO və beynəlxalq sənaye standartlarına tam cavab verir."
+        "title": "Praktik texniki yanaşma",
+        "text": "Həllər real istismar şəraiti, texniki tələblər və layihənin məqsədləri nəzərə alınmaqla seçilir."
       },
       {
-        "title": "Layihə Eksklyuzivliyi",
-        "text": "Qlobal istehsalçılarla birbaşa tərəfdaşlıq sayəsində rəqabətədavamlı qiymət və çevik təchizat şərtləri."
+        "title": "Sənaye yönümlü məhsul portfeli",
+        "text": "Məhsul və xidmətlər neft-qaz hasilatı sahəsində konkret texniki ehtiyaclara cavab vermək üçün formalaşdırılıb."
       },
       {
-        "title": "Kompleks Mühəndislik Dəstəyi",
-        "text": "Avadanlığın seçimindən başlayaraq, sahədə sınaq-quraşdırma (SAT) və 24/7 operativ texniki dəstək."
+        "title": "Kompleks müşayiət",
+        "text": "Layihə təhlilindən başlayaraq təchizat, tətbiq, istismar və sonrakı dəstəyə qədər vahid yanaşma."
       },
       {
-        "title": "Çətin Şəraitlər üçün Həllər",
-        "text": "Azərbaycanın yerli geoloji və istismar şəraitinə (özüllü neft, qum, yüksək təzyiq) uyğunlaşdırılmış xüsusi modifikasiyalar."
+        "title": "Etibarlılıq və dayanıqlıq",
+        "text": "Məqsəd yalnız avadanlıq təqdim etmək deyil, həm də onun uzunmüddətli və sabit işləməsinə dəstək verməkdir."
       }
     ]
   },
   "cta": {
-    "title": "Bizimlə Əlaqə",
-    "text": "Layihəniz üçün texniki həllərə və ya qiymət təklifinə ehtiyacınız var? Mütəxəssislərimiz sizə kömək etməyə hazırdır.",
-    "button": "Sorğu göndərin"
+    "title": "Layihəniz üçün uyğun texniki həlli birlikdə müəyyən edək",
+    "text": "İstismar şəraitinizi, texniki tələblərinizi və prioritetlərinizi bizimlə paylaşın.",
+    "button": "Sorğu göndər"
   }
 }

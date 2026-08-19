@@ -1,31 +1,119 @@
 {
   "slug": "derinlik-nasoslari",
   "navLabel": "Dərinlik Nasosları",
-  "metaTitle": "Ştangalı Dərinlik Nasosları və Quyudibi Avadanlıqlar (API 11AX) — Minline Systems",
-  "metaDescription": "API Spec 11AX sertifikasiyalı ştangalı dərinlik nasosları (ŞDN), mürəkkəb şəraitlər üçün xüsusi icralar, silindrlər, plunjerlər və klapan cütlükləri.",
+  "metaTitle": "Ştanqlı dərinlik nasosları və quyudibi avadanlıqlar (API Spec 11AX) — Minline Systems",
+  "metaDescription": "API Spec 11AX tələblərinə uyğun ştanqlı dərinlik nasosları, mürəkkəb istismar şəraitləri üçün xüsusi icralar, silindrlər, plunjerlər və ehtiyat hissələri.",
   "eyebrow": "Fəaliyyət İstiqaməti 02",
-  "intro": {
-    "title": "Beynəlxalq API 11AX Standartlı Mexanikləşdirilmiş Hasilat Avadanlıqları",
-    "lead": "Quru və dəniz yataqlarında mexanikləşdirilmiş neft hasilatının fasiləsizliyini təmin etmək üçün yüksək keyfiyyətli dərinlik nasosları və komponentlərinin tədarükü."
+  "hero": {
+    "title": "Ştanqlı dərinlik nasosları və quyudibi avadanlıqlar",
+    "lead": "Minline Systems mexanikləşdirilmiş neft hasilatı üçün API Spec 11AX tələblərinə uyğun ştanqlı dərinlik nasosları, müxtəlif istismar şəraitləri üçün uyğunlaşdırılmış icralar və geniş çeşiddə ehtiyat hissələri təqdim edir. Məhsul xətti quru və dəniz yataqlarında etibarlı və dayanıqlı istismarı dəstəkləmək üçün formalaşdırılıb.",
+    "ctaLabel": "Avadanlıq çeşidinə baxın"
   },
-  "blocksTitle": "Avadanlıq Çeşidi",
+  "cardsAnchor": "pump-cards",
+  "cardsTitle": "Avadanlıq Çeşidi",
+  "cards": [
+    {
+      "title": "API Spec 11AX tələblərinə uyğun nasoslar",
+      "text": "Insert və tubing tipli ştanqlı dərinlik nasoslarının müxtəlif modifikasiyaları və tipölçüləri."
+    },
+    {
+      "title": "Mürəkkəb şəraitlər üçün xüsusi icralar",
+      "text": "Qum, korroziyalı mühit, yüksək qaz amili və özlü neft kimi çətin istismar şəraitləri üçün uyğun həllər."
+    },
+    {
+      "title": "Ehtiyat hissələri və komponentlər",
+      "text": "Silindrlər, plunjerlər, klapan elementləri və nasos sistemləri üçün digər mühüm komponentlərin geniş çeşidi."
+    }
+  ],
   "blocks": [
     {
-      "title": "API Spec 11AX Sertifikasiyalı Nasoslar",
-      "text": "İqtisadi və texniki baxımdan yüksək effektivliyə malik keçidli (insert) və boru (tubing) tipli ştangalı dərinlik nasoslarının tam çeşidi."
+      "type": "specs",
+      "title": "API Spec 11AX tələblərinə uyğun ştanqlı dərinlik nasosları",
+      "body": "UKR-LAND məhsul xətti API Spec 11AX tələblərinə uyğun müxtəlif konstruktiv modifikasiyalarda ştanqlı dərinlik nasoslarını əhatə edir. Məhsullar neft-qaz sənayesində material, konstruksiya, sınaq və markalanma tələblərinə cavab verən həllər kimi formalaşdırılıb. Portfeldə həm insert tipli, həm də tubing tipli nasoslar mövcuddur.",
+      "specsTitle": "Əsas texniki göstəricilər",
+      "specs": [
+        { "label": "Silindr diametri", "value": "20–95 mm" },
+        { "label": "Plunjer gedişi", "value": "0,9–6 m" },
+        { "label": "Silindr növləri", "value": "Heavy-Wall, Thin-Wall, API Modified" },
+        { "label": "Materiallar", "value": "legirlənmiş polad və örtük variantları" },
+        { "label": "H₂S mühitləri üçün həllər", "value": "NACE tələblərinə uyğun seçimlər" },
+        { "label": "Əsas modifikasiyalar", "value": "RHA, RHB, RWA, RXB, TH, THM, THOS" }
+      ]
     },
     {
-      "title": "Mürəkkəb Şəraitlər üçün Xüsusi İcralar",
-      "text": "Yüksək qaz amili, qum təzahürü, korroziyalı mühit və özüllü neft hasil olunan quyular üçün xüsusi dözümlü xəlitələrdən hazırlanmış nasoslar."
+      "type": "columns",
+      "title": "Nasos tipləri",
+      "columns": [
+        {
+          "title": "Insert tipli nasoslar",
+          "text": "Insert tipli nasoslar tubing kolonunun daxilində işləyən konstruksiyaya malikdir və müxtəlif quyu şəraitlərində tətbiq üçün uyğun modifikasiyalarda seçilə bilər."
+        },
+        {
+          "title": "Tubing tipli nasoslar",
+          "text": "Tubing tipli nasoslar daha geniş tətbiq diapazonu və uyğun konstruktiv imkanlar təqdim edərək müəyyən quyu parametrləri üçün effektiv həll rolunu oynayır."
+        }
+      ]
     },
     {
-      "title": "Ehtiyat Hissələri və Komponentlər",
-      "text": "Yüksək resurslu silindrlər, plunjerlər, klapan cütlükləri, millər və quyudibi avadanlıqların tam çeşiddə zəmanətli təminatı."
+      "type": "subitems",
+      "title": "Mürəkkəb istismar şəraitləri üçün həllər",
+      "body": "Bəzi quyularda qum təzahürü, korroziyalı mühit, yüksək qaz amili və ya özlü neft kimi amillər standart avadanlığın istismarına əlavə tələblər yaradır. Bu səbəbdən material seçimi, örtük texnologiyası və konstruktiv həllər konkret iş şəraitinə uyğun müəyyənləşdirilməlidir.",
+      "subitems": [
+        {
+          "title": "Qumlu quyular",
+          "text": "Qum və bərk hissəciklərin təsirini azaltmaq üçün qum təmizləyici elementlər, yivli plunjerlər və anti-sand tipli həllər tətbiq oluna bilər."
+        },
+        {
+          "title": "Korroziyalı mühit",
+          "text": "Korroziyaya davamlı materiallar və xüsusi örtüklər sürtünən elementlərin xidmət müddətinin artırılmasına kömək edir."
+        },
+        {
+          "title": "Fərdi seçim",
+          "text": "Avadanlığın seçimi quyu dərinliyi, iş rejimi, mühitin tərkibi, temperatur, təzyiq və abrazivlik kimi parametrlər nəzərə alınmaqla aparılmalıdır."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Silindrlər",
+      "body": "Ştanqlı dərinlik nasosları üçün silindrlər müxtəlif istismar şəraitlərinə uyğun olaraq bir neçə variantda təqdim oluna bilər. Seçim quyunun parametrləri, mayenin xüsusiyyətləri və tələb olunan dayanıqlıq səviyyəsinə əsaslanır.",
+      "bullets": [
+        "xrom örtüklü silindrlər",
+        "nikel-karbid örtüklü silindrlər",
+        "xrom örtüklü latun silindrlər",
+        "karbon-azot emalı və xrom örtüyü tətbiq olunmuş polad silindrlər"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Plunjerlər",
+      "body": "Plunjerlər müxtəlif istismar şəraitlərinə uyğun konstruksiyalarda təqdim oluna bilər. Qumlu quyular, korroziyalı mühit və abraziv iş şəraiti üçün ayrıca həllər mövcuddur.",
+      "bullets": [
+        "qum təzahürü olan quyular üçün yivli plunjerlər",
+        "korroziyaya davamlı Monel örtüklü plunjerlər",
+        "kimyəvi və abraziv dayanıqlığa malik PA tipli plunjerlər"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Ehtiyat hissələri və komponentlər",
+      "body": "Nasos sistemlərinin komplektləşdirilməsi, texniki xidməti və təmiri üçün geniş çeşiddə ehtiyat hissələri və komponentlər təqdim oluna bilər.",
+      "bullets": [
+        "silindrlər",
+        "plunjerlər və plunjer qovşaqları",
+        "klapan qovşaqları",
+        "klapan kürələri və oturacaqları",
+        "muftalar və nipellər",
+        "oturtma və kilidləmə elementləri",
+        "qoruyucu filtrlər",
+        "qum təmizləyici elementlər",
+        "digər quyudibi komponentlər"
+      ]
     }
   ],
   "cta": {
-    "title": "Avadanlıq seçimində kömək lazımdır?",
-    "text": "Quyunuzun şəraitinə uyğun nasos tipini və komplektasiyanı birlikdə müəyyən edək.",
-    "button": "Sorğu göndərin"
+    "title": "Quyu şəraitiniz üçün uyğun nasos həllini seçək",
+    "text": "Quyu parametrlərini və istismar şərtlərini bizimlə paylaşın, uyğun avadanlıq seçimində sizə dəstək olaq.",
+    "button": "Sorğu göndər"
   }
 }

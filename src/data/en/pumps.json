@@ -1,31 +1,119 @@
 {
   "slug": "sucker-rod-pumps",
   "navLabel": "Sucker Rod Pumps",
-  "metaTitle": "Sucker Rod Pumps and Downhole Equipment (API 11AX) — Minline Systems",
-  "metaDescription": "API Spec 11AX certified sucker rod pumps, special designs for challenging conditions, barrels, plungers and valve assemblies.",
+  "metaTitle": "Sucker rod pumps and downhole equipment (API Spec 11AX) — Minline Systems",
+  "metaDescription": "Sucker rod pumps built to API Spec 11AX requirements, special designs for challenging conditions, barrels, plungers and spare parts.",
   "eyebrow": "Direction 02",
-  "intro": {
-    "title": "Artificial Lift Equipment to the International API 11AX Standard",
-    "lead": "Supply of high-quality downhole pumps and components to ensure uninterrupted artificial lift oil production at onshore and offshore fields."
+  "hero": {
+    "title": "Sucker rod pumps and downhole equipment",
+    "lead": "Minline Systems supplies sucker rod pumps built to API Spec 11AX requirements, designs adapted to different operating conditions and a broad range of spare parts for artificial lift oil production. The product line is shaped to support reliable, stable operation on both onshore and offshore fields.",
+    "ctaLabel": "View the product range"
   },
-  "blocksTitle": "Equipment Range",
+  "cardsAnchor": "pump-cards",
+  "cardsTitle": "Product Range",
+  "cards": [
+    {
+      "title": "Pumps built to API Spec 11AX requirements",
+      "text": "A range of modifications and sizes of insert-type and tubing-type sucker rod pumps."
+    },
+    {
+      "title": "Special designs for challenging conditions",
+      "text": "Solutions suited to demanding service: sand, corrosive environments, high gas-oil ratio and viscous crude."
+    },
+    {
+      "title": "Spare parts and components",
+      "text": "A wide range of barrels, plungers, valve elements and other critical components for pump systems."
+    }
+  ],
   "blocks": [
     {
-      "title": "API Spec 11AX Certified Pumps",
-      "text": "A complete range of insert and tubing type sucker rod pumps, efficient in both economic and technical terms."
+      "type": "specs",
+      "title": "Sucker rod pumps built to API Spec 11AX requirements",
+      "body": "The UKR-LAND product line covers sucker rod pumps in a range of design modifications built to API Spec 11AX requirements. The products are shaped as solutions that meet oil and gas industry requirements for materials, construction, testing and marking. The portfolio includes both insert-type and tubing-type pumps.",
+      "specsTitle": "Key technical parameters",
+      "specs": [
+        { "label": "Barrel diameter", "value": "20–95 mm" },
+        { "label": "Plunger stroke", "value": "0.9–6 m" },
+        { "label": "Barrel types", "value": "Heavy-Wall, Thin-Wall, API Modified" },
+        { "label": "Materials", "value": "alloy steels and coating options" },
+        { "label": "Solutions for H₂S service", "value": "options compliant with NACE requirements" },
+        { "label": "Main modifications", "value": "RHA, RHB, RWA, RXB, TH, THM, THOS" }
+      ]
     },
     {
-      "title": "Special Designs for Challenging Conditions",
-      "text": "Pumps made from highly resistant alloys for wells with a high gas-oil ratio, sand production, corrosive environments and viscous oil."
+      "type": "columns",
+      "title": "Pump types",
+      "columns": [
+        {
+          "title": "Insert-type pumps",
+          "text": "Insert-type pumps are designed to operate inside the tubing string and can be selected in modifications suited to a range of well conditions."
+        },
+        {
+          "title": "Tubing-type pumps",
+          "text": "Tubing-type pumps offer a wider application range and matching design options, making them an effective solution for certain well parameters."
+        }
+      ]
     },
     {
-      "title": "Spare Parts and Components",
-      "text": "Guaranteed supply of a full range: long-life barrels, plungers, valve assemblies, rods and downhole equipment."
+      "type": "subitems",
+      "title": "Solutions for challenging operating conditions",
+      "body": "In some wells, sand production, corrosive environments, a high gas-oil ratio or viscous crude place additional demands on standard equipment. Material selection, coating technology and design choices therefore have to be defined against the specific service conditions.",
+      "subitems": [
+        {
+          "title": "Sandy wells",
+          "text": "Sand cleaner elements, grooved plungers and anti-sand solutions can be applied to reduce the effect of sand and solid particles."
+        },
+        {
+          "title": "Corrosive environments",
+          "text": "Corrosion-resistant materials and special coatings help extend the service life of friction elements."
+        },
+        {
+          "title": "Case-by-case selection",
+          "text": "Equipment selection should account for well depth, operating regime, fluid composition, temperature, pressure and abrasiveness."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Barrels",
+      "body": "Barrels for sucker rod pumps can be supplied in several variants to suit different operating conditions. The choice is based on well parameters, fluid properties and the required level of durability.",
+      "bullets": [
+        "chrome-plated barrels",
+        "nickel-carbide coated barrels",
+        "chrome-plated brass barrels",
+        "steel barrels with carbonitriding and chrome plating"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Plungers",
+      "body": "Plungers can be supplied in designs suited to different operating conditions. Dedicated solutions are available for sandy wells, corrosive environments and abrasive service.",
+      "bullets": [
+        "grooved plungers for wells with sand production",
+        "corrosion-resistant Monel-coated plungers",
+        "PA-type plungers with chemical and abrasion resistance"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Spare parts and components",
+      "body": "A wide range of spare parts and components can be supplied for the assembly, maintenance and repair of pump systems.",
+      "bullets": [
+        "barrels",
+        "plungers and plunger assemblies",
+        "valve assemblies",
+        "valve balls and seats",
+        "couplings and nipples",
+        "seating and locking elements",
+        "protective filters",
+        "sand cleaner elements",
+        "other downhole components"
+      ]
     }
   ],
   "cta": {
-    "title": "Need help selecting equipment?",
-    "text": "Let us determine the pump type and configuration for your well conditions together.",
+    "title": "Let's select the right pump solution for your well conditions",
+    "text": "Share your well parameters and operating conditions, and we will support you in selecting suitable equipment.",
     "button": "Send a request"
   }
 }

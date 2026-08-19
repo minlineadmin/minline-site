@@ -1,33 +1,104 @@
 {
   "slug": "xidmetler",
   "navLabel": "Xidmətlər",
-  "metaTitle": "Xidmətlər — Minline Systems",
-  "metaDescription": "Avadanlığın seçimi və layihələndirmə, komplekt təchizat, sahə quraşdırması və sınaq (SAT/commissioning), 24/7 texniki dəstək.",
-  "intro": {
-    "title": "Xidmətlər",
-    "lead": "Avadanlığın seçimindən başlayaraq sahədə istismara verməyə və uzunmüddətli texniki dəstəyə qədər tam xidmət dövrü."
+  "metaTitle": "Xidmətlər — texniki audit, quraşdırma, servis və modernləşdirmə | Minline Systems",
+  "metaDescription": "Texniki audit və avadanlıq seçimi, quraşdırma və istismara vermə, planlı servis, təmir və modernləşdirmə üzrə kompleks texniki dəstək.",
+  "hero": {
+    "title": "Avadanlıq seçimindən istismara qədər texniki dəstək",
+    "lead": "Minline Systems layihənin texniki tələblərinin təhlilindən başlayaraq avadanlıq seçimi, quraşdırma, istismara vermə, servis, təmir və modernləşdirmə mərhələlərinə qədər kompleks yanaşma təklif edir. Məqsəd avadanlığın dayanıqlı işləməsini təmin etmək və əməliyyat risklərini azaltmaqdır.",
+    "ctaLabel": "Xidmətlərə baxın"
   },
-  "items": [
+  "cardsAnchor": "services-grid",
+  "cardsTitle": "Əsas Xidmətlər",
+  "cards": [
     {
-      "title": "Layihələndirmə və Avadanlıq Seçimi",
-      "text": "Obyektin texniki tələblərinin təhlili və quyu şəraitinə uyğun optimal həllin müəyyən edilməsi."
+      "title": "Texniki Audit və Avadanlıq Seçimi",
+      "text": "Quyu və istismar şəraitinin təhlili əsasında uyğun texniki həll və avadanlıq konfiqurasiyasının seçilməsi."
     },
     {
-      "title": "Komplekt Təchizat",
-      "text": "Beynəlxalq istehsalçılarla birbaşa tərəfdaşlıq əsasında avadanlığın və ehtiyat hissələrinin çatdırılması."
+      "title": "Quraşdırma və İstismara Verilmə",
+      "text": "Avadanlığın quraşdırılması, sazlanması, iş rejiminə çıxarılması və zərurət olduqda personalın təlimi."
     },
     {
-      "title": "Sahə Quraşdırması və Sınaq (SAT)",
-      "text": "Quraşdırma, sazlama və sahədə qəbul sınaqlarının (SAT/commissioning) təşkili."
+      "title": "Servis və Texniki Xidmət",
+      "text": "Planlı texniki xidmət, nasazlıqlara operativ reaksiya və iş rejiminin optimallaşdırılması üzrə dəstək."
     },
     {
-      "title": "24/7 Texniki Dəstək",
-      "text": "İstismar dövründə operativ texniki dəstək və personal üçün təlimlər."
+      "title": "Təmir və Modernləşdirmə",
+      "text": "Avadanlığın iş qabiliyyətinin bərpası, qovşaqların yenilənməsi və səmərəliliyin artırılması."
     }
   ],
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Texniki Audit və Avadanlıq Seçimi",
+      "body": "Texniki audit zamanı istismar şəraiti, quyu xüsusiyyətləri, mövcud infrastruktur və layihə məqsədləri təhlil edilir. Bu məlumatlar əsasında uyğun avadanlıq və konfiqurasiya seçilir. Məqsəd texniki tələblər, layihə büdcəsi və istismar səmərəliliyi arasında optimal balans yaratmaqdır."
+    },
+    {
+      "type": "text",
+      "title": "Quraşdırma və İstismara Verilmə",
+      "body": "Bu mərhələ avadanlığın obyektə quraşdırılmasını, sazlama işlərini və texniki tapşırığa uyğun iş rejiminə çıxarılmasını əhatə edir. Zərurət olduqda sifarişçi heyətinə istismar üzrə təlim də təqdim oluna bilər."
+    },
+    {
+      "type": "text",
+      "title": "Servis və Texniki Xidmət",
+      "body": "Servis xidməti planlı profilaktikanı, texniki vəziyyətin qiymətləndirilməsini, köhnəlmiş qovşaqların müəyyən edilməsini və istismar sabitliyinin qorunmasına yönəlmiş tədbirləri əhatə edir. Əsas məqsəd dayanma riskini azaltmaq və avadanlığın xidmət müddətini uzatmaqdır."
+    },
+    {
+      "type": "text",
+      "title": "Təmir və Modernləşdirmə",
+      "body": "Təmir və modernləşdirmə mövcud avadanlığın səmərəliliyinin artırılmasına, ayrı-ayrı qovşaqların yenilənməsinə və sistemin xidmət müddətinin uzadılmasına kömək edir. Bu yanaşma tam dəyişiklik olmadan texniki nəticəni yaxşılaşdırmağa imkan verir."
+    }
+  ],
+  "process": {
+    "title": "Layihənin Həyata Keçirilməsi",
+    "steps": [
+      {
+        "title": "Konsultasiya və texniki tapşırıq",
+        "text": "Tələblərin, istismar şəraitinin və layihə məqsədlərinin ilkin təhlili."
+      },
+      {
+        "title": "Texniki təklifin hazırlanması",
+        "text": "Müştərinin ehtiyaclarına uyğun texniki həllin və konfiqurasiyanın formalaşdırılması."
+      },
+      {
+        "title": "Razılaşma və planlaşdırma",
+        "text": "Təchizat şərtləri, müddətlər, qiymət və iş planının razılaşdırılması."
+      },
+      {
+        "title": "İcra",
+        "text": "Təchizat, quraşdırma, sazlama, test və işə hazırlıq mərhələsi."
+      },
+      {
+        "title": "Nəzarət və təhvil",
+        "text": "Yekun yoxlama, sənədləşmə, zəmanət və sonrakı texniki dəstək."
+      }
+    ]
+  },
+  "why": {
+    "title": "Niyə bu yanaşma effektivdir",
+    "items": [
+      {
+        "title": "Operativlik",
+        "text": "Tapşırıqlara çevik reaksiya və mərhələlərin ardıcıl icrası."
+      },
+      {
+        "title": "Texniki ekspertiza",
+        "text": "Sənaye yönümlü bilik və praktiki tətbiq yanaşması."
+      },
+      {
+        "title": "Zəmanətli keyfiyyət",
+        "text": "Sınaqdan keçmiş həllər və etibarlı komponentlərə əsaslanan yanaşma."
+      },
+      {
+        "title": "Fərdi yanaşma",
+        "text": "Hər yatağın və hər layihənin spesifikası nəzərə alınmaqla həll seçimi."
+      }
+    ]
+  },
   "cta": {
-    "title": "Xidmətlərimizə ehtiyacınız var?",
-    "text": "Layihənizin şərtlərini bizə göndərin — texniki-kommersiya təklifi ilə geri dönək.",
-    "button": "Sorğu göndərin"
+    "title": "Layihəniz üçün texniki dəstəyə ehtiyac var?",
+    "text": "Tələblərinizi bizimlə bölüşün, uyğun həll və iş modeli təklif edək.",
+    "button": "Əlaqə saxlayın"
   }
 }

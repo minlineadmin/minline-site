@@ -2,32 +2,32 @@
   "slug": "about",
   "navLabel": "About",
   "metaTitle": "About us — Minline Systems",
-  "metaDescription": "Minline Systems LLC — a partner specializing in the integration of modern technologies, SCADA systems and engineering solutions in Azerbaijan's oil, gas and industrial sector.",
+  "metaDescription": "Minline Systems LLC — a technical partner in Azerbaijan's oil and gas sector: digital field management and artificial lift equipment.",
   "intro": {
     "title": "About us",
     "paragraphs": [
-      "Minline Systems LLC is a reliable partner specializing in the integration of modern technologies, SCADA automation systems and engineering solutions in Azerbaijan's oil, gas and industrial sector.",
-      "Through exclusive partnership with international manufacturers, the company provides oil and gas production enterprises, operating companies and contractors with complete supply, engineering, site installation (SAT/commissioning) and technical support services. Our goal is to increase production efficiency at local industrial facilities and accelerate digital transformation."
+      "Minline Systems LLC is a technical partner working in Azerbaijan's oil and gas sector. Our work is built on two directions: digital field management (Smart Field and SCADA) and the supply of downhole equipment for artificial lift production.",
+      "Working with international manufacturers — Kunlun Digital Technology in industrial automation and UKR-LAND in sucker rod pumps — allows us to offer producers, operating companies and contractors a single approach covering equipment selection, supply, installation and ongoing technical support."
     ]
   },
   "advantages": {
-    "title": "Why Minline Systems?",
+    "title": "How we work",
     "items": [
       {
-        "title": "International Certification",
-        "text": "All equipment we supply fully complies with API Spec 11AX, ISO and international industry standards."
+        "title": "We start from the technical requirements",
+        "text": "Work begins with an analysis of well parameters, operating conditions and project objectives — equipment selection is the outcome of that analysis."
       },
       {
-        "title": "Supply Exclusivity",
-        "text": "Direct partnership with global manufacturers ensures competitive pricing and flexible supply terms."
+        "title": "Direct contact with the manufacturer",
+        "text": "Technical questions, configurations and non-standard designs are agreed directly with the manufacturer."
       },
       {
-        "title": "Comprehensive Engineering Support",
-        "text": "From equipment selection through site acceptance testing (SAT) to 24/7 responsive technical support."
+        "title": "The full project cycle",
+        "text": "Supply, installation, commissioning, service and modernization are carried out under a single line of responsibility."
       },
       {
-        "title": "Solutions for Challenging Conditions",
-        "text": "Special modifications adapted to Azerbaijan's local geological and operating conditions: viscous oil, sand production, high pressure."
+        "title": "Long-term cooperation",
+        "text": "The goal is not a one-off sale, but stable equipment performance across its whole service life."
       }
     ]
   },

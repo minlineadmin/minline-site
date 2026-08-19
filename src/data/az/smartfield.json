@@ -1,35 +1,71 @@
 {
   "slug": "smart-field-scada",
   "navLabel": "Smart Field & SCADA",
-  "metaTitle": "İntellektual Neft və Qaz Hasilatı (Smart Field & SCADA) — Minline Systems",
-  "metaDescription": "Sənaye 4.0 standartları ilə neft-qaz yataqlarının rəqəmsallaşdırılması: Smart Field idarəetməsi, SCADA avtomatlaşdırma, proqnozlaşdırıcı analitika və enerji optimallaşdırılması.",
+  "metaTitle": "Smart Field & SCADA — neft-qaz yataqlarının rəqəmsal idarə edilməsi | Minline Systems",
+  "metaDescription": "Real vaxt monitorinqi, SCADA əsaslı avtomatlaşdırma, proqnozlaşdırıcı analitika və enerji optimallaşdırılması üzrə həllər.",
   "eyebrow": "Fəaliyyət İstiqaməti 01",
-  "intro": {
-    "title": "Sənaye 4.0 Standartları ilə Neft-Qaz Yataqlarının Rəqəmsallaşdırılması",
-    "lead": "\"Minline Systems\" neft və qaz yataqlarının effektivliyini artırmaq, hasilat xərclərini azaltmaq və əməliyyat təhlükəsizliyini təmin etmək üçün qabaqcıl rəqəmsal həllər təqdim edir."
+  "hero": {
+    "title": "Neft-qaz yataqlarının rəqəmsal idarə edilməsi",
+    "lead": "Smart Field və SCADA həlləri quyular, hasilat obyektləri və texnoloji proseslər üzrə məlumatların real vaxt rejimində toplanmasına, izlənməsinə və vahid idarəetmə mühitində istifadə olunmasına imkan verir. Bu yanaşma əməliyyat şəffaflığını artırır, qərarverməni sürətləndirir və proseslərin daha səmərəli idarə edilməsinə dəstək verir.",
+    "ctaLabel": "Həll sahələrinə baxın"
   },
-  "blocksTitle": "Həll Sahələri",
-  "blocks": [
+  "cardsAnchor": "sf-solutions",
+  "cardsTitle": "Həll Sahələri",
+  "cards": [
     {
-      "title": "Ağıllı Yataq (Smart Field) İdarəetməsi",
-      "text": "Əşyaların İnterneti (IoT) sensorları və Big Data analitikası əsasında quyuların və hasilat obyektlərinin real vaxt rejimində mərkəzləşdirilmiş monitorinqi."
+      "title": "Ağıllı Yataq İdarəetməsi",
+      "text": "IoT sensorları və əməliyyat məlumatları əsasında quyuların və hasilat obyektlərinin real vaxt rejimində mərkəzləşdirilmiş monitorinqi."
     },
     {
       "title": "SCADA və İnteqrasiya Olunmuş Avtomatlaşdırma",
-      "text": "Qazma, hasilat, nəqletmə və emal proseslərində insan faktorunu minimuma endirən, yüksək dəqiqlikli avtomatlaşdırılmış idarəetmə sistemləri."
+      "text": "Qazma, hasilat, nəql və emal proseslərinin vahid nəzarət mühitində izlənməsi və idarə edilməsi."
     },
     {
-      "title": "Proqnozlaşdırıcı Analitika (Predictive Maintenance)",
-      "text": "Süni intellekt alətləri vasitəsilə avadanlıqların aşınmasını və mürəkkəbləşmələri öncədən təyin edən diaqnostika platformaları."
+      "title": "Proqnozlaşdırıcı Analitika",
+      "text": "Avadanlığın aşınma əlamətlərini və potensial nasazlıqları əvvəlcədən müəyyən etməyə kömək edən analitik alətlər."
     },
     {
       "title": "Enerji Optimallaşdırılması",
-      "text": "İstehsalat proseslərində enerji itkilərinin azaldılması və karbon izinin minimuma endirilməsi üzrə rəqəmsal modullar."
+      "text": "İstehsalat proseslərində enerji itkilərinin azaldılmasına və resurslardan daha səmərəli istifadəyə yönəlmiş rəqəmsal həllər."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Ağıllı Yataq İdarəetməsi",
+      "body": "Müasir neft-qaz yataqlarında çoxsaylı obyektlərdən daxil olan məlumatların vahid mühitdə birləşdirilməsi əməliyyat mənzərəsini aydın görməyə imkan verir. Ağıllı yataq idarəetməsi quyuların, hasilat xətlərinin və əsas texnoloji nöqtələrin monitorinqini mərkəzləşdirərək operatorlara daha operativ və əsaslandırılmış qərarlar qəbul etməyə kömək edir.",
+      "bullets": [
+        "quyular və hasilat obyektləri üzrə real vaxt müşahidəsi",
+        "məlumatların mərkəzləşdirilmiş toplanması",
+        "əməliyyat göstəricilərinin vizuallaşdırılması",
+        "analitika üçün vahid informasiya bazası"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "SCADA və İnteqrasiya Olunmuş Avtomatlaşdırma",
+      "body": "SCADA əsaslı yanaşma texnoloji proseslərə nəzarəti vahid platformada toplamağa imkan verir. Ayrı-ayrı obyektlərdən daxil olan məlumatlar mərkəzləşdirilmiş şəkildə izlənir, proseslər daha dəqiq idarə olunur və insan faktorundan asılılıq azalır. Bu, xüsusilə çoxsaylı obyektlərin iştirak etdiyi hasilat və emal zəncirində vacib üstünlük yaradır.",
+      "bullets": [
+        "vahid nəzarət və monitorinq mühiti",
+        "proseslərin daha operativ idarə edilməsi",
+        "əməliyyat intizamının artırılması",
+        "avtomatlaşdırma səviyyəsinin yüksəldilməsi"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Proqnozlaşdırıcı Analitika",
+      "body": "Avadanlıq üzrə toplanan əməliyyat məlumatlarının analizi potensial nasazlıqların erkən əlamətlərini müəyyən etməyə kömək edir. Bu yanaşma texniki xidməti yalnız nasazlıq baş verdikdən sonra deyil, avadanlığın faktiki vəziyyətinə əsasən planlaşdırmağa imkan verir."
+    },
+    {
+      "type": "text",
+      "title": "Enerji Optimallaşdırılması",
+      "body": "Rəqəmsal nəzarət və analitika istehsalat proseslərində enerji sərfiyyatının izlənməsinə, itki mənbələrinin aşkar edilməsinə və resurslardan daha səmərəli istifadəyə kömək edir. Məqsəd texnoloji dayanıqlığı qorumaqla istehsal effektivliyini yüksəltməkdir."
     }
   ],
   "cta": {
-    "title": "Layihəniz üçün həll axtarırsınız?",
-    "text": "Mütəxəssislərimiz sizin obyektin şəraitinə uyğun rəqəmsallaşdırma həllini seçməkdə kömək edəcək.",
-    "button": "Sorğu göndərin"
+    "title": "Rəqəmsallaşdırma ehtiyaclarınızı birlikdə qiymətləndirək",
+    "text": "Mövcud infrastrukturunuz, monitorinq ehtiyaclarınız və avtomatlaşdırma prioritetləriniz əsasında uyğun yanaşmanı müəyyənləşdirək.",
+    "button": "Bizimlə əlaqə"
   }
 }

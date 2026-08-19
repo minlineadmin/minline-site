@@ -8,7 +8,10 @@ const homeHref = nav.find((i) => i.key === 'home')?.href ?? '/';
 ---
 <header class="site-header">
   <div class="container">
-    <a class="brand" href={homeHref}>Minline <span>Systems</span></a>
+    <a class="brand" href={homeHref}>
+      <img class="brand-mark" src="/img/logo-mark.png" alt="" width="34" height="36" />
+      <span class="brand-text">Minline <span>Systems</span></span>
+    </a>
     <nav class="site-nav" aria-label={site.navAriaLabel}>
       {nav.map((item) => (
         <a href={item.href} aria-current={item.key === sectionKey ? 'page' : undefined}>

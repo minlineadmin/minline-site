@@ -1,33 +1,104 @@
 {
   "slug": "services",
   "navLabel": "Services",
-  "metaTitle": "Services — Minline Systems",
-  "metaDescription": "Engineering and equipment selection, complete supply, site installation and acceptance testing (SAT/commissioning), 24/7 technical support.",
-  "intro": {
-    "title": "Services",
-    "lead": "A full cycle — from equipment selection through commissioning on site to long-term technical support."
+  "metaTitle": "Services — technical audit, installation, service and upgrades | Minline Systems",
+  "metaDescription": "Technical audit and equipment selection, installation and commissioning, planned service, repair and modernization — end-to-end technical support.",
+  "hero": {
+    "title": "Technical support from equipment selection through operation",
+    "lead": "Minline Systems offers an end-to-end approach — from analysing a project's technical requirements through equipment selection, installation, commissioning, service, repair and modernization. The goal is to keep equipment running reliably and to reduce operational risk.",
+    "ctaLabel": "View our services"
   },
-  "items": [
+  "cardsAnchor": "services-grid",
+  "cardsTitle": "Core Services",
+  "cards": [
     {
-      "title": "Engineering and Equipment Selection",
-      "text": "Analysis of the site's technical requirements and definition of the optimal solution for the well conditions."
+      "title": "Technical Audit and Equipment Selection",
+      "text": "Selecting the right technical solution and equipment configuration based on an analysis of well and operating conditions."
     },
     {
-      "title": "Complete Supply",
-      "text": "Delivery of equipment and spare parts based on direct partnership with international manufacturers."
+      "title": "Installation and Commissioning",
+      "text": "Installation, adjustment, bringing equipment to its working regime and, where required, training the operating personnel."
     },
     {
-      "title": "Site Installation and Testing (SAT)",
-      "text": "Organization of installation, commissioning and site acceptance testing (SAT)."
+      "title": "Service and Maintenance",
+      "text": "Planned maintenance, prompt response to failures and support in optimising the operating regime."
     },
     {
-      "title": "24/7 Technical Support",
-      "text": "Responsive technical support throughout operation and training for your personnel."
+      "title": "Repair and Modernization",
+      "text": "Restoring equipment performance, renewing assemblies and improving efficiency."
     }
   ],
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Technical Audit and Equipment Selection",
+      "body": "A technical audit examines operating conditions, well characteristics, existing infrastructure and project objectives. Suitable equipment and configuration are then selected on that basis. The aim is an optimal balance between technical requirements, project budget and operating efficiency."
+    },
+    {
+      "type": "text",
+      "title": "Installation and Commissioning",
+      "body": "This stage covers installation at the site, adjustment work and bringing the equipment to the working regime defined in the technical specification. Where required, operating training can also be provided to the client's personnel."
+    },
+    {
+      "type": "text",
+      "title": "Service and Maintenance",
+      "body": "Service covers planned preventive maintenance, assessment of technical condition, identification of worn assemblies and measures to preserve operating stability. The main goal is to reduce downtime risk and extend equipment service life."
+    },
+    {
+      "type": "text",
+      "title": "Repair and Modernization",
+      "body": "Repair and modernization help improve the efficiency of existing equipment, renew individual assemblies and extend the service life of the system. This approach improves the technical outcome without a full replacement."
+    }
+  ],
+  "process": {
+    "title": "How a Project Runs",
+    "steps": [
+      {
+        "title": "Consultation and technical specification",
+        "text": "Initial analysis of requirements, operating conditions and project objectives."
+      },
+      {
+        "title": "Preparing the technical proposal",
+        "text": "Shaping a technical solution and configuration around the client's needs."
+      },
+      {
+        "title": "Agreement and planning",
+        "text": "Agreeing supply terms, schedule, pricing and the work plan."
+      },
+      {
+        "title": "Execution",
+        "text": "Supply, installation, adjustment, testing and readiness for operation."
+      },
+      {
+        "title": "Control and handover",
+        "text": "Final inspection, documentation, warranty and subsequent technical support."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why this approach works",
+    "items": [
+      {
+        "title": "Responsiveness",
+        "text": "Flexible response to tasks and consistent execution of each stage."
+      },
+      {
+        "title": "Technical expertise",
+        "text": "Industry knowledge combined with a practical approach to applying it."
+      },
+      {
+        "title": "Assured quality",
+        "text": "An approach built on proven solutions and reliable components."
+      },
+      {
+        "title": "Case-by-case approach",
+        "text": "Solutions chosen with the specifics of each field and each project in mind."
+      }
+    ]
+  },
   "cta": {
-    "title": "Need our services?",
-    "text": "Send us your project requirements — we will come back with a technical and commercial proposal.",
-    "button": "Send a request"
+    "title": "Need technical support for your project?",
+    "text": "Share your requirements with us and we will propose a suitable solution and working model.",
+    "button": "Contact us"
   }
 }

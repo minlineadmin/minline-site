@@ -65,6 +65,11 @@ const ICONS = {
   </svg>`
 };
 
+// Mirrors src/components/MarbleVeins.astro
+const VEINS = readFileSync(join(root, 'src/components/MarbleVeins.astro'), 'utf8')
+  .replace(/^---[\s\S]*?---\n/, '')
+  .trim();
+
 function header(locale, currentKey) {
   const site = data[locale].site;
   const links = sections
@@ -79,7 +84,10 @@ function header(locale, currentKey) {
     return `<a href="${pagePath(l, currentKey)}"${cur} lang="${l}">${l.toUpperCase()}</a>`;
   }).join('');
   return `<header class="site-header"><div class="container">
-    <a class="brand" href="${pagePath(locale, 'home')}">Minline <span>Systems</span></a>
+    <a class="brand" href="${pagePath(locale, 'home')}">
+      <img class="brand-mark" src="/img/logo-mark.png" alt="" width="34" height="36" />
+      <span class="brand-text">Minline <span>Systems</span></span>
+    </a>
     <nav class="site-nav" aria-label="${esc(site.navAriaLabel)}">${links}</nav>
     <div class="lang-switcher">${langs}</div>
   </div></header>`;
@@ -112,6 +120,38 @@ function quoteForm(locale) {
     <button class="btn btn-primary" type="submit">${esc(f.submit)}</button>
     <p class="form-note">${esc(f.pendingNote)}</p>
   </form>`;
+}
+
+// Mirrors src/components/ContentBlock.astro
+function contentBlock(b) {
+  const parts = [];
+  if (b.title) parts.push(`<h2>${esc(b.title)}</h2>`);
+  if (b.body) parts.push(`<p>${esc(b.body)}</p>`);
+  if (b.bullets)
+    parts.push(`<ul class="point-list">${b.bullets.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>`);
+  if (b.type === 'specs' && b.specs)
+    parts.push(`<div class="specs">${
+      b.specsTitle ? `<p class="specs-title">${esc(b.specsTitle)}</p>` : ''
+    }<dl>${b.specs
+      .map((r) => `<dt>${esc(r.label)}</dt><dd>${esc(r.value)}</dd>`)
+      .join('')}</dl></div>`);
+  if (b.type === 'columns' && b.columns)
+    parts.push(`<div class="columns">${b.columns
+      .map((col) => `<div><h3>${esc(col.title)}</h3><p>${esc(col.text)}</p></div>`)
+      .join('')}</div>`);
+  if (b.type === 'subitems' && b.subitems)
+    parts.push(`<div class="subitems">${b.subitems
+      .map((i) => `<div class="subitem"><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></div>`)
+      .join('')}</div>`);
+  if (b.image)
+    parts.push(`<figure class="block-figure"><img src="${esc(b.image.src)}" alt="${esc(
+      b.image.alt
+    )}" loading="lazy" />${
+      b.image.caption ? `<figcaption>${esc(b.image.caption)}</figcaption>` : ''
+    }</figure>`);
+  return `<section class="block"><div class="container"><div class="block-body">${parts.join(
+    ''
+  )}</div></div></section>`;
 }
 
 const ctaBlock = (locale, c) => `<section class="section"><div class="container">
@@ -150,23 +190,38 @@ const templates = {
     return `
     <section class="section section-lead"><div class="container">
       <p class="eyebrow">${esc(c.eyebrow)}</p>
-      <h1>${esc(c.intro.title)}</h1>
-      <div class="section-intro"><p class="lead">${esc(c.intro.lead)}</p></div>
+      <h1>${esc(c.hero.title)}</h1>
+      <div class="section-intro"><p class="lead">${esc(c.hero.lead)}</p>
+      ${c.hero.ctaLabel ? `<a class="btn btn-ghost" href="#${esc(c.cardsAnchor)}">${esc(c.hero.ctaLabel)}</a>` : ''}
+      </div>
     </div></section>
-    <section class="section"><div class="container">
-      <h2>${esc(c.blocksTitle)}</h2>
-      <div class="grid">${c.blocks.map(card).join('')}</div>
+    <section class="section" id="${esc(c.cardsAnchor)}"><div class="container">
+      <h2>${esc(c.cardsTitle)}</h2>
+      <div class="grid">${c.cards.map(card).join('')}</div>
     </div></section>
+    ${c.blocks.map(contentBlock).join('')}
     ${ctaBlock(locale, c)}`;
   },
   Services(locale, c) {
     return `
     <section class="section section-lead"><div class="container">
-      <h1>${esc(c.intro.title)}</h1>
-      <div class="section-intro"><p class="lead">${esc(c.intro.lead)}</p></div>
+      <h1>${esc(c.hero.title)}</h1>
+      <div class="section-intro"><p class="lead">${esc(c.hero.lead)}</p>
+      ${c.hero.ctaLabel ? `<a class="btn btn-ghost" href="#${esc(c.cardsAnchor)}">${esc(c.hero.ctaLabel)}</a>` : ''}
+      </div>
+    </div></section>
+    <section class="section" id="${esc(c.cardsAnchor)}"><div class="container">
+      <h2>${esc(c.cardsTitle)}</h2>
+      <div class="grid">${c.cards.map(card).join('')}</div>
+    </div></section>
+    ${c.blocks.map(contentBlock).join('')}
+    <section class="section"><div class="container">
+      <h2>${esc(c.process.title)}</h2>
+      ${beadList(c.process.steps)}
     </div></section>
     <section class="section"><div class="container">
-      ${beadList(c.items)}
+      <h2>${esc(c.why.title)}</h2>
+      ${featureList(c.why.items)}
     </div></section>
     ${ctaBlock(locale, c)}`;
   },
@@ -226,6 +281,7 @@ function page(locale, key, template) {
     <link rel="stylesheet" href="/styles/global.css" />
   </head>
   <body>
+    ${VEINS}
     ${header(locale, key)}
     <main>${templates[template](locale, c)}</main>
     ${footer(locale)}
@@ -245,4 +301,5 @@ for (const locale of LOCALES) {
 }
 mkdirSync(join(out, 'styles'), { recursive: true });
 cpSync(join(root, 'src/styles/global.css'), join(out, 'styles/global.css'));
+cpSync(join(root, 'public/img'), join(out, 'img'), { recursive: true });
 console.log(`Preview built: ${count} pages -> dist-preview/`);

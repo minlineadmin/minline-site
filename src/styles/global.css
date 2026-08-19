@@ -22,12 +22,8 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background:
-    /* faint marble veining: long diagonal light streaks */
-    linear-gradient(115deg, transparent 42%, rgba(255, 255, 255, 0.012) 45%, transparent 48%),
-    linear-gradient(100deg, transparent 68%, rgba(255, 255, 255, 0.015) 72%, transparent 75%),
-    linear-gradient(130deg, transparent 15%, rgba(201, 162, 75, 0.012) 20%, transparent 26%),
-    var(--bg);
+  position: relative;
+  background: var(--bg);
   color: var(--text);
   font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.65;
@@ -55,6 +51,33 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Header ---------- */
 
+/* ---------- Marble veins (decorative, two corners only) ---------- */
+
+.veins {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  color: var(--gold);
+}
+.veins svg {
+  position: absolute;
+  width: clamp(300px, 34vw, 520px);
+  height: clamp(300px, 34vw, 520px);
+  opacity: 0.28;
+}
+.veins-tl { top: 0; left: 0; }
+.veins-br { bottom: 0; right: 0; }
+
+@media (max-width: 760px) {
+  .veins svg { width: 62vw; height: 62vw; opacity: 0.22; }
+}
+
+.site-header,
+main,
+.site-footer { position: relative; z-index: 1; }
+
 .site-header {
   border-bottom: 1px solid var(--line);
   background: rgba(10, 10, 13, 0.9);
@@ -72,6 +95,9 @@ a:hover { text-decoration: underline; }
   flex-wrap: nowrap;
 }
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -79,8 +105,14 @@ a:hover { text-decoration: underline; }
   text-transform: uppercase;
   color: var(--text);
 }
-.brand span { color: var(--gold); }
+.brand-mark { width: 34px; height: auto; display: block; flex-shrink: 0; }
+.brand-text span { color: var(--gold); }
 .brand:hover { text-decoration: none; }
+
+@media (max-width: 420px) {
+  .brand { gap: 8px; font-size: 0.85rem; letter-spacing: 0.12em; }
+  .brand-mark { width: 28px; }
+}
 
 .site-nav {
   display: flex;
@@ -473,4 +505,122 @@ a:hover { text-decoration: underline; }
   .feature-list li { padding-left: 30px; }
   .feature-list li::before { left: 2px; }
   .bead-list li { padding-left: 48px; }
+}
+
+/* ---------- Rich content blocks (direction & service pages) ----------
+   Block types come from the content files: text (optional bullets),
+   specs (label/value pairs), columns (two parallel notes), subitems
+   (a lead paragraph plus named sub-cases). Adding a block = a JSON entry,
+   never a template change. */
+
+.block { padding: 74px 0; border-bottom: 1px solid var(--line); }
+.block:last-of-type { border-bottom: 1px solid var(--line); }
+.block-body { max-width: 760px; }
+.block-body > p { font-size: 1.02rem; }
+
+.block h2 { margin-bottom: 0.7em; }
+
+/* bulleted supporting points */
+.point-list {
+  list-style: none;
+  padding: 0;
+  margin: 26px 0 0;
+  display: grid;
+  gap: 12px;
+  max-width: 700px;
+}
+.point-list li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--text-muted);
+  font-size: 0.96rem;
+}
+.point-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.85;
+}
+
+/* specifications: label / value pairs */
+.specs {
+  margin: 34px 0 0;
+  border-top: 1px solid var(--line);
+  max-width: 760px;
+}
+.specs-title {
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 4px;
+  padding-top: 26px;
+}
+.specs dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(160px, auto) 1fr;
+  gap: 0;
+}
+.specs dt,
+.specs dd {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  margin: 0;
+  font-size: 0.94rem;
+}
+.specs dt { color: var(--text-muted); padding-right: 24px; }
+.specs dd { color: var(--text); }
+
+/* two parallel notes */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 34px;
+  margin-top: 30px;
+  max-width: 860px;
+}
+.columns h3 {
+  color: var(--text);
+  padding-top: 18px;
+  border-top: 1px solid rgba(201, 162, 75, 0.3);
+}
+.columns p { margin: 0; font-size: 0.96rem; }
+
+/* named sub-cases under a lead paragraph */
+.subitems {
+  margin: 32px 0 0;
+  display: grid;
+  gap: 26px;
+  max-width: 760px;
+}
+.subitem { padding-left: 22px; border-left: 2px solid var(--gold-dim); }
+.subitem h3 { color: var(--text); margin-bottom: 0.35em; }
+.subitem p { margin: 0; font-size: 0.96rem; }
+
+/* image slot — renders only when the content file supplies one */
+.block-figure { margin: 32px 0 0; }
+.block-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.block-figure figcaption {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 620px) {
+  .block { padding: 54px 0; }
+  .specs dl { grid-template-columns: 1fr; }
+  .specs dt { padding-bottom: 0; border-bottom: none; }
+  .specs dd { padding-top: 4px; }
 }

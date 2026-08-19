@@ -1,4 +1,8 @@
 ---
+// Services: lead → service cards → detail blocks → delivery process → why → CTA.
+// The process uses bead-list (a real sequence); "why" uses feature-list
+// (parallel claims). Same distinction as elsewhere on the site.
+import ContentBlock from '../components/ContentBlock.astro';
 import { pagePath } from '../lib/content.js';
 
 const { locale, content } = Astro.props;
@@ -6,17 +10,51 @@ const contactsPath = pagePath(locale, 'contacts');
 ---
 <section class="section section-lead">
   <div class="container">
-    <h1>{content.intro.title}</h1>
+    <h1>{content.hero.title}</h1>
     <div class="section-intro">
-      <p class="lead">{content.intro.lead}</p>
+      <p class="lead">{content.hero.lead}</p>
+      {content.hero.ctaLabel && (
+        <a class="btn btn-ghost" href={`#${content.cardsAnchor}`}>{content.hero.ctaLabel}</a>
+      )}
     </div>
+  </div>
+</section>
+
+<section class="section" id={content.cardsAnchor}>
+  <div class="container">
+    <h2>{content.cardsTitle}</h2>
+    <div class="grid">
+      {content.cards.map((item) => (
+        <div class="card">
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{content.blocks.map((block) => <ContentBlock block={block} />)}
+
+<section class="section">
+  <div class="container">
+    <h2>{content.process.title}</h2>
+    <ul class="bead-list">
+      {content.process.steps.map((step) => (
+        <li>
+          <h3>{step.title}</h3>
+          <p>{step.text}</p>
+        </li>
+      ))}
+    </ul>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <ul class="bead-list">
-      {content.items.map((item) => (
+    <h2>{content.why.title}</h2>
+    <ul class="feature-list">
+      {content.why.items.map((item) => (
         <li>
           <h3>{item.title}</h3>
           <p>{item.text}</p>

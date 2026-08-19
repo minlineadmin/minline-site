@@ -2,32 +2,32 @@
   "slug": "haqqimizda",
   "navLabel": "Haqqımızda",
   "metaTitle": "Haqqımızda — Minline Systems",
-  "metaDescription": "\"Minline Systems\" MMC — Azərbaycanın neft-qaz və sənaye sektorunda müasir texnologiyaların, SCADA sistemlərinin və mühəndislik həllərinin inteqrasiyası üzrə ixtisaslaşmış tərəfdaş.",
+  "metaDescription": "\"Minline Systems\" MMC — Azərbaycanın neft-qaz sektoru üçün rəqəmsal idarəetmə həlləri və mexanikləşdirilmiş hasilat avadanlıqları üzrə texniki tərəfdaş.",
   "intro": {
     "title": "Haqqımızda",
     "paragraphs": [
-      "\"Minline Systems\" MMC — Azərbaycanın neft-qaz və sənaye sektorunda müasir texnologiyaların, SCADA avtomatlaşdırma sistemlərinin və mühəndislik həllərinin inteqrasiyası üzrə ixtisaslaşmış etibarlı tərəfdaşdır.",
-      "Şirkətimiz beynəlxalq istehsalçılarla eksklyuziv tərəfdaşlıq əsasında neft və qaz hasilatı müəssisələrinə, əməliyyat şirkətlərinə və podratçılara komplekt təchizat, layihələndirmə, sahə quraşdırması (SAT/commissioning) və texniki dəstək xidmətləri göstərir. Bizim məqsədimiz — yerli sənaye obyektlərində hasilatın səmərəliliyini artırmaq və rəqəmsal transformasiyanı sürətləndirməkdir."
+      "\"Minline Systems\" MMC Azərbaycanın neft-qaz sektorunda fəaliyyət göstərən texniki tərəfdaşdır. Fəaliyyətimiz iki istiqamət üzərində qurulub: yataqların rəqəmsal idarə edilməsi (Smart Field və SCADA) və mexanikləşdirilmiş hasilat üçün quyudibi avadanlıqların təchizatı.",
+      "Beynəlxalq istehsalçılarla — sənaye avtomatlaşdırması üzrə Kunlun Digital Technology və ştanqlı dərinlik nasosları üzrə UKR-LAND ilə — əməkdaşlıq bizə hasilat müəssisələrinə, əməliyyat şirkətlərinə və podratçılara avadanlıq seçimi, təchizat, quraşdırma və sonrakı texniki dəstək üzrə vahid yanaşma təklif etməyə imkan verir."
     ]
   },
   "advantages": {
-    "title": "Niyə Minline Systems?",
+    "title": "Necə işləyirik",
     "items": [
       {
-        "title": "Beynəlxalq Sertifikasiya",
-        "text": "Təqdim etdiyimiz bütün avadanlıqlar API Spec 11AX, ISO və beynəlxalq sənaye standartlarına tam cavab verir."
+        "title": "Texniki tələblərdən başlayırıq",
+        "text": "İş quyu parametrlərinin, istismar şəraitinin və layihə məqsədlərinin təhlili ilə başlayır — avadanlıq seçimi bu təhlilin nəticəsidir."
       },
       {
-        "title": "Layihə Eksklyuzivliyi",
-        "text": "Qlobal istehsalçılarla birbaşa tərəfdaşlıq sayəsində rəqabətədavamlı qiymət və çevik təchizat şərtləri."
+        "title": "İstehsalçı ilə birbaşa əlaqə",
+        "text": "Texniki suallar, konfiqurasiya və qeyri-standart icralar üzrə məsələlər istehsalçı ilə birbaşa razılaşdırılır."
       },
       {
-        "title": "Kompleks Mühəndislik Dəstəyi",
-        "text": "Avadanlığın seçimindən başlayaraq, sahədə sınaq-quraşdırma (SAT) və 24/7 operativ texniki dəstək."
+        "title": "Layihənin tam dövrü",
+        "text": "Təchizat, quraşdırma, istismara vermə, servis və modernləşdirmə mərhələləri vahid məsuliyyət altında aparılır."
       },
       {
-        "title": "Çətin Şəraitlər üçün Həllər",
-        "text": "Azərbaycanın yerli geoloji və istismar şəraitinə (özüllü neft, qum, yüksək təzyiq) uyğunlaşdırılmış xüsusi modifikasiyalar."
+        "title": "Uzunmüddətli əməkdaşlıq",
+        "text": "Məqsəd birdəfəlik satış deyil, avadanlığın istismar müddəti boyunca sabit işini dəstəkləməkdir."
       }
     ]
   },

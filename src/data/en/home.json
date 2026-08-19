@@ -2,55 +2,55 @@
   "slug": "",
   "navLabel": "Home",
   "metaTitle": "Minline Systems — modern solutions for the oil and gas industry",
-  "metaDescription": "Oilfield digitalization, SCADA automation systems and reliable supply of oil production equipment compliant with international API standards.",
+  "metaDescription": "Digitalization and SCADA-based control, sucker rod pumps and downhole equipment — technical solutions for the oil and gas sector.",
   "hero": {
     "title": "Modern solutions for the oil and gas industry",
-    "lead": "Oilfield digitalization, SCADA automation systems and reliable supply of oil production equipment compliant with international API standards.",
-    "ctaPrimary": "Explore our directions",
-    "ctaSecondary": "Get in touch"
+    "lead": "Minline Systems delivers technical solutions in digitalization, SCADA-based control, sucker rod pumps and downhole equipment. We help our clients make production processes more efficient, more resilient and easier to manage.",
+    "ctaPrimary": "View our directions",
+    "ctaSecondary": "Contact us"
   },
   "directions": {
-    "title": "Our Business Directions",
-    "lead": "Innovative digital technologies and artificial lift solutions tailored to the needs of Azerbaijan's oil and gas sector.",
+    "title": "Core Directions",
+    "lead": "Our work is built on two directions: digital field management and the supply of artificial lift equipment.",
     "items": [
       {
         "key": "smartfield",
-        "title": "Intelligent Oil and Gas Production (Smart Field & SCADA)",
-        "text": "Full digitalization of oil and gas fields, SCADA systems and AI-based control technologies.",
+        "title": "Smart Field & SCADA",
+        "text": "Real-time field monitoring, SCADA-based control, analytics and automation solutions.",
         "more": "Learn more"
       },
       {
         "key": "pumps",
-        "title": "Sucker Rod Pumps and Downhole Equipment",
-        "text": "High-precision sucker rod pumps and spare parts for oil production, compliant with the international API 11AX standard.",
+        "title": "Sucker Rod Pumps",
+        "text": "Sucker rod pumps built to API Spec 11AX requirements, special designs and downhole components.",
         "more": "Learn more"
       }
     ]
   },
   "advantages": {
-    "title": "Why Minline Systems?",
+    "title": "Why Minline Systems",
     "items": [
       {
-        "title": "International Certification",
-        "text": "All equipment we supply fully complies with API Spec 11AX, ISO and international industry standards."
+        "title": "A practical engineering approach",
+        "text": "Solutions are selected against real operating conditions, technical requirements and project objectives."
       },
       {
-        "title": "Supply Exclusivity",
-        "text": "Direct partnership with global manufacturers ensures competitive pricing and flexible supply terms."
+        "title": "An industry-focused portfolio",
+        "text": "Products and services are shaped to answer specific technical needs in oil and gas production."
       },
       {
-        "title": "Comprehensive Engineering Support",
-        "text": "From equipment selection through site acceptance testing (SAT) to 24/7 responsive technical support."
+        "title": "End-to-end support",
+        "text": "One approach from project analysis through supply, deployment, operation and ongoing support."
       },
       {
-        "title": "Solutions for Challenging Conditions",
-        "text": "Special modifications adapted to Azerbaijan's local geological and operating conditions: viscous oil, sand production, high pressure."
+        "title": "Reliability and stability",
+        "text": "The goal is not only to supply equipment, but to keep it running steadily over the long term."
       }
     ]
   },
   "cta": {
-    "title": "Get in touch",
-    "text": "Need technical solutions or a commercial proposal for your project? Our specialists are ready to help.",
+    "title": "Let's define the right technical solution for your project",
+    "text": "Share your operating conditions, technical requirements and priorities with us.",
     "button": "Send a request"
   }
 }

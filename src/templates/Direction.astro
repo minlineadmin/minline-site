@@ -1,6 +1,8 @@
 ---
-// Shared template for the two business directions (Smart Field & SCADA, sucker rod pumps).
-// Adding a third direction = 3 content files + one line in sections.json. No code change.
+// Shared template for the two business directions.
+// Page shape: lead → summary cards → typed content blocks → CTA.
+// A third direction = 3 content files + one line in sections.json. No code change.
+import ContentBlock from '../components/ContentBlock.astro';
 import { pagePath } from '../lib/content.js';
 
 const { locale, content } = Astro.props;
@@ -9,18 +11,21 @@ const contactsPath = pagePath(locale, 'contacts');
 <section class="section section-lead">
   <div class="container">
     <p class="eyebrow">{content.eyebrow}</p>
-    <h1>{content.intro.title}</h1>
+    <h1>{content.hero.title}</h1>
     <div class="section-intro">
-      <p class="lead">{content.intro.lead}</p>
+      <p class="lead">{content.hero.lead}</p>
+      {content.hero.ctaLabel && (
+        <a class="btn btn-ghost" href={`#${content.cardsAnchor}`}>{content.hero.ctaLabel}</a>
+      )}
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id={content.cardsAnchor}>
   <div class="container">
-    <h2>{content.blocksTitle}</h2>
+    <h2>{content.cardsTitle}</h2>
     <div class="grid">
-      {content.blocks.map((item) => (
+      {content.cards.map((item) => (
         <div class="card">
           <h3>{item.title}</h3>
           <p>{item.text}</p>
@@ -29,6 +34,8 @@ const contactsPath = pagePath(locale, 'contacts');
     </div>
   </div>
 </section>
+
+{content.blocks.map((block) => <ContentBlock block={block} />)}
 
 <section class="section">
   <div class="container">

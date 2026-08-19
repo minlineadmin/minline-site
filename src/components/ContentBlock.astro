@@ -1,0 +1,69 @@
+---
+// Renders one typed content block. Supported types:
+//   text     — heading + body, optional bullet points
+//   specs    — text block plus a label/value specification table
+//   columns  — text block plus two (or more) parallel notes
+//   subitems — text block plus named sub-cases
+// Every type may carry an optional `image` ({ src, alt, caption }); the figure
+// renders only when the content file supplies one, so pages stay valid before
+// the client's photography arrives.
+const { block } = Astro.props;
+const b = block;
+---
+<section class="block">
+  <div class="container">
+    <div class="block-body">
+      {b.title && <h2>{b.title}</h2>}
+      {b.body && <p>{b.body}</p>}
+
+      {b.bullets && (
+        <ul class="point-list">
+          {b.bullets.map((point) => <li>{point}</li>)}
+        </ul>
+      )}
+
+      {b.type === 'specs' && b.specs && (
+        <div class="specs">
+          {b.specsTitle && <p class="specs-title">{b.specsTitle}</p>}
+          <dl>
+            {b.specs.map((row) => (
+              <>
+                <dt>{row.label}</dt>
+                <dd>{row.value}</dd>
+              </>
+            ))}
+          </dl>
+        </div>
+      )}
+
+      {b.type === 'columns' && b.columns && (
+        <div class="columns">
+          {b.columns.map((col) => (
+            <div>
+              <h3>{col.title}</h3>
+              <p>{col.text}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {b.type === 'subitems' && b.subitems && (
+        <div class="subitems">
+          {b.subitems.map((item) => (
+            <div class="subitem">
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {b.image && (
+        <figure class="block-figure">
+          <img src={b.image.src} alt={b.image.alt} loading="lazy" />
+          {b.image.caption && <figcaption>{b.image.caption}</figcaption>}
+        </figure>
+      )}
+    </div>
+  </div>
+</section>
