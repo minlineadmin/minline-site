@@ -7,7 +7,7 @@
   --bg-elevated: #131318;
   --bg-card: #15151b;
   --text: #ece9e2;
-  --text-muted: #a39f95;
+  --text-muted: #b3aea2;
   --gold: #c9a24b;
   --gold-soft: #e3c67f;
   --gold-dim: rgba(201, 162, 75, 0.35);
@@ -57,38 +57,19 @@ a:hover { text-decoration: underline; }
 .veins {
   position: fixed;
   inset: 0;
-  overflow: hidden;
   pointer-events: none;
   z-index: 0;
+  background-image: url("/img/veins-field.svg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.34;
 }
-.veins span {
-  position: absolute;
-  display: block;
-  width: clamp(620px, 66vw, 1080px);
-  height: clamp(620px, 66vw, 1080px);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-}
-/* The falloff is baked into each tile, so the offsets only decide how much of
-   the dense corner stays off-canvas. */
-.veins-tl {
-  top: 0;
-  left: 0;
-  transform: translate(-27%, -27%);
-  opacity: 0.5;
-  background-image: url("/img/veins-tl.svg");
-}
-.veins-br {
-  bottom: 0;
-  right: 0;
-  transform: translate(11%, 11%);
-  opacity: 0.72;
-  background-image: url("/img/veins-br.svg");
-}
+/* The slab runs behind the text, so the veining has to sit far enough back
+   that it reads as stone and never competes with a letterform. One number
+   controls that: .veins opacity. */
 
 @media (max-width: 760px) {
-  .veins span { width: 132vw; height: 132vw; opacity: 0.5; }
+  .veins { opacity: 0.3; }
 }
 
 .site-header,

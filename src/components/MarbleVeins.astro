@@ -1,13 +1,10 @@
 ---
 // Decorative marble veining echoing the logo's stone.
-// The artwork lives in two generated SVG tiles under /img (see
-// scripts/gen_veins.py): a crack network of tapered, branching veins with a
-// warm haze and a mottled stone field, faded out from its own corner so the
-// tile never shows an edge. Kept as external files rather than inline markup —
-// they are ~50 KB each and would otherwise be repeated in all 18 pages.
+// The artwork is a generated SVG slab under /img (see scripts/gen_veins.py):
+// a crack network of tapered, branching veins with a warm haze over a mottled
+// stone field, spread across the whole surface with a dominant flow direction
+// and a few quiet zones. Kept as an external file rather than inline markup —
+// it would otherwise be repeated in all 18 pages.
 // Inert to pointer events and behind every content layer.
 ---
-<div class="veins" aria-hidden="true">
-  <span class="veins-tl"></span>
-  <span class="veins-br"></span>
-</div>
+<div class="veins" aria-hidden="true"></div>
