@@ -60,35 +60,35 @@ a:hover { text-decoration: underline; }
   overflow: hidden;
   pointer-events: none;
   z-index: 0;
-  color: var(--gold);
 }
-.veins svg {
+.veins span {
   position: absolute;
-  width: clamp(460px, 58vw, 940px);
-  height: clamp(460px, 58vw, 940px);
-  opacity: 0.62;
+  display: block;
+  width: clamp(620px, 66vw, 1080px);
+  height: clamp(620px, 66vw, 1080px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.6;
 }
-/* Each cluster is pushed a fifth of its own size off-canvas and masked from
-   its corner outwards: full strength in the empty corner, gone by the time it
-   reaches the reading column. Without the mask the strokes cross headings. */
+/* The falloff is baked into each tile, so the offsets only decide how much of
+   the dense corner stays off-canvas. */
 .veins-tl {
   top: 0;
   left: 0;
-  transform: translate(-17%, -17%);
-  transform-origin: 0 0;
-  -webkit-mask-image: radial-gradient(105% 105% at 0% 0%, #000 0%, #000 30%, rgba(0, 0, 0, 0.45) 52%, transparent 74%);
-  mask-image: radial-gradient(105% 105% at 0% 0%, #000 0%, #000 30%, rgba(0, 0, 0, 0.45) 52%, transparent 74%);
+  transform: translate(-27%, -27%);
+  opacity: 0.5;
+  background-image: url("/img/veins-tl.svg");
 }
 .veins-br {
   bottom: 0;
   right: 0;
-  transform: translate(17%, 17%);
-  -webkit-mask-image: radial-gradient(105% 105% at 100% 100%, #000 0%, #000 30%, rgba(0, 0, 0, 0.45) 52%, transparent 74%);
-  mask-image: radial-gradient(105% 105% at 100% 100%, #000 0%, #000 30%, rgba(0, 0, 0, 0.45) 52%, transparent 74%);
+  transform: translate(11%, 11%);
+  opacity: 0.72;
+  background-image: url("/img/veins-br.svg");
 }
 
 @media (max-width: 760px) {
-  .veins svg { width: 128vw; height: 128vw; opacity: 0.4; }
+  .veins span { width: 132vw; height: 132vw; opacity: 0.5; }
 }
 
 .site-header,
