@@ -65,8 +65,8 @@ const ICONS = {
   </svg>`
 };
 
-// Mirrors src/components/MarbleVeins.astro
-const VEINS = readFileSync(join(root, 'src/components/MarbleVeins.astro'), 'utf8')
+// Mirrors src/components/StoneBackdrop.astro
+const VEINS = readFileSync(join(root, 'src/components/StoneBackdrop.astro'), 'utf8')
   .replace(/^---[\s\S]*?---\n/, '')
   .trim();
 

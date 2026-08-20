@@ -14,6 +14,8 @@
   --line: #26262e;
   --max-width: 1240px;
   --radius: 4px;
+  --stone-veil: rgba(8, 8, 11, 0.12);
+  --stone-scrim: rgba(8, 8, 11, 0.9);
 }
 
 * { box-sizing: border-box; }
@@ -52,24 +54,57 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Header ---------- */
 
-/* ---------- Marble veins (decorative, two corners only) ---------- */
+/* ---------- Stone backdrop ---------- */
 
-.veins {
+/* The stone is the client's own texture — the same file the logo was built on.
+   Generated vein artwork was replaced by it: no procedural network matches a
+   specific photograph, and matching the logo exactly was the requirement.
+   --stone-veil is the one number that trades presence against legibility;
+   scripts/contrast check keeps body text at or above WCAG AA over it. */
+.stone {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background-image: url("/img/veins-field.svg");
+  background-image:
+    linear-gradient(var(--stone-veil), var(--stone-veil)),
+    url("/img/marble.jpg");
+  background-image:
+    linear-gradient(var(--stone-veil), var(--stone-veil)),
+    image-set(url("/img/marble.webp") type("image/webp"),
+              url("/img/marble.jpg") type("image/jpeg"));
   background-size: cover;
   background-position: center;
-  opacity: 0.34;
 }
-/* The slab runs behind the text, so the veining has to sit far enough back
-   that it reads as stone and never competes with a letterform. One number
-   controls that: .veins opacity. */
+
+/* Reading band. The texture is a photograph: its gold veins are far brighter
+   than any flat colour we would put behind body copy, so text on the raw stone
+   fails WCAG contrast outright — that is arithmetic, not taste. The band keeps
+   the stone at full strength in the margins and polishes it dark exactly where
+   the text column sits. Both layers are fixed, so there are no seams between
+   sections. */
+.stone::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  width: min(100%, 1460px);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 11, 0) 0,
+    var(--stone-scrim) 7%,
+    var(--stone-scrim) 93%,
+    rgba(8, 8, 11, 0) 100%
+  );
+}
 
 @media (max-width: 760px) {
-  .veins { opacity: 0.3; }
+  .stone { background-position: 62% center; }
+  /* No decorative margin to spare on a phone: the band goes edge to edge and
+     the stone reads through it rather than beside it. */
+  .stone::after { width: 100%; background: rgba(8, 8, 11, 0.84); }
 }
 
 .site-header,
