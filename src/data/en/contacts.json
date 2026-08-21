@@ -10,9 +10,27 @@
   "formTitle": "Send a request",
   "detailsTitle": "Company details",
   "items": [
-    { "label": "Company", "value": "Minline Systems LLC" },
-    { "label": "Address", "value": "Baku, Narimanov district, H. Aliyev str. 143" },
-    { "label": "Email", "value": "info@minline.az", "href": "mailto:info@minline.az" },
-    { "label": "TIN (VÖEN)", "value": "1009691901" }
+    {
+      "label": "Company",
+      "value": "Minline Systems LLC"
+    },
+    {
+      "label": "Address",
+      "value": "Baku, Narimanov district, H. Aliyev str. 143"
+    },
+    {
+      "label": "Phone",
+      "value": "+994 55 401 48 40",
+      "href": "tel:+994554014840"
+    },
+    {
+      "label": "Email",
+      "value": "info@minline.az",
+      "href": "mailto:info@minline.az"
+    },
+    {
+      "label": "TIN (VÖEN)",
+      "value": "1009691901"
+    }
   ]
 }

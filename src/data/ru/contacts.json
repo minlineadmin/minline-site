@@ -10,9 +10,27 @@
   "formTitle": "Отправить запрос",
   "detailsTitle": "Реквизиты",
   "items": [
-    { "label": "Компания", "value": "ООО «Minline Systems»" },
-    { "label": "Адрес", "value": "г. Баку, Наримановский район, ул. Г. Алиева 143" },
-    { "label": "E-mail", "value": "info@minline.az", "href": "mailto:info@minline.az" },
-    { "label": "ИНН (VÖEN)", "value": "1009691901" }
+    {
+      "label": "Компания",
+      "value": "ООО «Minline Systems»"
+    },
+    {
+      "label": "Адрес",
+      "value": "г. Баку, Наримановский район, ул. Г. Алиева 143"
+    },
+    {
+      "label": "Телефон",
+      "value": "+994 55 401 48 40",
+      "href": "tel:+994554014840"
+    },
+    {
+      "label": "E-mail",
+      "value": "info@minline.az",
+      "href": "mailto:info@minline.az"
+    },
+    {
+      "label": "ИНН (VÖEN)",
+      "value": "1009691901"
+    }
   ]
 }

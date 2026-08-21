@@ -10,9 +10,27 @@
   "formTitle": "Sorğu Göndərin",
   "detailsTitle": "Rekvizitlər",
   "items": [
-    { "label": "Şirkət", "value": "\"Minline Systems\" MMC" },
-    { "label": "Ünvan", "value": "Bakı şəhəri, Narımanov rayonu, H. Əliyev küç. 143" },
-    { "label": "E-poçt", "value": "info@minline.az", "href": "mailto:info@minline.az" },
-    { "label": "VÖEN", "value": "1009691901" }
+    {
+      "label": "Şirkət",
+      "value": "\"Minline Systems\" MMC"
+    },
+    {
+      "label": "Ünvan",
+      "value": "Bakı şəhəri, Narımanov rayonu, H. Əliyev küç. 143"
+    },
+    {
+      "label": "Telefon",
+      "value": "+994 55 401 48 40",
+      "href": "tel:+994554014840"
+    },
+    {
+      "label": "E-poçt",
+      "value": "info@minline.az",
+      "href": "mailto:info@minline.az"
+    },
+    {
+      "label": "VÖEN",
+      "value": "1009691901"
+    }
   ]
 }

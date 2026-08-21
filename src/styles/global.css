@@ -42,7 +42,7 @@ body {
 
 h1, h2, h3 { line-height: 1.22; font-weight: 600; letter-spacing: 0.01em; }
 h1 { font-size: clamp(2rem, 4.2vw, 3.3rem); margin: 0 0 0.5em; }
-h2 { font-size: clamp(1.35rem, 2.4vw, 1.9rem); margin: 0 0 0.9em; }
+h2 { font-size: clamp(1.35rem, 2.4vw, 1.9rem); margin: 0 0 0.7em; }
 h3 { font-size: 1.06rem; margin: 0 0 0.45em; letter-spacing: 0.02em; }
 
 p { margin: 0 0 1em; color: var(--text-muted); }
@@ -90,12 +90,12 @@ a:hover { text-decoration: underline; }
   left: 50%;
   right: auto;
   transform: translateX(-50%);
-  width: min(100%, 1460px);
+  width: min(100%, max(1360px, 76vw));
   background: linear-gradient(
     90deg,
     rgba(8, 8, 11, 0) 0,
-    var(--stone-scrim) 7%,
-    var(--stone-scrim) 93%,
+    var(--stone-scrim) 60px,
+    var(--stone-scrim) calc(100% - 60px),
     rgba(8, 8, 11, 0) 100%
   );
 }
@@ -186,7 +186,7 @@ main,
 
 .hero {
   position: relative;
-  padding: 104px 0 84px;
+  padding: 84px 0 64px;
   border-bottom: 1px solid var(--line);
   background:
     radial-gradient(900px 420px at 82% -12%, rgba(201, 162, 75, 0.13), transparent 65%),
@@ -206,7 +206,7 @@ main,
   background: linear-gradient(90deg, var(--gold), rgba(201, 162, 75, 0.15));
 }
 .hero .lead { max-width: 880px; font-size: 1.12rem; line-height: 1.7; }
-.hero .actions { margin-top: 34px; display: flex; gap: 16px; flex-wrap: wrap; }
+.hero .actions { margin-top: 30px; display: flex; gap: 16px; flex-wrap: wrap; }
 
 /* ---------- Buttons ---------- */
 
@@ -233,7 +233,7 @@ main,
 
 /* ---------- Sections ---------- */
 
-.section { padding: 58px 0; border-bottom: 1px solid var(--line); }
+.section { padding: 44px 0; border-bottom: 1px solid var(--line); }
 .section:last-child { border-bottom: none; }
 
 .section h2 {
@@ -252,11 +252,11 @@ main,
   display: block;
   width: 56px;
   height: 2px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   background: linear-gradient(90deg, var(--gold), rgba(201, 162, 75, 0.15));
 }
 
-.section-intro { max-width: 900px; margin-bottom: 32px; }
+.section-intro { max-width: 900px; margin-bottom: 24px; }
 .section-intro p { font-size: 1.02rem; }
 .section-intro h2 { margin-top: 1.6em; }
 
@@ -367,9 +367,9 @@ main,
 }
 
 @media (max-width: 760px) {
-  .hero { padding: 72px 0 56px; }
+  .hero { padding: 58px 0 44px; }
   .hero h1 { max-width: none; }
-  .section { padding: 46px 0; }
+  .section { padding: 34px 0; }
   .section-lead { padding-bottom: 0; }
 }
 
@@ -482,7 +482,7 @@ main,
 }
 .feature-list li {
   position: relative;
-  padding: 22px 0 22px 46px;
+  padding: 18px 0 18px 46px;
   border-bottom: 1px solid var(--line);
 }
 .feature-list li:first-child { padding-top: 4px; }
@@ -491,7 +491,7 @@ main,
   content: "";
   position: absolute;
   left: 8px;
-  top: 30px;
+  top: 26px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -557,12 +557,12 @@ main,
    (a lead paragraph plus named sub-cases). Adding a block = a JSON entry,
    never a template change. */
 
-.block { padding: 52px 0; border-bottom: 1px solid var(--line); }
+.block { padding: 38px 0; border-bottom: 1px solid var(--line); }
 .block:last-of-type { border-bottom: 1px solid var(--line); }
 .block-body { max-width: 1000px; }
 .block-body > p { font-size: 1.02rem; }
 
-.block h2 { margin-bottom: 0.7em; }
+.block h2 { margin-bottom: 0.55em; }
 
 /* bulleted supporting points */
 .point-list {
@@ -593,7 +593,7 @@ main,
 
 /* specifications: label / value pairs */
 .specs {
-  margin: 30px 0 0;
+  margin: 24px 0 0;
   border-top: 1px solid var(--line);
   max-width: 1000px;
 }
@@ -663,7 +663,7 @@ main,
 }
 
 @media (max-width: 620px) {
-  .block { padding: 40px 0; }
+  .block { padding: 30px 0; }
   .specs dl { grid-template-columns: 1fr; }
   .specs dt { padding-bottom: 0; border-bottom: none; }
   .specs dd { padding-top: 4px; }
