@@ -18,7 +18,7 @@
      scrim while the stone stays visible outside it. */
   --max-width: 1240px;
   --stone-fade: 120px;
-  --figure-overlap: clamp(300px, 36vw, 620px);
+  --figure-overlap: clamp(360px, 43vw, 744px);
   --radius: 4px;
   --stone-veil: rgba(8, 8, 11, 0.12);
   --stone-scrim: rgba(8, 8, 11, 0.9);
@@ -244,7 +244,7 @@ main,
      band there are only ~70px between the column and the band edge, and going
      past the band puts gold linework on the marble. The level is the highest
      that keeps body text above WCAG AA; scripts/contrast.py holds the line. */
-  --figure-alpha: 0.46;
+  --figure-alpha: 0.6;
   -webkit-mask-image: linear-gradient(90deg, transparent 0,
     rgba(0, 0, 0, var(--figure-alpha)) 22%,
     rgba(0, 0, 0, var(--figure-alpha)) 86%,
