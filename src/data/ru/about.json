@@ -3,6 +3,10 @@
   "navLabel": "О компании",
   "metaTitle": "О компании — Minline Systems",
   "metaDescription": "ООО «Minline Systems» — технический партнёр в нефтегазовом секторе Азербайджана: цифровое управление месторождениями и оборудование для механизированной добычи.",
+  "heroImage": {
+    "src": "/img/illus/about.svg",
+    "alt": "Морская нефтяная платформа"
+  },
   "intro": {
     "title": "О компании",
     "paragraphs": [

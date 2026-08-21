@@ -102,6 +102,14 @@ function footer(locale) {
   </div></footer>`;
 }
 
+// Mirrors src/components/LeadFigure.astro
+const leadFigure = (c) =>
+  c.heroImage
+    ? `<div class="lead-figure" aria-hidden="true"><img src="${esc(c.heroImage.src)}" alt="" title="${esc(
+        c.heroImage.alt
+      )}"></div>`
+    : '';
+
 const card = (i) => `<div class="card"><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></div>`;
 const summaryCards = (locale, c) => {
   const more = data[locale].site.cardMoreLabel;
@@ -177,7 +185,7 @@ const ctaBlock = (locale, c) => `<section class="section"><div class="container"
 const templates = {
   Home(locale, c) {
     return `
-    <section class="hero"><div class="container">
+    <section class="hero">${leadFigure(c)}<div class="container">
       <h1>${esc(c.hero.title)}</h1><p class="lead">${esc(c.hero.lead)}</p>
       <div class="actions">
         <a class="btn btn-primary" href="#directions">${esc(c.hero.ctaPrimary)}</a>
@@ -203,7 +211,7 @@ const templates = {
   },
   Direction(locale, c) {
     return `
-    <section class="section section-lead"><div class="container">
+    <section class="section section-lead">${leadFigure(c)}<div class="container">
       <p class="eyebrow">${esc(c.eyebrow)}</p>
       <h1>${esc(c.hero.title)}</h1>
       <div class="section-intro"><p class="lead">${esc(c.hero.lead)}</p>
@@ -216,7 +224,7 @@ const templates = {
   },
   Services(locale, c) {
     return `
-    <section class="section section-lead"><div class="container">
+    <section class="section section-lead">${leadFigure(c)}<div class="container">
       <p class="eyebrow">${esc(c.eyebrow)}</p>
       <h1>${esc(c.hero.title)}</h1>
       <div class="section-intro"><p class="lead">${esc(c.hero.lead)}</p>
@@ -237,7 +245,7 @@ const templates = {
   },
   About(locale, c) {
     return `
-    <section class="section section-lead"><div class="container">
+    <section class="section section-lead">${leadFigure(c)}<div class="container">
       <h1>${esc(c.intro.title)}</h1>
       <div class="section-intro">${c.intro.paragraphs.map((p) => `<p class="lead">${esc(p)}</p>`).join('')}</div>
     </div></section>
@@ -249,7 +257,7 @@ const templates = {
   },
   Contacts(locale, c) {
     return `
-    <section class="section section-lead"><div class="container">
+    <section class="section section-lead">${leadFigure(c)}<div class="container">
       <h1>${esc(c.intro.title)}</h1>
       <div class="section-intro"><p class="lead">${esc(c.intro.lead)}</p></div>
     </div></section>

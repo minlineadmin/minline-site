@@ -3,6 +3,10 @@
   "navLabel": "Dərinlik Nasosları",
   "metaTitle": "Ştanqlı dərinlik nasosları və quyudibi avadanlıqlar (API Spec 11AX) — Minline Systems",
   "metaDescription": "API Spec 11AX tələblərinə uyğun ştanqlı dərinlik nasosları, mürəkkəb istismar şəraitləri üçün xüsusi icralar, silindrlər, plunjerlər və ehtiyat hissələri.",
+  "heroImage": {
+    "src": "/img/illus/pumps.svg",
+    "alt": "Ştanqlı dərinlik nasosu"
+  },
   "eyebrow": "Fəaliyyət İstiqaməti 02",
   "hero": {
     "title": "Ştanqlı dərinlik nasosları və quyudibi avadanlıqlar",

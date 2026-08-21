@@ -1,0 +1,13 @@
+---
+// Illustration for the lead block of a section: sits at the right edge, behind
+// the text, and scrolls with the block (unlike the stone, which is fixed).
+//
+// The left side of the picture is masked away so the text column can run over
+// it without either fighting the other — the copy stays on plain stone and the
+// artwork only appears where the column ends. Decorative, so aria-hidden and
+// an empty alt: the heading next to it already says what the page is about.
+const { src, alt } = Astro.props;
+---
+<div class="lead-figure" aria-hidden="true">
+  <img src={src} alt="" loading="eager" decoding="async" title={alt} />
+</div>

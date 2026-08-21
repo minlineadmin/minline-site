@@ -3,6 +3,10 @@
   "navLabel": "Sucker Rod Pumps",
   "metaTitle": "Sucker rod pumps and downhole equipment (API Spec 11AX) — Minline Systems",
   "metaDescription": "Sucker rod pumps built to API Spec 11AX requirements, special designs for challenging conditions, barrels, plungers and spare parts.",
+  "heroImage": {
+    "src": "/img/illus/pumps.svg",
+    "alt": "Sucker rod pump"
+  },
   "eyebrow": "Direction 02",
   "hero": {
     "title": "Sucker rod pumps and downhole equipment",

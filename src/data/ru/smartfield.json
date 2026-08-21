@@ -3,6 +3,10 @@
   "navLabel": "Smart Field и SCADA",
   "metaTitle": "Smart Field и SCADA — цифровое управление нефтегазовыми месторождениями | Minline Systems",
   "metaDescription": "Решения по мониторингу в реальном времени, автоматизации на базе SCADA, прогнозной аналитике и оптимизации энергопотребления.",
+  "heroImage": {
+    "src": "/img/illus/scada.webp",
+    "alt": "Среда управления Smart Field и SCADA"
+  },
   "eyebrow": "Направление 01",
   "hero": {
     "title": "Цифровое управление нефтегазовыми месторождениями",

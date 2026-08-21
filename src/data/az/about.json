@@ -3,6 +3,10 @@
   "navLabel": "Haqqımızda",
   "metaTitle": "Haqqımızda — Minline Systems",
   "metaDescription": "\"Minline Systems\" MMC — Azərbaycanın neft-qaz sektoru üçün rəqəmsal idarəetmə həlləri və mexanikləşdirilmiş hasilat avadanlıqları üzrə texniki tərəfdaş.",
+  "heroImage": {
+    "src": "/img/illus/about.svg",
+    "alt": "Dəniz neft platforması"
+  },
   "intro": {
     "title": "Haqqımızda",
     "paragraphs": [

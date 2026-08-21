@@ -18,6 +18,7 @@
      scrim while the stone stays visible outside it. */
   --max-width: 1240px;
   --stone-fade: 120px;
+  --figure-overlap: clamp(190px, 24vw, 380px);
   --radius: 4px;
   --stone-veil: rgba(8, 8, 11, 0.12);
   --stone-scrim: rgba(8, 8, 11, 0.9);
@@ -209,6 +210,57 @@ main,
 }
 .hero .lead { max-width: 880px; font-size: 1.12rem; line-height: 1.7; }
 .hero .actions { margin-top: 30px; display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* ---------- Lead illustration ----------
+   Anchored to the right edge of the lead block and scrolling with it. Masked
+   from the left so the text column can overlap the artwork without landing on
+   its bright parts — the picture only becomes solid past the end of the copy. */
+
+.hero,
+.section-lead { position: relative; overflow: hidden; }
+.hero > .container,
+.section-lead > .container { position: relative; z-index: 1; }
+
+.lead-figure {
+  position: absolute;
+  top: 50%;
+  /* The picture starts one overlap-width before the text column ends, so the
+     copy runs onto it by a controlled amount rather than by whatever the
+     viewport happens to be. Over that strip the mask holds the artwork at a
+     fifth of its strength — measured, not guessed: at full strength its gold
+     lines drop body text to 1:1 contrast. */
+  left: calc(50% + var(--max-width) / 2 - var(--figure-overlap));
+  right: -3%;
+  min-width: 340px;
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.95;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0,
+    rgba(0, 0, 0, 0.15) calc(var(--figure-overlap) * 0.75),
+    #000 calc(var(--figure-overlap) + 60px));
+  mask-image: linear-gradient(90deg, transparent 0,
+    rgba(0, 0, 0, 0.15) calc(var(--figure-overlap) * 0.75),
+    #000 calc(var(--figure-overlap) + 60px));
+}
+.lead-figure img { display: block; width: 100%; height: auto; }
+
+@media (max-width: 1023px) {
+  /* No room beside the column: the artwork drops back to a faint backdrop */
+  .lead-figure {
+    left: auto;
+    width: 92%;
+    min-width: 0;
+    right: -14%;
+    opacity: 0.4;
+    -webkit-mask-image: linear-gradient(200deg, #000 0%, rgba(0, 0, 0, 0.35) 55%, transparent 82%);
+    mask-image: linear-gradient(200deg, #000 0%, rgba(0, 0, 0, 0.35) 55%, transparent 82%);
+  }
+}
+
+@media (max-width: 560px) {
+  .lead-figure { opacity: 0.28; }
+}
 
 /* ---------- Buttons ---------- */
 

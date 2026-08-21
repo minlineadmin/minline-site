@@ -3,6 +3,10 @@
   "navLabel": "Services",
   "metaTitle": "Services — technical audit, installation, service and upgrades | Minline Systems",
   "metaDescription": "Technical audit and equipment selection, installation and commissioning, planned service, repair and modernization — end-to-end technical support.",
+  "heroImage": {
+    "src": "/img/illus/services.svg",
+    "alt": "Technical service and support"
+  },
   "eyebrow": "Services",
   "hero": {
     "title": "Technical support from equipment selection through operation",

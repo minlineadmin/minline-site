@@ -1,10 +1,12 @@
 ---
 import { pagePath } from '../lib/content.js';
+import LeadFigure from '../components/LeadFigure.astro';
 
 const { locale, content } = Astro.props;
 const contactsPath = pagePath(locale, 'contacts');
 ---
 <section class="section section-lead">
+  {content.heroImage && <LeadFigure src={content.heroImage.src} alt={content.heroImage.alt} />}
   <div class="container">
     <h1>{content.intro.title}</h1>
     <div class="section-intro">

@@ -3,6 +3,10 @@
   "navLabel": "Smart Field & SCADA",
   "metaTitle": "Smart Field & SCADA — digital management of oil and gas fields | Minline Systems",
   "metaDescription": "Solutions for real-time monitoring, SCADA-based automation, predictive analytics and energy optimization.",
+  "heroImage": {
+    "src": "/img/illus/scada.webp",
+    "alt": "Smart Field and SCADA control environment"
+  },
   "eyebrow": "Direction 01",
   "hero": {
     "title": "Digital management of oil and gas fields",

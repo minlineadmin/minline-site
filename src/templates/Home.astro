@@ -1,6 +1,7 @@
 ---
 import { pagePath } from '../lib/content.js';
 import DirectionIcon from '../components/DirectionIcon.astro';
+import LeadFigure from '../components/LeadFigure.astro';
 
 const { locale, content } = Astro.props;
 const contactsPath = pagePath(locale, 'contacts');
@@ -10,6 +11,7 @@ const directionsPath = {
 };
 ---
 <section class="hero">
+  {content.heroImage && <LeadFigure src={content.heroImage.src} alt={content.heroImage.alt} />}
   <div class="container">
     <h1>{content.hero.title}</h1>
     <p class="lead">{content.hero.lead}</p>

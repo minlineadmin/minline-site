@@ -3,6 +3,10 @@
   "navLabel": "Ana səhifə",
   "metaTitle": "Minline Systems — neft-qaz sənayesində müasir həllər",
   "metaDescription": "Neft-qaz sektorunda rəqəmsallaşdırma, SCADA əsaslı idarəetmə, ştanqlı dərinlik nasosları və quyudibi avadanlıqlar üzrə texniki həllər.",
+  "heroImage": {
+    "src": "/img/illus/main.svg",
+    "alt": "Neft-qaz hasilat obyekti"
+  },
   "hero": {
     "title": "Neft-qaz sənayesində müasir həllər",
     "lead": "Minline Systems neft-qaz sektorunda rəqəmsallaşdırma, SCADA əsaslı idarəetmə, ştanqlı dərinlik nasosları və quyudibi avadanlıqlar üzrə texniki həllər təqdim edir. Biz müştərilərə hasilat proseslərinin daha səmərəli, daha dayanıqlı və daha idarəolunan qurulmasına dəstək veririk.",

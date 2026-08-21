@@ -3,6 +3,10 @@
   "navLabel": "About",
   "metaTitle": "About us — Minline Systems",
   "metaDescription": "Minline Systems LLC — a technical partner in Azerbaijan's oil and gas sector: digital field management and artificial lift equipment.",
+  "heroImage": {
+    "src": "/img/illus/about.svg",
+    "alt": "Offshore oil platform"
+  },
   "intro": {
     "title": "About us",
     "paragraphs": [

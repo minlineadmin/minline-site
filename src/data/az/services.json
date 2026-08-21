@@ -3,6 +3,10 @@
   "navLabel": "Xidmətlər",
   "metaTitle": "Xidmətlər — texniki audit, quraşdırma, servis və modernləşdirmə | Minline Systems",
   "metaDescription": "Texniki audit və avadanlıq seçimi, quraşdırma və istismara vermə, planlı servis, təmir və modernləşdirmə üzrə kompleks texniki dəstək.",
+  "heroImage": {
+    "src": "/img/illus/services.svg",
+    "alt": "Texniki servis və dəstək"
+  },
   "eyebrow": "Xidmətlər",
   "hero": {
     "title": "Avadanlıq seçimindən istismara qədər texniki dəstək",

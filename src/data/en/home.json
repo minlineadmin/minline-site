@@ -3,6 +3,10 @@
   "navLabel": "Home",
   "metaTitle": "Minline Systems — modern solutions for the oil and gas industry",
   "metaDescription": "Digitalization and SCADA-based control, sucker rod pumps and downhole equipment — technical solutions for the oil and gas sector.",
+  "heroImage": {
+    "src": "/img/illus/main.svg",
+    "alt": "Oil and gas production facility"
+  },
   "hero": {
     "title": "Modern solutions for the oil and gas industry",
     "lead": "Minline Systems delivers technical solutions in digitalization, SCADA-based control, sucker rod pumps and downhole equipment. We help our clients make production processes more efficient, more resilient and easier to manage.",

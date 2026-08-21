@@ -3,6 +3,10 @@
   "navLabel": "Smart Field & SCADA",
   "metaTitle": "Smart Field & SCADA — neft-qaz yataqlarının rəqəmsal idarə edilməsi | Minline Systems",
   "metaDescription": "Real vaxt monitorinqi, SCADA əsaslı avtomatlaşdırma, proqnozlaşdırıcı analitika və enerji optimallaşdırılması üzrə həllər.",
+  "heroImage": {
+    "src": "/img/illus/scada.webp",
+    "alt": "Smart Field və SCADA idarəetmə mühiti"
+  },
   "eyebrow": "Fəaliyyət İstiqaməti 01",
   "hero": {
     "title": "Neft-qaz yataqlarının rəqəmsal idarə edilməsi",
