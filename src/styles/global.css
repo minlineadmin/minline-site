@@ -12,7 +12,12 @@
   --gold-soft: #e3c67f;
   --gold-dim: rgba(201, 162, 75, 0.35);
   --line: #26262e;
+  /* The column narrows on smaller desktops so the stone has margins to show
+     in. Its width, the scrim band and the falloff are one linked system:
+     band = text width + two falloffs, so the column always sits on full
+     scrim while the stone stays visible outside it. */
   --max-width: 1240px;
+  --stone-fade: 120px;
   --radius: 4px;
   --stone-veil: rgba(8, 8, 11, 0.12);
   --stone-scrim: rgba(8, 8, 11, 0.9);
@@ -61,6 +66,10 @@ a:hover { text-decoration: underline; }
    specific photograph, and matching the logo exactly was the requirement.
    --stone-veil is the one number that trades presence against legibility;
    scripts/contrast check keeps body text at or above WCAG AA over it. */
+@media (min-width: 1024px) {
+  :root { --max-width: min(1240px, 76vw); }
+}
+
 .stone {
   position: fixed;
   inset: 0;
@@ -90,12 +99,12 @@ a:hover { text-decoration: underline; }
   left: 50%;
   right: auto;
   transform: translateX(-50%);
-  width: min(100%, max(1360px, 76vw));
+  width: min(100%, calc(var(--max-width) - 56px + 2 * var(--stone-fade)));
   background: linear-gradient(
     90deg,
     rgba(8, 8, 11, 0) 0,
-    var(--stone-scrim) 60px,
-    var(--stone-scrim) calc(100% - 60px),
+    var(--stone-scrim) var(--stone-fade),
+    var(--stone-scrim) calc(100% - var(--stone-fade)),
     rgba(8, 8, 11, 0) 100%
   );
 }
@@ -186,15 +195,8 @@ main,
 
 .hero {
   position: relative;
-  padding: 84px 0 64px;
+  padding: 56px 0 56px;
   border-bottom: 1px solid var(--line);
-  background:
-    radial-gradient(900px 420px at 82% -12%, rgba(201, 162, 75, 0.13), transparent 65%),
-    radial-gradient(700px 500px at -8% 110%, rgba(201, 162, 75, 0.05), transparent 60%),
-    /* fine engineering grid, fades toward the left where text sits */
-    linear-gradient(to left, transparent, var(--bg) 55%),
-    repeating-linear-gradient(0deg, transparent 0 47px, rgba(255, 255, 255, 0.025) 47px 48px),
-    repeating-linear-gradient(90deg, transparent 0 47px, rgba(255, 255, 255, 0.025) 47px 48px);
 }
 .hero h1 { max-width: 22ch; }
 .hero h1::before {
@@ -367,7 +369,7 @@ main,
 }
 
 @media (max-width: 760px) {
-  .hero { padding: 58px 0 44px; }
+  .hero { padding: 40px 0 40px; }
   .hero h1 { max-width: none; }
   .section { padding: 34px 0; }
   .section-lead { padding-bottom: 0; }
