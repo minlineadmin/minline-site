@@ -18,7 +18,7 @@
      scrim while the stone stays visible outside it. */
   --max-width: 1240px;
   --stone-fade: 120px;
-  --figure-overlap: clamp(190px, 24vw, 380px);
+  --figure-overlap: clamp(300px, 36vw, 620px);
   --radius: 4px;
   --stone-veil: rgba(8, 8, 11, 0.12);
   --stone-scrim: rgba(8, 8, 11, 0.9);
@@ -230,36 +230,56 @@ main,
      fifth of its strength — measured, not guessed: at full strength its gold
      lines drop body text to 1:1 contrast. */
   left: calc(50% + var(--max-width) / 2 - var(--figure-overlap));
-  right: -3%;
+  /* The right edge stops inside the dark reading band. Bleeding past it put
+     gold linework straight on top of the marble veining, and the two textures
+     fought each other. */
+  right: calc(50% - var(--max-width) / 2 - var(--stone-fade) * 0.6);
   min-width: 340px;
   transform: translateY(-50%);
   z-index: 0;
   pointer-events: none;
-  opacity: 0.95;
+  /* The artwork reads as a watermark rather than a picture with a hard edge:
+     one strength across its whole width, soft at both ends. Trying to keep a
+     full-strength area to the right of the copy does not fit — inside the dark
+     band there are only ~70px between the column and the band edge, and going
+     past the band puts gold linework on the marble. The level is the highest
+     that keeps body text above WCAG AA; scripts/contrast.py holds the line. */
+  --figure-alpha: 0.46;
   -webkit-mask-image: linear-gradient(90deg, transparent 0,
-    rgba(0, 0, 0, 0.15) calc(var(--figure-overlap) * 0.75),
-    #000 calc(var(--figure-overlap) + 60px));
+    rgba(0, 0, 0, var(--figure-alpha)) 22%,
+    rgba(0, 0, 0, var(--figure-alpha)) 86%,
+    rgba(0, 0, 0, 0.06) 100%);
   mask-image: linear-gradient(90deg, transparent 0,
-    rgba(0, 0, 0, 0.15) calc(var(--figure-overlap) * 0.75),
-    #000 calc(var(--figure-overlap) + 60px));
+    rgba(0, 0, 0, var(--figure-alpha)) 22%,
+    rgba(0, 0, 0, var(--figure-alpha)) 86%,
+    rgba(0, 0, 0, 0.06) 100%);
+  mask-image: linear-gradient(90deg, transparent 0,
+    rgba(0, 0, 0, 0.14) calc(var(--figure-overlap) * 0.35),
+    rgba(0, 0, 0, 0.14) var(--figure-overlap),
+    #000 calc(var(--figure-overlap) + 150px));
 }
 .lead-figure img { display: block; width: 100%; height: auto; }
 
 @media (max-width: 1023px) {
   /* No room beside the column: the artwork drops back to a faint backdrop */
+  /* No room beside the column, so the artwork sits behind the lead text as a
+     backdrop. Anchored to the top-right corner: these illustrations carry
+     their subject on the right, and centring cropped it off the screen. */
   .lead-figure {
     left: auto;
-    width: 92%;
+    right: -4%;
+    top: 0;
+    width: 86%;
     min-width: 0;
-    right: -14%;
-    opacity: 0.4;
-    -webkit-mask-image: linear-gradient(200deg, #000 0%, rgba(0, 0, 0, 0.35) 55%, transparent 82%);
-    mask-image: linear-gradient(200deg, #000 0%, rgba(0, 0, 0, 0.35) 55%, transparent 82%);
+    transform: none;
+    opacity: 0.34;
+    -webkit-mask-image: linear-gradient(215deg, #000 0%, rgba(0, 0, 0, 0.4) 52%, transparent 80%);
+    mask-image: linear-gradient(215deg, #000 0%, rgba(0, 0, 0, 0.4) 52%, transparent 80%);
   }
 }
 
 @media (max-width: 560px) {
-  .lead-figure { opacity: 0.28; }
+  .lead-figure { opacity: 0.3; width: 96%; }
 }
 
 /* ---------- Buttons ---------- */
