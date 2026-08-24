@@ -4,6 +4,9 @@
 //   specs    — text block plus a label/value specification table
 //   columns  — text block plus two (or more) parallel notes
 //   subitems — text block plus named sub-cases
+//   lineup   — a run of product shots, each with its designation: turns the
+//              list of modifications in the specs table into something a
+//              visitor can actually see
 // Every type may carry an optional `image` ({ src, alt, caption }); the figure
 // renders only when the content file supplies one, so pages stay valid before
 // the client's photography arrives.
@@ -42,9 +45,24 @@ const b = block;
             <div>
               <h3>{col.title}</h3>
               <p>{col.text}</p>
+              {col.image && (
+                <img class="column-shot" src={col.image.src} alt={col.image.alt} loading="lazy" />
+              )}
             </div>
           ))}
         </div>
+      )}
+
+      {b.type === 'lineup' && b.items && (
+        <ul class="lineup">
+          {b.items.map((item) => (
+            <li>
+              <span class="lineup-code">{item.code}</span>
+              <img src={item.src} alt={item.alt} loading="lazy" />
+              {item.note && <span class="lineup-note">{item.note}</span>}
+            </li>
+          ))}
+        </ul>
       )}
 
       {b.type === 'subitems' && b.subitems && (

@@ -67,16 +67,52 @@
       "anchor": "pump-range"
     },
     {
+      "type": "lineup",
+      "title": "Modifications",
+      "body": "The main insert-type modifications. The design is chosen against well conditions and the operating regime.",
+      "items": [
+        {
+          "code": "RHA",
+          "src": "/img/products/pump-rha.webp",
+          "alt": "RHA sucker rod pump"
+        },
+        {
+          "code": "RHB",
+          "src": "/img/products/pump-rhb.webp",
+          "alt": "RHB sucker rod pump"
+        },
+        {
+          "code": "RWA",
+          "src": "/img/products/pump-rwa.webp",
+          "alt": "RWA sucker rod pump"
+        },
+        {
+          "code": "RXB",
+          "src": "/img/products/pump-rxb.webp",
+          "alt": "RXB sucker rod pump"
+        }
+      ],
+      "anchor": "pump-modifications"
+    },
+    {
       "type": "columns",
       "title": "Pump types",
       "columns": [
         {
           "title": "Insert-type pumps",
-          "text": "Insert-type pumps are designed to operate inside the tubing string and can be selected in modifications suited to a range of well conditions."
+          "text": "Insert-type pumps are designed to operate inside the tubing string and can be selected in modifications suited to a range of well conditions.",
+          "image": {
+            "src": "/img/products/pump-rha.webp",
+            "alt": "Insert-type pump, RHA modification"
+          }
         },
         {
           "title": "Tubing-type pumps",
-          "text": "Tubing-type pumps offer a wider application range and matching design options, making them an effective solution for certain well parameters."
+          "text": "Tubing-type pumps offer a wider application range and matching design options, making them an effective solution for certain well parameters.",
+          "image": {
+            "src": "/img/products/pump-th.webp",
+            "alt": "Tubing-type pump, TH modification"
+          }
         }
       ],
       "anchor": "pump-types"
@@ -122,7 +158,12 @@
         "corrosion-resistant Monel-coated plungers",
         "PA-type plungers with chemical and abrasion resistance"
       ],
-      "anchor": "pump-plungers"
+      "anchor": "pump-plungers",
+      "image": {
+        "src": "/img/products/plungers.webp",
+        "alt": "Grooved plungers and rods",
+        "caption": "Grooved plungers and rods"
+      }
     },
     {
       "type": "text",
@@ -139,7 +180,12 @@
         "sand cleaner elements",
         "other downhole components"
       ],
-      "anchor": "pump-parts"
+      "anchor": "pump-parts",
+      "image": {
+        "src": "/img/products/shipment.webp",
+        "alt": "Manufactured by UKR-LAND: pumps ready for shipment",
+        "caption": "Manufactured by UKR-LAND: pumps ready for shipment"
+      }
     }
   ],
   "cta": {

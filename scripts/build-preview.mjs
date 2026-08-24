@@ -160,8 +160,20 @@ function contentBlock(b) {
       .join('')}</dl></div>`);
   if (b.type === 'columns' && b.columns)
     parts.push(`<div class="columns">${b.columns
-      .map((col) => `<div><h3>${esc(col.title)}</h3><p>${esc(col.text)}</p></div>`)
+      .map((col) => `<div><h3>${esc(col.title)}</h3><p>${esc(col.text)}</p>${
+        col.image
+          ? `<img class="column-shot" src="${esc(col.image.src)}" alt="${esc(col.image.alt)}" loading="lazy">`
+          : ''
+      }</div>`)
       .join('')}</div>`);
+  if (b.type === 'lineup' && b.items)
+    parts.push(`<ul class="lineup">${b.items
+      .map((i) => `<li><span class="lineup-code">${esc(i.code)}</span><img src="${esc(
+        i.src
+      )}" alt="${esc(i.alt)}" loading="lazy">${
+        i.note ? `<span class="lineup-note">${esc(i.note)}</span>` : ''
+      }</li>`)
+      .join('')}</ul>`);
   if (b.type === 'subitems' && b.subitems)
     parts.push(`<div class="subitems">${b.subitems
       .map((i) => `<div class="subitem"><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></div>`)

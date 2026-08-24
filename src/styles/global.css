@@ -290,6 +290,57 @@ main,
   .lead-figure { opacity: 0.54; width: 96%; }
 }
 
+/* ---------- Product lineup ----------
+   A sucker rod pump is roughly 1:20, so it only works lying down: upright it
+   would be a two-thousand-pixel hairline. The studio white is keyed out of the
+   source files, which is what lets the steel sit straight on the stone with no
+   plate around it. */
+
+.lineup {
+  list-style: none;
+  padding: 0;
+  margin: 26px 0 0;
+  display: grid;
+  gap: 26px;
+}
+.lineup li {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+.lineup li:last-child { border-bottom: none; padding-bottom: 0; }
+.lineup-code {
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.lineup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.lineup-note {
+  grid-column: 2;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.column-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 620px) {
+  .lineup li { grid-template-columns: 1fr; gap: 8px; }
+  .lineup-note { grid-column: 1; }
+}
+
 /* ---------- Buttons ---------- */
 
 .btn {

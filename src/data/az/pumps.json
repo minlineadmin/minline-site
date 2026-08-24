@@ -67,16 +67,52 @@
       "anchor": "pump-range"
     },
     {
+      "type": "lineup",
+      "title": "Modifikasiyalar",
+      "body": "Insert tipli nasosların əsas modifikasiyaları. Konstruksiya quyu şəraitinə və iş rejiminə uyğun seçilir.",
+      "items": [
+        {
+          "code": "RHA",
+          "src": "/img/products/pump-rha.webp",
+          "alt": "RHA tipli ştanqlı dərinlik nasosu"
+        },
+        {
+          "code": "RHB",
+          "src": "/img/products/pump-rhb.webp",
+          "alt": "RHB tipli ştanqlı dərinlik nasosu"
+        },
+        {
+          "code": "RWA",
+          "src": "/img/products/pump-rwa.webp",
+          "alt": "RWA tipli ştanqlı dərinlik nasosu"
+        },
+        {
+          "code": "RXB",
+          "src": "/img/products/pump-rxb.webp",
+          "alt": "RXB tipli ştanqlı dərinlik nasosu"
+        }
+      ],
+      "anchor": "pump-modifications"
+    },
+    {
       "type": "columns",
       "title": "Nasos tipləri",
       "columns": [
         {
           "title": "Insert tipli nasoslar",
-          "text": "Insert tipli nasoslar tubing kolonunun daxilində işləyən konstruksiyaya malikdir və müxtəlif quyu şəraitlərində tətbiq üçün uyğun modifikasiyalarda seçilə bilər."
+          "text": "Insert tipli nasoslar tubing kolonunun daxilində işləyən konstruksiyaya malikdir və müxtəlif quyu şəraitlərində tətbiq üçün uyğun modifikasiyalarda seçilə bilər.",
+          "image": {
+            "src": "/img/products/pump-rha.webp",
+            "alt": "Insert tipli nasos, RHA modifikasiyası"
+          }
         },
         {
           "title": "Tubing tipli nasoslar",
-          "text": "Tubing tipli nasoslar daha geniş tətbiq diapazonu və uyğun konstruktiv imkanlar təqdim edərək müəyyən quyu parametrləri üçün effektiv həll rolunu oynayır."
+          "text": "Tubing tipli nasoslar daha geniş tətbiq diapazonu və uyğun konstruktiv imkanlar təqdim edərək müəyyən quyu parametrləri üçün effektiv həll rolunu oynayır.",
+          "image": {
+            "src": "/img/products/pump-th.webp",
+            "alt": "Tubing tipli nasos, TH modifikasiyası"
+          }
         }
       ],
       "anchor": "pump-types"
@@ -122,7 +158,12 @@
         "korroziyaya davamlı Monel örtüklü plunjerlər",
         "kimyəvi və abraziv dayanıqlığa malik PA tipli plunjerlər"
       ],
-      "anchor": "pump-plungers"
+      "anchor": "pump-plungers",
+      "image": {
+        "src": "/img/products/plungers.webp",
+        "alt": "Yivli plunjerlər və ştanqlar",
+        "caption": "Yivli plunjerlər və ştanqlar"
+      }
     },
     {
       "type": "text",
@@ -139,7 +180,12 @@
         "qum təmizləyici elementlər",
         "digər quyudibi komponentlər"
       ],
-      "anchor": "pump-parts"
+      "anchor": "pump-parts",
+      "image": {
+        "src": "/img/products/shipment.webp",
+        "alt": "UKR-LAND istehsalı: göndərişə hazır nasoslar",
+        "caption": "UKR-LAND istehsalı: göndərişə hazır nasoslar"
+      }
     }
   ],
   "cta": {
