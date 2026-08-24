@@ -262,7 +262,7 @@ main,
   display: block;
   width: 100%;
   height: auto;
-  filter: brightness(1.05);
+  filter: brightness(1.15);
 }
 
 @media (max-width: 1023px) {
@@ -278,7 +278,7 @@ main,
     width: 86%;
     min-width: 0;
     transform: none;
-    opacity: 0.3;
+    opacity: 0.6;
     /* the phone layout cannot carry the desktop lift, see contrast.py */
     -webkit-mask-image: linear-gradient(215deg, #000 0%, rgba(0, 0, 0, 0.4) 52%, transparent 80%);
     mask-image: linear-gradient(215deg, #000 0%, rgba(0, 0, 0, 0.4) 52%, transparent 80%);
@@ -286,7 +286,7 @@ main,
 }
 
 @media (max-width: 560px) {
-  .lead-figure { opacity: 0.27; width: 96%; }
+  .lead-figure { opacity: 0.54; width: 96%; }
 }
 
 /* ---------- Buttons ---------- */
