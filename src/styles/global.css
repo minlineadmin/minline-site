@@ -244,7 +244,7 @@ main,
      band there are only ~70px between the column and the band edge, and going
      past the band puts gold linework on the marble. The level is the highest
      that keeps body text above WCAG AA; scripts/contrast.py holds the line. */
-  --figure-alpha: 0.6;
+  --figure-alpha: 1;
   -webkit-mask-image: linear-gradient(90deg, transparent 0,
     rgba(0, 0, 0, var(--figure-alpha)) 22%,
     rgba(0, 0, 0, var(--figure-alpha)) 86%,
@@ -258,9 +258,15 @@ main,
     rgba(0, 0, 0, 0.14) var(--figure-overlap),
     #000 calc(var(--figure-overlap) + 150px));
 }
-.lead-figure img { display: block; width: 100%; height: auto; }
+.lead-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(1.05);
+}
 
 @media (max-width: 1023px) {
+  .lead-figure img { filter: none; }
   /* No room beside the column: the artwork drops back to a faint backdrop */
   /* No room beside the column, so the artwork sits behind the lead text as a
      backdrop. Anchored to the top-right corner: these illustrations carry
@@ -272,14 +278,15 @@ main,
     width: 86%;
     min-width: 0;
     transform: none;
-    opacity: 0.34;
+    opacity: 0.3;
+    /* the phone layout cannot carry the desktop lift, see contrast.py */
     -webkit-mask-image: linear-gradient(215deg, #000 0%, rgba(0, 0, 0, 0.4) 52%, transparent 80%);
     mask-image: linear-gradient(215deg, #000 0%, rgba(0, 0, 0, 0.4) 52%, transparent 80%);
   }
 }
 
 @media (max-width: 560px) {
-  .lead-figure { opacity: 0.3; width: 96%; }
+  .lead-figure { opacity: 0.27; width: 96%; }
 }
 
 /* ---------- Buttons ---------- */
