@@ -244,7 +244,7 @@ main,
      band there are only ~70px between the column and the band edge, and going
      past the band puts gold linework on the marble. The level is the highest
      that keeps body text above WCAG AA; scripts/contrast.py holds the line. */
-  --figure-alpha: 1;
+  --figure-alpha: 0.75;
   -webkit-mask-image: linear-gradient(90deg, transparent 0,
     rgba(0, 0, 0, var(--figure-alpha)) 22%,
     rgba(0, 0, 0, var(--figure-alpha)) 86%,
@@ -253,10 +253,6 @@ main,
     rgba(0, 0, 0, var(--figure-alpha)) 22%,
     rgba(0, 0, 0, var(--figure-alpha)) 86%,
     rgba(0, 0, 0, 0.06) 100%);
-  mask-image: linear-gradient(90deg, transparent 0,
-    rgba(0, 0, 0, 0.14) calc(var(--figure-overlap) * 0.35),
-    rgba(0, 0, 0, 0.14) var(--figure-overlap),
-    #000 calc(var(--figure-overlap) + 150px));
 }
 .lead-figure img {
   display: block;
