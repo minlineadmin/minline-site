@@ -10,6 +10,10 @@
 // One 404.html is emitted per locale (/404.html, /en/404.html, /ru/404.html).
 // Cloudflare serves the nearest 404.html up the directory tree, so a broken
 // address under /ru gets the Russian page without any client-side logic.
+//
+// The nested files need scripts/fix-404.mjs after the build: with
+// build.format 'directory' Astro writes them as en/404/index.html, which is
+// not the name Cloudflare looks for. See that file for the full reason.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getSite, pagePath } from '../lib/content.js';
 
