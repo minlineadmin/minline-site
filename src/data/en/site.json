@@ -20,7 +20,7 @@
     "success": "Thank you! Your request has been received. Our specialist will contact you shortly.",
     "sending": "Sending…",
     "error": "The request could not be sent. Please try again in a moment, or contact us directly by email.",
-    "emailSubject": "minline.az — new request (EN)",
+    "emailSubject": "minline.az - new request (EN)",
     "pendingNote": "The form will be activated shortly. In the meantime, please contact us by email."
   }
 }
