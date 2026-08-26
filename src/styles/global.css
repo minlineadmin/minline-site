@@ -450,7 +450,23 @@ main,
 .quote-form input:focus,
 .quote-form textarea:focus { outline: none; border-color: var(--gold); }
 .quote-form .btn { justify-self: start; margin-top: 6px; }
+.quote-form .btn[disabled] { opacity: 0.6; cursor: progress; }
 .form-note { font-size: 0.8rem; color: var(--text-muted); }
+
+/* Honeypot: off-screen rather than display:none, which some bots skip. */
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Empty until the submit handler writes into it, so it must not reserve space. */
+.form-status { margin: 0; font-size: 0.9rem; line-height: 1.6; }
+.form-status:empty { display: none; }
+.form-status.is-success { color: var(--gold); }
+.form-status.is-error { color: #e0857a; }
 
 /* ---------- Contacts ---------- */
 

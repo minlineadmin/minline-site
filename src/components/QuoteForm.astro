@@ -1,12 +1,33 @@
 ---
-// Request-a-quote form. Formspree endpoint is wired at alpha stage via
-// PUBLIC_FORMSPREE_ID; until then the form renders but is inert (no action).
-const { site } = Astro.props;
+// Request-a-quote form.
+//
+// Delivery goes through Formspree; the endpoint is wired at build time from
+// PUBLIC_FORMSPREE_ID. Until that variable exists the form renders but stays
+// inert, showing a note instead of posting anywhere.
+//
+// Submission happens over fetch so the visitor stays on minline.az and reads
+// the confirmation in the language of the page. Two reasons this matters:
+// Formspree's own "thanks" page has no Azerbaijani translation, and pointing
+// it at a page of ours is a paid-plan feature. If JavaScript fails the native
+// POST still runs, which is what _language is there for.
+//
+// Field names are not arbitrary. Formspree reads `email` for the Reply-To
+// header and `subject` for the email subject, and silently drops anything
+// that fills the `_gotcha` honeypot.
+const { site, locale } = Astro.props;
 const f = site.form;
 const formspreeId = import.meta.env.PUBLIC_FORMSPREE_ID;
 const action = formspreeId ? `https://formspree.io/f/${formspreeId}` : undefined;
+const fallbackLanguage = locale === 'ru' ? 'ru' : 'en';
 ---
-<form class="quote-form" method="POST" action={action}>
+<form
+  class="quote-form"
+  method="POST"
+  action={action}
+  data-sending={f.sending}
+  data-success={f.success}
+  data-error={f.error}
+>
   <label>
     <span>{f.name}</span>
     <input type="text" name="name" placeholder={f.namePlaceholder} required autocomplete="name" />
@@ -27,6 +48,64 @@ const action = formspreeId ? `https://formspree.io/f/${formspreeId}` : undefined
     <span>{f.message}</span>
     <textarea name="message" rows="5" placeholder={f.messagePlaceholder} required></textarea>
   </label>
+
+  <input type="hidden" name="subject" value={f.emailSubject} />
+  <input type="hidden" name="_language" value={fallbackLanguage} />
+  <div class="hp" aria-hidden="true">
+    <label>
+      Leave this field empty
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+    </label>
+  </div>
+
   <button class="btn btn-primary" type="submit">{f.submit}</button>
+  <p class="form-status" role="status" aria-live="polite"></p>
   {!action && <p class="form-note">{f.pendingNote}</p>}
 </form>
+
+<script>
+  // Progressive enhancement: without this the form still posts natively.
+  for (const form of document.querySelectorAll('.quote-form[action]')) {
+    const status = form.querySelector('.form-status');
+    const button = form.querySelector('button[type="submit"]');
+    const label = button ? button.textContent : '';
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (form.dataset.busy === '1') return;
+
+      form.dataset.busy = '1';
+      if (button) {
+        button.disabled = true;
+        button.textContent = form.dataset.sending;
+      }
+      status.classList.remove('is-error', 'is-success');
+      status.textContent = '';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (response.ok) {
+          form.reset();
+          status.textContent = form.dataset.success;
+          status.classList.add('is-success');
+          return;
+        }
+        throw new Error('HTTP ' + response.status);
+      } catch (error) {
+        status.textContent = form.dataset.error;
+        status.classList.add('is-error');
+      } finally {
+        form.dataset.busy = '0';
+        if (button) {
+          button.disabled = false;
+          button.textContent = label;
+        }
+      }
+    });
+  }
+</script>
