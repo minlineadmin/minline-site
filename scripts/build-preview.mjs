@@ -150,7 +150,8 @@ function quoteForm(locale) {
     <button class="btn btn-primary" type="submit">${esc(f.submit)}</button>
     <p class="form-status" role="status" aria-live="polite"></p>
     ${action ? '' : `<p class="form-note">${esc(f.pendingNote)}</p>`}
-  </form>`;
+  </form>
+  <script type="module" src="/js/quote-form.js"></script>`;
 }
 
 // Mirrors src/components/ContentBlock.astro
@@ -340,4 +341,5 @@ for (const locale of LOCALES) {
 mkdirSync(join(out, 'styles'), { recursive: true });
 cpSync(join(root, 'src/styles/global.css'), join(out, 'styles/global.css'));
 cpSync(join(root, 'public/img'), join(out, 'img'), { recursive: true });
+cpSync(join(root, 'public/js'), join(out, 'js'), { recursive: true });
 console.log(`Preview built: ${count} pages -> dist-preview/`);

@@ -28,16 +28,10 @@ const gaId = import.meta.env.PUBLIC_GA_ID; // set at alpha stage; absent = no GA
       hreflang="x-default"
       href={new URL(alternates.find((a) => a.locale === DEFAULT_LOCALE).href, Astro.site)}
     />
+    {gaId && <meta name="ga-id" content={gaId} />}
+    {gaId && <script is:inline src="/js/ga.js"></script>}
     {gaId && (
       <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
-    )}
-    {gaId && (
-      <script is:inline define:vars={{ gaId }}>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', gaId);
-      </script>
     )}
   </head>
   <body>
