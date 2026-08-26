@@ -20,7 +20,7 @@
     "success": "Təşəkkür edirik! Sorğunuz qəbul olundu. Mütəxəssisimiz ən qısa zamanda sizinlə əlaqə saxlayacaqdır.",
     "sending": "Göndərilir…",
     "error": "Sorğu göndərilə bilmədi. Zəhmət olmasa, bir az sonra yenidən cəhd edin və ya bizimlə birbaşa e-poçt vasitəsilə əlaqə saxlayın.",
-    "emailSubject": "minline.az - new request (AZ)",
+    "emailSubject": "minline.az — yeni sorğu (AZ)",
     "pendingNote": "Forma tezliklə aktiv olacaq. Hələlik bizimlə e-poçt vasitəsilə əlaqə saxlaya bilərsiniz."
   }
 }
