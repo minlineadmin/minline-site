@@ -1,0 +1,34 @@
+---
+// 404 page.
+//
+// Not a section: it is absent from sections.json, from the navigation and from
+// the hreflang set, and it carries a noindex meta tag. Reason: the file is a
+// real asset, so /404 resolves with status 200 even though a missing address
+// resolves through it with status 404 — without noindex the page could be
+// indexed as if it were content.
+//
+// One 404.html is emitted per locale (/404.html, /en/404.html, /ru/404.html).
+// Cloudflare serves the nearest 404.html up the directory tree, so a broken
+// address under /ru gets the Russian page without any client-side logic.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSite, pagePath } from '../lib/content.js';
+
+const { locale } = Astro.props;
+const site = getSite(locale);
+const c = site.notFound;
+---
+<BaseLayout locale={locale} content={c} noIndex={true}>
+  <section class="section section-lead">
+    <div class="container">
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1>{c.title}</h1>
+      <div class="section-intro">
+        <p class="lead">{c.text}</p>
+      </div>
+      <div class="error-actions">
+        <a class="btn btn-primary" href={pagePath(locale, 'home')}>{c.homeLabel}</a>
+        <a class="btn btn-ghost" href={pagePath(locale, 'contacts')}>{c.contactLabel}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

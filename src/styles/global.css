@@ -468,6 +468,18 @@ main,
 .form-status.is-success { color: var(--gold); }
 .form-status.is-error { color: #e0857a; }
 
+/* ---------- 404 ---------- */
+
+.error-code {
+  font-size: clamp(3.2rem, 9vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  opacity: 0.55;
+  margin: 0 0 8px;
+}
+.error-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+
 /* ---------- Contacts ---------- */
 
 .contact-list {

@@ -1,0 +1,6 @@
+---
+// Emits /ru/404.html. Cloudflare serves the nearest 404.html up the tree,
+// so a broken address under /ru gets this locale's page.
+import NotFound from '../../templates/NotFound.astro';
+---
+<NotFound locale="ru" />

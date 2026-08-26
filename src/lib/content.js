@@ -65,7 +65,11 @@ export function getNav(locale) {
   }));
 }
 
-/** hreflang alternates for the same section across locales */
+/** hreflang alternates for the same section across locales.
+ *  Without a key (the 404 page, which is not a section) the alternates point at
+ *  each locale's home page: switching language from a dead address should land
+ *  the visitor somewhere that exists. */
 export function getAlternates(key) {
-  return LOCALES.map((locale) => ({ locale, href: pagePath(locale, key) }));
+  const target = key ?? 'home';
+  return LOCALES.map((locale) => ({ locale, href: pagePath(locale, target) }));
 }

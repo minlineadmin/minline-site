@@ -79,9 +79,12 @@ function header(locale, currentKey) {
       return `<a href="${pagePath(locale, key)}"${cur}>${esc(c.navLabel)}</a>`;
     })
     .join('');
+  // Mirrors getAlternates(): with no section (the 404 page) the switcher points
+  // at each locale's home page rather than at a dead address.
+  const langTarget = currentKey ?? 'home';
   const langs = LOCALES.map((l) => {
     const cur = l === locale ? ' aria-current="true"' : '';
-    return `<a href="${pagePath(l, currentKey)}"${cur} lang="${l}">${l.toUpperCase()}</a>`;
+    return `<a href="${pagePath(l, langTarget)}"${cur} lang="${l}">${l.toUpperCase()}</a>`;
   }).join('');
   return `<header class="site-header"><div class="container">
     <a class="brand" href="${pagePath(locale, 'home')}">
@@ -328,6 +331,36 @@ function page(locale, key, template) {
 </html>`;
 }
 
+// Mirrors src/templates/NotFound.astro
+function notFoundPage(locale) {
+  const c = data[locale].site.notFound;
+  return `<!doctype html>
+<html lang="${locale}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${esc(c.metaTitle)}</title>
+    <meta name="description" content="${esc(c.metaDescription)}" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    ${VEINS}
+    ${header(locale, null)}
+    <main><section class="section section-lead"><div class="container">
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1>${esc(c.title)}</h1>
+      <div class="section-intro"><p class="lead">${esc(c.text)}</p></div>
+      <div class="error-actions">
+        <a class="btn btn-primary" href="${pagePath(locale, 'home')}">${esc(c.homeLabel)}</a>
+        <a class="btn btn-ghost" href="${pagePath(locale, 'contacts')}">${esc(c.contactLabel)}</a>
+      </div>
+    </div></section></main>
+    ${footer(locale)}
+  </body>
+</html>`;
+}
+
 let count = 0;
 for (const locale of LOCALES) {
   for (const { key, template } of sections) {
@@ -338,6 +371,12 @@ for (const locale of LOCALES) {
     count++;
   }
 }
+for (const locale of LOCALES) {
+  const dir = join(out, locale === DEFAULT_LOCALE ? '' : locale);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, '404.html'), notFoundPage(locale));
+}
+
 mkdirSync(join(out, 'styles'), { recursive: true });
 cpSync(join(root, 'src/styles/global.css'), join(out, 'styles/global.css'));
 cpSync(join(root, 'public/img'), join(out, 'img'), { recursive: true });

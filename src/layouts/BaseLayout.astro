@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 import StoneBackdrop from '../components/StoneBackdrop.astro';
 import { getAlternates, getSite, DEFAULT_LOCALE } from '../lib/content.js';
 
-const { locale, sectionKey, content } = Astro.props;
+const { locale, sectionKey, content, noIndex = false } = Astro.props;
 const site = getSite(locale);
 const alternates = getAlternates(sectionKey);
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -18,16 +18,19 @@ const gaId = import.meta.env.PUBLIC_GA_ID; // set at alpha stage; absent = no GA
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{content.metaTitle}</title>
     <meta name="description" content={content.metaDescription} />
-    <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/png" href="/img/logo-mark.png" />
-    {alternates.map(({ locale: l, href }) => (
+    {noIndex && <meta name="robots" content="noindex" />}
+    {!noIndex && <link rel="canonical" href={canonical} />}
+    {!noIndex && alternates.map(({ locale: l, href }) => (
       <link rel="alternate" hreflang={l} href={new URL(href, Astro.site)} />
     ))}
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href={new URL(alternates.find((a) => a.locale === DEFAULT_LOCALE).href, Astro.site)}
-    />
+    {!noIndex && (
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href={new URL(alternates.find((a) => a.locale === DEFAULT_LOCALE).href, Astro.site)}
+      />
+    )}
     {gaId && <meta name="ga-id" content={gaId} />}
     {gaId && <script is:inline src="/js/ga.js"></script>}
     {gaId && (

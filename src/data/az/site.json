@@ -22,5 +22,13 @@
     "error": "Sorğu göndərilə bilmədi. Zəhmət olmasa, bir az sonra yenidən cəhd edin və ya bizimlə birbaşa e-poçt vasitəsilə əlaqə saxlayın.",
     "emailSubject": "minline.az — yeni sorğu (AZ)",
     "pendingNote": "Forma tezliklə aktiv olacaq. Hələlik bizimlə e-poçt vasitəsilə əlaqə saxlaya bilərsiniz."
+  },
+  "notFound": {
+    "metaTitle": "Səhifə tapılmadı — Minline Systems",
+    "metaDescription": "Axtardığınız səhifə mövcud deyil.",
+    "title": "Səhifə tapılmadı",
+    "text": "Səhifə silinib, adı dəyişdirilib və ya ünvan səhv yazılıb.",
+    "homeLabel": "Ana səhifəyə keç",
+    "contactLabel": "Bizimlə əlaqə saxlayın"
   }
 }

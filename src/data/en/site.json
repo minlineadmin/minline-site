@@ -22,5 +22,13 @@
     "error": "The request could not be sent. Please try again in a moment, or contact us directly by email.",
     "emailSubject": "minline.az — new request (EN)",
     "pendingNote": "The form will be activated shortly. In the meantime, please contact us by email."
+  },
+  "notFound": {
+    "metaTitle": "Page not found — Minline Systems",
+    "metaDescription": "The page you requested does not exist.",
+    "title": "Page not found",
+    "text": "The page has been removed, renamed, or the address was mistyped.",
+    "homeLabel": "Go to the home page",
+    "contactLabel": "Get in touch"
   }
 }
