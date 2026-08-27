@@ -21,6 +21,9 @@
     "sending": "Göndərilir…",
     "error": "Sorğu göndərilə bilmədi. Zəhmət olmasa, bir az sonra yenidən cəhd edin və ya bizimlə birbaşa e-poçt vasitəsilə əlaqə saxlayın.",
     "emailSubject": "minline.az — yeni sorğu (AZ)",
+    "requiredNote": "* doldurulması vacib xanalar",
+    "msgRequired": "Bu xananı doldurun",
+    "msgEmail": "E-poçt ünvanını yoxlayın",
     "pendingNote": "Forma tezliklə aktiv olacaq. Hələlik bizimlə e-poçt vasitəsilə əlaqə saxlaya bilərsiniz."
   },
   "notFound": {

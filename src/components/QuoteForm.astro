@@ -14,6 +14,15 @@
 // Field names are not arbitrary. Formspree reads `email` for the Reply-To
 // header and `subject` for the email subject, and silently drops anything
 // that fills the `_gotcha` honeypot.
+//
+// Required: name, company, email, message. Phone stays optional on purpose —
+// it is the field a first-contact buyer is least willing to give, and a
+// salesperson can ask for it in the reply. Company is required because the
+// company sells to companies: a request without one is more likely noise.
+//
+// Validation stays native (the `required` and `type` attributes). Only the
+// message text is replaced, in quote-form.js, so it follows the language of
+// the page instead of the language of the visitor's browser.
 const { site, locale } = Astro.props;
 const f = site.form;
 const formspreeId = import.meta.env.PUBLIC_FORMSPREE_ID;
@@ -27,27 +36,37 @@ const fallbackLanguage = locale === 'ru' ? 'ru' : 'en';
   data-sending={f.sending}
   data-success={f.success}
   data-error={f.error}
+  data-msg-required={f.msgRequired}
+  data-msg-email={f.msgEmail}
 >
   <label>
-    <span>{f.name}</span>
+    <span>{f.name}<i class="req" aria-hidden="true">*</i></span>
     <input type="text" name="name" placeholder={f.namePlaceholder} required autocomplete="name" />
   </label>
   <label>
-    <span>{f.company}</span>
-    <input type="text" name="company" placeholder={f.companyPlaceholder} autocomplete="organization" />
+    <span>{f.company}<i class="req" aria-hidden="true">*</i></span>
+    <input type="text" name="company" placeholder={f.companyPlaceholder} required autocomplete="organization" />
   </label>
   <label>
-    <span>{f.email}</span>
-    <input type="email" name="email" placeholder={f.emailPlaceholder} required autocomplete="email" />
+    <span>{f.email}<i class="req" aria-hidden="true">*</i></span>
+    <input
+      type="email"
+      name="email"
+      placeholder={f.emailPlaceholder}
+      required
+      autocomplete="email"
+      pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,}"
+    />
   </label>
   <label>
     <span>{f.phone}</span>
     <input type="tel" name="phone" placeholder={f.phonePlaceholder} autocomplete="tel" />
   </label>
   <label>
-    <span>{f.message}</span>
+    <span>{f.message}<i class="req" aria-hidden="true">*</i></span>
     <textarea name="message" rows="5" placeholder={f.messagePlaceholder} required></textarea>
   </label>
+  <p class="form-required-note">{f.requiredNote}</p>
 
   <input type="hidden" name="subject" value={f.emailSubject} />
   <input type="hidden" name="_language" value={fallbackLanguage} />

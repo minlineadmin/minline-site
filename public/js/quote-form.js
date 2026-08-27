@@ -8,6 +8,31 @@
 //
 // Progressive enhancement: without this file the form still posts natively.
 
+// Native validation, our wording.
+//
+// The browser writes its own message ("Заполните это поле") in the language of
+// the browser, not of the page — so an Azerbaijani page can scold a visitor in
+// Russian. setCustomValidity replaces the text with ours; the bubble's looks
+// stay browser-native, which is not stylable and does not need to be.
+//
+// The message has to be cleared on input, otherwise a field that once failed
+// stays permanently invalid and the form can never be submitted.
+function localiseValidation(form) {
+  const required = form.dataset.msgRequired;
+  const email = form.dataset.msgEmail;
+  if (!required) return;
+
+  for (const field of form.querySelectorAll('[required]')) {
+    const message = () =>
+      field.validity.valueMissing ? required : field.type === 'email' ? email : '';
+
+    field.addEventListener('invalid', () => field.setCustomValidity(message()));
+    field.addEventListener('input', () => field.setCustomValidity(''));
+  }
+}
+
+for (const form of document.querySelectorAll('.quote-form')) localiseValidation(form);
+
 for (const form of document.querySelectorAll('.quote-form[action]')) {
   const status = form.querySelector('.form-status');
   const button = form.querySelector('button[type="submit"]');

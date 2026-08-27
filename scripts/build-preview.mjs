@@ -135,17 +135,24 @@ const beadList = (items) => `<ul class="bead-list">${items.map(li).join('')}</ul
 
 function quoteForm(locale) {
   const f = data[locale].site.form;
-  const fld = (label, ph, type, name) =>
-    `<label><span>${esc(label)}</span><input type="${type}" name="${name}" placeholder="${esc(ph)}"></label>`;
+  // The e-mail pattern mirrors QuoteForm.astro: type="email" alone accepts
+  // "buyer@example" without a dot, which is almost always a typo.
+  const EMAIL_PATTERN = '[^@\\s]+@[^@\\s]+\\.[^@\\s]{2,}';
+  const fld = (label, ph, type, name, req) =>
+    `<label><span>${esc(label)}${req ? '<i class="req" aria-hidden="true">*</i>' : ''}</span>` +
+    `<input type="${type}" name="${name}" placeholder="${esc(ph)}"${req ? ' required' : ''}` +
+    `${type === 'email' ? ` pattern="${EMAIL_PATTERN}"` : ''}></label>`;
   const id = process.env.PUBLIC_FORMSPREE_ID;
   const action = id ? ` action="https://formspree.io/f/${esc(id)}"` : '';
   return `<form class="quote-form" method="POST"${action}
-    data-sending="${esc(f.sending)}" data-success="${esc(f.success)}" data-error="${esc(f.error)}">
-    ${fld(f.name, f.namePlaceholder, 'text', 'name')}
-    ${fld(f.company, f.companyPlaceholder, 'text', 'company')}
-    ${fld(f.email, f.emailPlaceholder, 'email', 'email')}
-    ${fld(f.phone, f.phonePlaceholder, 'tel', 'phone')}
-    <label><span>${esc(f.message)}</span><textarea name="message" rows="5" placeholder="${esc(f.messagePlaceholder)}"></textarea></label>
+    data-sending="${esc(f.sending)}" data-success="${esc(f.success)}" data-error="${esc(f.error)}"
+    data-msg-required="${esc(f.msgRequired)}" data-msg-email="${esc(f.msgEmail)}">
+    ${fld(f.name, f.namePlaceholder, 'text', 'name', true)}
+    ${fld(f.company, f.companyPlaceholder, 'text', 'company', true)}
+    ${fld(f.email, f.emailPlaceholder, 'email', 'email', true)}
+    ${fld(f.phone, f.phonePlaceholder, 'tel', 'phone', false)}
+    <label><span>${esc(f.message)}<i class="req" aria-hidden="true">*</i></span><textarea name="message" rows="5" placeholder="${esc(f.messagePlaceholder)}" required></textarea></label>
+    <p class="form-required-note">${esc(f.requiredNote)}</p>
     <input type="hidden" name="subject" value="${esc(f.emailSubject)}">
     <input type="hidden" name="_language" value="${locale === 'ru' ? 'ru' : 'en'}">
     <div class="hp" aria-hidden="true"><label>Leave this field empty

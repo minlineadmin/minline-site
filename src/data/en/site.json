@@ -21,6 +21,9 @@
     "sending": "Sending…",
     "error": "The request could not be sent. Please try again in a moment, or contact us directly by email.",
     "emailSubject": "minline.az — new request (EN)",
+    "requiredNote": "* required fields",
+    "msgRequired": "Please fill in this field",
+    "msgEmail": "Check the email address",
     "pendingNote": "The form will be activated shortly. In the meantime, please contact us by email."
   },
   "notFound": {

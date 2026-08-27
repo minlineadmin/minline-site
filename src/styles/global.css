@@ -453,6 +453,20 @@ main,
 .quote-form .btn[disabled] { opacity: 0.6; cursor: progress; }
 .form-note { font-size: 0.8rem; color: var(--text-muted); }
 
+/* Asterisk on required fields. `i` rather than a span so it inherits nothing
+   from the uppercase label treatment beyond colour. */
+.quote-form .req {
+  color: var(--gold);
+  font-style: normal;
+  margin-left: 4px;
+}
+.form-required-note {
+  margin: -4px 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
 /* Honeypot: off-screen rather than display:none, which some bots skip. */
 .hp {
   position: absolute;
